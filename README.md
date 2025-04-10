@@ -35,18 +35,6 @@ ttf2woff build/fukiai.ttf build/fukiai.woff
 
 ---
 
-## 🚀 GitHub Actions
-
-You can trigger the full toolchain with one manual run.
-
-| Workflow Name | Trigger Type | What it does |
-|---------------|---------------|-----------------------------|
-| `full-build-preview-release.yml` | Manual (`workflow_dispatch`) | ① Generate fonts → ② Preview via GitHub Pages → ③ Release zip archive |
-
-This unified workflow uploads the font as an artifact, builds a preview page using the font, and creates a release with the packaged files.
-
----
-
 ## 🎨 Design Guidelines
 
 - Canvas size: `1000 × 1000`
@@ -65,8 +53,6 @@ This unified workflow uploads the font as an artifact, builds a preview page usi
   - [`ttf2woff`](https://github.com/fontello/ttf2woff)
 - [SVG Optimization]
   - [`svgo`](https://github.com/svg/svgo)
-- [Automation]
-  - [`GitHub Actions`](https://docs.github.com/en/actions)
 
 ---
 
@@ -77,4 +63,5 @@ All content is licensed under:
 
 ---
 
-© hugelton 2025 — Designed with waveforms in mind.
+By Leo Kuroshita for
+Hügelton Instruments. Kōbe,Japan.
