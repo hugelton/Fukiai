@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg id="a" data-name="layer1" xmlns="http://www.w3.org/2000/svg" width="1000" height="1000" viewBox="0 0 1000 1000">
-  <polyline points="100 266.663 100 733.354 200 733.354 200 266.663 900 266.663" fill="none" stroke="#231815" stroke-linecap="round" stroke-linejoin="round" stroke-width="40"/>
+  <path d="M200,753.354h-100c-11.046,0-20-8.954-20-20v-466.69c0-11.046,8.954-20,20-20s20,8.954,20,20v446.69h60v-446.69c0-11.046,8.954-20,20-20h700c11.046,0,20,8.954,20,20s-8.954,20-20,20H220v446.69c0,11.046-8.954,20-20,20Z" fill="#231815" stroke-width="0"/>
 </svg>
