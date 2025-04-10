@@ -1,0 +1,17 @@
+# Mac系
+.DS_Store
+
+# SVG作業中テンポラリ
+svg_outlined/
+temp_svg/
+*.bak
+
+# ビルド成果物
+build/
+*.ttf
+*.woff
+*.woff2
+
+# Python/Node artifacts
+__pycache__/
+node_modules/
