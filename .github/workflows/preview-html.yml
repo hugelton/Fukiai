@@ -1,13 +1,6 @@
 name: Preview Fukiai Font
 
 on:
-  push:
-    paths:
-      - "glyphs.json"
-      - "scripts/convert_glyphs_json.py"
-      - "scripts/generate_categorized_preview.py"
-      - "build/fukiai.woff"
-      - ".github/workflows/preview-html.yml"
   workflow_dispatch:
 
 permissions:
