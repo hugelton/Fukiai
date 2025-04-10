@@ -1,4 +1,3 @@
-
 import json
 from pathlib import Path
 
@@ -11,7 +10,7 @@ html_head = """<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Fukiai Icon Preview</title>
+  <title>Fukiai</title>
   <style>
     @font-face {
       font-family: 'Fukiai';
@@ -59,6 +58,10 @@ html_head = """<!DOCTYPE html>
 
 html_foot = """
   </div>
+  <footer>
+  <a href="https://github.com/kurogedelic/Fukiai">GitHub</a>
+  <br>
+  By Leo Kuroshita for <a href="https://hugelton.com">Hügelton Instruments</a> Kōbe,Japan.</footer>
 </body>
 </html>
 """
@@ -68,11 +71,13 @@ with open("docs/index.html", "w", encoding="utf-8") as f:
     for i, name in enumerate(glyphs):
         codepoint = 0xEA00 + i
         char = f"&#x{codepoint:04X};"
-        f.write(f'''
+        f.write(
+            f"""
     <div class="icon">
       <span class="glyph">{char}</span>
       <div class="icon-name">{name}</div>
-    </div>''')
+    </div>"""
+        )
     f.write(html_foot)
 
 print("✅ docs/index.html generated")
