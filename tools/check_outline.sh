@@ -14,7 +14,7 @@ for file in "$SVG_DIR"/*.svg; do
 
     # 2. Inkscapeで上書き処理（ストロークをパス化）
     inkscape "$temp_svg" \
-        --actions="select-all;object-to-path;export-filename:$file;export-do"
+  --actions="EditSelectAll;SelectionStrokeToPath;SelectionUnGroup;SelectionCombine;object-to-path;export-filename:$file;export-do"
 
     echo "  ✅ $filename を上書きしました"
 done

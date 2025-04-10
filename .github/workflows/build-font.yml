@@ -27,7 +27,11 @@ jobs:
 
       - name: Install CLI tools
         run: |
-          npm install -g svgicons2svgfont svg2ttf ttf2woff
+          npm install -g svgo svgicons2svgfont svg2ttf ttf2woff
+
+      - name: Optimize SVGs with SVGO
+        run: |
+          svgo -f svg --recursive --config '{ "plugins": ["removeDimensions", "removeAttrs", { "name": "removeViewBox", "active": false }] }'
 
       - name: Inject unicode attributes into SVGs
         run: |
