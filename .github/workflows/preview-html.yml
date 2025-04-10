@@ -1,0 +1,40 @@
+name: Preview Fukiai Font
+
+on:
+  push:
+    paths:
+      - "glyphs.json"
+      - "scripts/convert_glyphs_json.py"
+      - "scripts/generate_categorized_preview.py"
+      - "build/fukiai.woff"
+      - ".github/workflows/preview-html.yml"
+  workflow_dispatch:
+
+jobs:
+  preview:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.x"
+
+      - name: Convert glyphs.json to structured format
+        run: |
+          python3 scripts/convert_glyphs_json.py
+
+      - name: Generate categorized preview HTML
+        run: |
+          python3 scripts/generate_categorized_preview.py
+
+      - name: Copy font to docs/
+        run: |
+          cp build/fukiai.woff docs/
+
+      - name: Upload to GitHub Pages
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: docs/
