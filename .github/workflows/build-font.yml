@@ -31,7 +31,7 @@ jobs:
 
       - name: Optimize SVGs with SVGO
         run: |
-          svgo -f svg --recursive --config '{ "plugins": ["removeDimensions", "removeAttrs", { "name": "removeViewBox", "active": false }] }'
+          svgo -f svg --config=svgo.config.js
 
       - name: Inject unicode attributes into SVGs
         run: |
