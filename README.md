@@ -1,35 +1,78 @@
-# Fukiai Icons
+# Fukiai
 
-**Fukiai** is an open-source SVG icon set designed for synthesizers, audio tools, and modular UI environments.
+Fukiai is a modular icon font project designed for use in synthesizer UIs, musical tools, and DSP interfaces.
 
-This project provides a consistent collection of abstract symbols, waveform representations, control elements, and interface icons. It is suitable for use in web fonts, panel designs, DAW interfaces, educational materials, and prototyping.
+[➡️ View preview page (GitHub Pages)](https://hugelton.github.io/Fukiai/)
 
-- Format: SVG (1000×1000 px), outlined
-- Naming convention: `domain_category_type_modifier`  
-  e.g., `waveform_sawtooth_ac_inv`
-- License: CC BY-NC-SA 4.0
+---
 
-## Directory structure
+## 📦 Repository Structure
 
 ```
 Fukiai/
-├── svg/               # All individual SVG files
-├── glyphs.json        # Unicode mapping for icon names
-├── tools/             # Local processing scripts
-└── .github/workflows/ # GitHub Actions for font builds
+├── svg/            # Source icon SVGs (outlined)
+├── build/          # Compiled fonts (woff, ttf, svg)
+├── docs/           # GitHub Pages preview (HTML + font)
+├── scripts/        # Font generation and conversion tools
+├── glyphs.json     # Glyph name → Unicode mapping
+└── .github/workflows/
 ```
 
-## License
+---
 
-This project is licensed under the  
-**Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International**  
-(CC BY-NC-SA 4.0)
+## ⚙️ Build Process
 
-Read the full license here:  
-https://creativecommons.org/licenses/by-nc-sa/4.0/
+To build the font locally:
 
-## Roadmap
+```bash
+npm install -g svgicons2svgfont svg2ttf ttf2woff
+python3 scripts/inject_unicode.py
+mkdir -p build
+svgicons2svgfont temp_svg/*.svg -o build/fukiai.svg
+svg2ttf build/fukiai.svg build/fukiai.ttf
+ttf2woff build/fukiai.ttf build/fukiai.woff
+```
 
-- 240+ icons target
-- Web font & CSS class generation
-- Usage documentation & demo
+---
+
+## 🚀 GitHub Actions
+
+| Workflow | Trigger | Output |
+|----------|---------|--------|
+| `build-font.yml` | `push` to `svg/` or `glyphs.json` | Generates font into `build/` |
+| `preview-html.yml` | Manual (`workflow_dispatch`) | Generates preview to GitHub Pages |
+| `release.yml` | Manual (`workflow_dispatch`) | Creates GitHub Release with zip of `build/` |
+
+---
+
+## 🎨 Design Guidelines
+
+- Canvas size: `1000 × 1000`
+- Stroke width: `~40px` (visual balance)
+- All strokes are outlined before export
+- Glyph naming follows semantic domains:  
+  e.g. `waveform_sine`, `control_play_f`, `symbol_clock_o`
+
+---
+
+## 🛠 Tools Used
+
+- [Font generation]
+  - [`svgicons2svgfont`](https://github.com/nfroidure/svgicons2svgfont)
+  - [`svg2ttf`](https://github.com/fontello/svg2ttf)
+  - [`ttf2woff`](https://github.com/fontello/ttf2woff)
+- [SVG Optimization]
+  - [`svgo`](https://github.com/svg/svgo)
+- [Automation]
+  - [`GitHub Actions`](https://docs.github.com/en/actions)
+
+---
+
+## 📄 License
+
+All content is licensed under:  
+**Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)**
+
+---
+
+© hugelton 2025 — Designed with waveforms in mind.
