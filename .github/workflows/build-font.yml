@@ -1,0 +1,47 @@
+name: Build Fukiai Font
+
+on:
+  push:
+    paths:
+      - "svg/**"
+      - "glyphs.json"
+      - ".github/workflows/**"
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Install CLI tools
+        run: |
+          npm install -g svgicons2svgfont svg2ttf ttf2woff
+
+      - name: Inject unicode attributes into SVGs
+        run: |
+          python3 scripts/inject_unicode.py
+
+      - name: Generate fonts
+        run: |
+          mkdir -p build
+          svgicons2svgfont temp_svg/*.svg -o build/fukiai.svg
+          svg2ttf build/fukiai.svg build/fukiai.ttf
+          ttf2woff build/fukiai.ttf build/fukiai.woff
+
+      - name: Upload fonts as artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: fukiai-font
+          path: build/
