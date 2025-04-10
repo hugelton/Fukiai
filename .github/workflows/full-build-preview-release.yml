@@ -1,0 +1,116 @@
+name: Build + Preview + Release
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    outputs:
+      artifact-name: fukiai-font
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: Install CLI tools
+        run: |
+          npm install -g svgicons2svgfont svg2ttf ttf2woff
+
+      - name: Inject unicode into SVGs
+        run: |
+          python3 scripts/inject_unicode.py
+
+      - name: Generate font files
+        run: |
+          mkdir -p build
+          svgicons2svgfont temp_svg/*.svg -o build/fukiai.svg
+          svg2ttf build/fukiai.svg build/fukiai.ttf
+          ttf2woff build/fukiai.ttf build/fukiai.woff
+
+      - name: Upload font artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: fukiai-font
+          path: build/
+
+  preview:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Download font artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: fukiai-font
+          path: build/
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Convert glyphs.json
+        run: |
+          python3 scripts/convert_glyphs_json.py
+
+      - name: Generate preview HTML
+        run: |
+          python3 scripts/generate_categorized_preview.py
+
+      - name: Copy font to docs/
+        run: |
+          cp build/fukiai.woff docs/
+
+      - name: Setup GitHub Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs/
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+  release:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Download font artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: fukiai-font
+          path: build/
+
+      - name: Zip font files
+        run: |
+          mkdir -p dist
+          zip -j dist/fukiai-font.zip build/fukiai.*
+
+      - name: Release ZIP on GitHub
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: font-release-${{ github.run_number }}
+          name: Fukiai Font Release ${{ github.run_number }}
+          files: dist/fukiai-font.zip
