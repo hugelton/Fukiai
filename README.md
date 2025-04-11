@@ -21,6 +21,57 @@ Fukiai/
 
 ---
 
+## 🔗 Using Fukiai Font
+
+### Via CDN (Recommended)
+
+The easiest way to use Fukiai is through the jsDelivr CDN:
+
+```css
+@font-face {
+  font-family: 'Fukiai';
+  src: url('https://cdn.jsdelivr.net/gh/hugelton/Fukiai@latest/build/fukiai.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+```
+
+For production use, it's recommended to pin to a specific version:
+
+```css
+@font-face {
+  font-family: 'Fukiai';
+  src: url('https://cdn.jsdelivr.net/gh/hugelton/Fukiai@v0.1.0/build/fukiai.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+```
+
+### Self-hosting
+
+1. Download the latest release from the [Releases page](https://github.com/hugelton/Fukiai/releases)
+2. Extract the files and host them on your server
+3. Include the font in your CSS:
+
+```css
+@font-face {
+  font-family: 'Fukiai';
+  src: url('path/to/fukiai.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+```
+
+### Usage in HTML
+
+Use the Unicode points to display icons:
+
+```html
+<span style="font-family: 'Fukiai';">&#xEA01;</span> <!-- sawtooth wave -->
+```
+
+---
+
 ## ⚙️ Build Process
 
 ### Installation

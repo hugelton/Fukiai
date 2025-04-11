@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg id="a" data-name="layer1" xmlns="http://www.w3.org/2000/svg" width="1000" height="1000" viewBox="0 0 1000 1000">
-  <path d="M700.058,720h-400c-11.046,0-20-8.954-20-20v-400c0-11.046,8.954-20,20-20h400c11.046,0,20,8.954,20,20v400c0,11.046-8.954,20-20,20ZM320.058,680h360v-360h-360v360Z" fill="#231815" stroke-width="0"/>
+  <rect x="169.091" y="400" width="60" height="200" rx="20" ry="20" fill="#000" stroke-width="0"/>
+  <rect x="648.385" y="200" width="60" height="600" rx="20" ry="20" fill="#000" stroke-width="0"/>
+  <rect x="288.915" y="300" width="60" height="400" rx="20" ry="20" fill="#000" stroke-width="0"/>
+  <rect x="408.738" y="350" width="60" height="300" rx="20" ry="20" fill="#000" stroke-width="0"/>
+  <rect x="768.209" y="400" width="60" height="200" rx="20" ry="20" fill="#000" stroke-width="0"/>
+  <rect x="528.562" y="300" width="60" height="400" rx="20" ry="20" fill="#000" stroke-width="0"/>
 </svg>
