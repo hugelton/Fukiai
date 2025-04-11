@@ -1,0 +1,86 @@
+name: Release and Deploy
+
+on:
+  push:
+    tags:
+      - "v*.*.*"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "18"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build font
+        run: npm run build-all
+
+      - name: Archive release
+        run: |
+          mkdir -p release/fukiai
+          cp -r build/* release/fukiai/
+          cp LICENSE.md README.md release/fukiai/
+          cd release
+          zip -r fukiai-${{ github.ref_name }}.zip fukiai
+
+      - name: Upload release artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: release-archive
+          path: release/fukiai-${{ github.ref_name }}.zip
+
+      - name: Upload GitHub Pages artifact
+        uses: actions/upload-pages-artifact@v2
+        with:
+          path: ./docs
+
+  release:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download release artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: release-archive
+          path: ./release
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v1
+        with:
+          name: Fukiai ${{ github.ref_name }}
+          draft: false
+          prerelease: false
+          files: |
+            ./release/fukiai-${{ github.ref_name }}.zip
+          body: |
+            # Fukiai ${{ github.ref_name }}
+
+            Modular icon font for synthesizer UIs and musical tools.
+
+            See [preview page](https://hugelton.github.io/Fukiai/) for all available icons.
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+    steps:
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v2
