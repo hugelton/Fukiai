@@ -21,31 +21,7 @@ Fukiai/
 
 ---
 
-## 🔗 Using Fukiai Font
-
-### Via CDN (Recommended)
-
-The easiest way to use Fukiai is through the jsDelivr CDN:
-
-```css
-@font-face {
-  font-family: 'Fukiai';
-  src: url('https://cdn.jsdelivr.net/gh/hugelton/Fukiai/releases/download/latest/fukiai.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-```
-
-For production use, it's recommended to pin to a specific version:
-
-```css
-@font-face {
-  font-family: 'Fukiai';
-  src: url('https://cdn.jsdelivr.net/gh/hugelton/Fukiai/releases/download/v0.2.0/fukiai.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-```
+## 🔗 Using Fukiai Font on Web
 
 ### Self-hosting
 
@@ -55,10 +31,10 @@ For production use, it's recommended to pin to a specific version:
 
 ```css
 @font-face {
-  font-family: 'Fukiai';
-  src: url('path/to/fukiai.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
+	font-family: "Fukiai";
+	src: url("path/to/fukiai.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
 }
 ```
 
@@ -67,10 +43,13 @@ For production use, it's recommended to pin to a specific version:
 Use the Unicode points to display icons:
 
 ```html
-<span style="font-family: 'Fukiai';">&#xEA01;</span> <!-- sawtooth wave -->
+<span style="font-family: 'Fukiai';">&#xEA01;</span>
+<!-- sawtooth wave -->
 ```
 
----
+## 🔗 Using Fukiai Font on Other work
+
+## Please download and install to your system.
 
 ## ⚙️ Build Process
 
