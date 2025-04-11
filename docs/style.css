@@ -13,6 +13,8 @@
 	--border-light: rgba(0, 0, 0, 0.12);
 	--border-dark: rgba(255, 255, 255, 0.12);
 
+	
+
 	/* ライトモード（デフォルト）で使用する変数 */
 	--bg-color: var(--bg-light);
 	--fg-color: var(--fg-light);
