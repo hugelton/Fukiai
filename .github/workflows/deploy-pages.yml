@@ -6,17 +6,12 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
-# Allow only one concurrent deployment
-concurrency:
-  group: "pages"
-  cancel-in-progress: true
-
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -25,7 +20,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '18'
+          node-version: '16'
           cache: 'npm'
 
       - name: Install dependencies
@@ -47,18 +42,9 @@ jobs:
           
           echo "Added CDN information for tag: $LATEST_TAG"
 
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
-        with:
-          path: './docs'
-
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
       - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v1
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: docs
+          branch: gh-pages
+          clean: true
