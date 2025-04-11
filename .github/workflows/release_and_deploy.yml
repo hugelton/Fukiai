@@ -1,4 +1,4 @@
-name: Release and Deploy
+name: Release and Deploy (No Artifacts)
 
 on:
   push:
@@ -8,12 +8,10 @@ on:
 
 permissions:
   contents: write
-  pages: write
-  id-token: write
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
+  release_and_deploy:
+    runs-on: ubuntu-22.04
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
@@ -22,7 +20,6 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: "18"
-          cache: "npm"
 
       - name: Install dependencies
         run: npm ci
@@ -30,57 +27,33 @@ jobs:
       - name: Build font
         run: npm run build-all
 
-      - name: Archive release
+      - name: Create release archive
         run: |
           mkdir -p release/fukiai
           cp -r build/* release/fukiai/
           cp LICENSE.md README.md release/fukiai/
           cd release
           zip -r fukiai-${{ github.ref_name }}.zip fukiai
-
-      - name: Upload release artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: release-archive
-          path: release/fukiai-${{ github.ref_name }}.zip
-
-      - name: Upload GitHub Pages artifact
-        uses: actions/upload-pages-artifact@v2
-        with:
-          path: ./docs
-
-  release:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - name: Download release artifact
-        uses: actions/download-artifact@v4
-        with:
-          name: release-archive
-          path: ./release
+          cd ..
 
       - name: Create GitHub Release
-        uses: softprops/action-gh-release@v1
+        uses: ncipollo/release-action@v1
         with:
+          artifacts: release/fukiai-${{ github.ref_name }}.zip
+          tag: ${{ github.ref_name }}
           name: Fukiai ${{ github.ref_name }}
-          draft: false
-          prerelease: false
-          files: |
-            ./release/fukiai-${{ github.ref_name }}.zip
           body: |
             # Fukiai ${{ github.ref_name }}
 
             Modular icon font for synthesizer UIs and musical tools.
 
-            See [preview page](https://hugelton.github.io/Fukiai/) for all available icons.
+            See the preview at: https://hugelton.github.io/Fukiai/
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-    steps:
       - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v2
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs
+          publish_branch: gh-pages
