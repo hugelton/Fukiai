@@ -30,7 +30,7 @@ The easiest way to use Fukiai is through the jsDelivr CDN:
 ```css
 @font-face {
   font-family: 'Fukiai';
-  src: url('https://cdn.jsdelivr.net/gh/hugelton/Fukiai@latest/build/fukiai.woff') format('woff');
+  src: url('https://cdn.jsdelivr.net/gh/hugelton/Fukiai/releases/download/latest/fukiai.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -41,7 +41,7 @@ For production use, it's recommended to pin to a specific version:
 ```css
 @font-face {
   font-family: 'Fukiai';
-  src: url('https://cdn.jsdelivr.net/gh/hugelton/Fukiai@v0.1.0/build/fukiai.woff') format('woff');
+  src: url('https://cdn.jsdelivr.net/gh/hugelton/Fukiai/releases/download/v0.2.0/fukiai.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }

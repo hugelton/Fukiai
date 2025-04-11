@@ -21,7 +21,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '18'
+          node-version: '16'
           cache: 'npm'
 
       - name: Install dependencies
@@ -48,6 +48,9 @@ jobs:
           prerelease: false
           files: |
             release/fukiai-${{ github.event.inputs.version || github.ref_name }}.zip
+            build/fukiai.woff
+            build/fukiai.ttf
+            build/fukiai.svg
           body: |
             # Fukiai ${{ github.event.inputs.version || github.ref_name }}
             
@@ -68,7 +71,7 @@ jobs:
             ```css
             @font-face {
               font-family: 'Fukiai';
-              src: url('https://cdn.jsdelivr.net/gh/hugelton/Fukiai@${{ github.event.inputs.version || github.ref_name }}/build/fukiai.woff') format('woff');
+              src: url('https://cdn.jsdelivr.net/gh/hugelton/Fukiai/releases/download/${{ github.event.inputs.version || github.ref_name }}/fukiai.woff') format('woff');
               font-weight: normal;
               font-style: normal;
             }
@@ -92,8 +95,8 @@ jobs:
       - name: Verify jsDelivr CDN URL
         run: |
           VERSION="${{ github.event.inputs.version || github.ref_name }}"
-          echo "Verifying jsDelivr CDN URL: https://cdn.jsdelivr.net/gh/hugelton/Fukiai@$VERSION/build/fukiai.woff"
-          RESPONSE_CODE=$(curl -s -o /dev/null -w "%{http_code}" "https://cdn.jsdelivr.net/gh/hugelton/Fukiai@$VERSION/build/fukiai.woff" || echo "Error")
+          echo "Verifying jsDelivr CDN URL: https://cdn.jsdelivr.net/gh/hugelton/Fukiai/releases/download/$VERSION/fukiai.woff"
+          RESPONSE_CODE=$(curl -s -o /dev/null -w "%{http_code}" "https://cdn.jsdelivr.net/gh/hugelton/Fukiai/releases/download/$VERSION/fukiai.woff" || echo "Error")
           echo "Response code: $RESPONSE_CODE"
           
           if [[ $RESPONSE_CODE == "200" ]]; then

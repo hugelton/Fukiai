@@ -36,7 +36,7 @@ jobs:
           
           # Add CDN information to the docs/index.html file
           SEARCH="</main>"
-          CDN_INFO="<div class=\"cdn-info\">\n<h2>CDN Usage</h2>\n<p>Use Fukiai via jsDelivr CDN:</p>\n<pre><code>@font-face {\n  font-family: 'Fukiai';\n  src: url('https://cdn.jsdelivr.net/gh/hugelton/Fukiai@${LATEST_TAG}/build/fukiai.woff') format('woff');\n  font-weight: normal;\n  font-style: normal;\n}</code></pre>\n</div>\n</main>"
+          CDN_INFO="<div class=\"cdn-info\">\n<h2>CDN Usage</h2>\n<p>Use Fukiai via jsDelivr CDN:</p>\n<pre><code>@font-face {\n  font-family: 'Fukiai';\n  src: url('https://cdn.jsdelivr.net/gh/hugelton/Fukiai/releases/download/${LATEST_TAG}/fukiai.woff') format('woff');\n  font-weight: normal;\n  font-style: normal;\n}</code></pre>\n</div>\n</main>"
           
           sed -i "s|${SEARCH}|${CDN_INFO}|g" docs/index.html
           
