@@ -49,7 +49,7 @@ Use the Unicode points to display icons:
 
 ## 🔗 Using Fukiai Font on Other work
 
-## Please download and install to your system.
+Please download and install to your system.
 
 ## ⚙️ Build Process
 
