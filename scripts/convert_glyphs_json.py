@@ -1,22 +1,23 @@
 import json
 from pathlib import Path
 
-# 旧形式 glyphs.json を読み込み（["waveform_sine", ...]）
 with open("glyphs.json", "r") as f:
-    names = json.load(f)
+    glyphs = json.load(f)
 
-# ドメイン名（接頭辞）でカテゴリ分類
-def extract_category(name):
-    return name.split("_")[0] if "_" in name else "misc"
+structured = {}
 
-# 新形式に変換 [{"name": ..., "category": ...}, ...]
-new_glyphs = [
-    {"name": name, "category": extract_category(name)}
-    for name in names
-]
+for name, code in glyphs.items():
+    if "_" in name:
+        category = name.split("_")[0]
+    else:
+        category = "uncategorized"
+    
+    structured.setdefault(category, []).append({
+        "name": name,
+        "code": code.upper()
+    })
 
-# 新形式を glyphs_structured.json に保存
 with open("glyphs_structured.json", "w") as f:
-    json.dump(new_glyphs, f, indent=2)
+    json.dump(structured, f, indent=2)
 
-print("✅ Converted to glyphs_structured.json")
+print("✅ Converted to glyphs_structured.json (grouped by category)")

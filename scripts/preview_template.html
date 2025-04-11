@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Fukiai : Musical Icon Fonts</title>
+		<link rel="stylesheet" href="style.css" />
+		<style>
+			@font-face {
+				font-family: "Fukiai";
+				src: url("fukiai.woff") format("woff");
+				font-weight: normal;
+				font-style: normal;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1>Fukiai : Musical Icon Fonts</h1>
+			<p><a href="https://github.com/hugelton/Fukiai">GitHub</a></p>
+			<input type="text" id="search" placeholder="Filter icons..." />
+			<p>{{category_links}}</p>
+		</header>
+
+		<main>{{glyph_blocks}}</main>
+
+		<div id="copied-notice">Copied to clipboard</div>
+
+		<footer>
+			<p>
+				By Leo Kuroshita for
+				<a href="https://hugelton.com">Hügelton Instruments</a>, Kōbe, Japan.
+			</p>
+		</footer>
+
+		<script>
+			const search = document.getElementById("search");
+			const glyphs = document.querySelectorAll(".glyph");
+
+			search.addEventListener("input", () => {
+				const q = search.value.toLowerCase();
+				glyphs.forEach((el) => {
+					const name = el.dataset.name?.toLowerCase() || "";
+					el.style.display = name.includes(q) ? "" : "none";
+				});
+			});
+
+			// コピー＆通知
+			const notice = document.getElementById("copied-notice");
+			document.querySelectorAll(".glyph-char").forEach((el) => {
+				el.addEventListener("click", () => {
+					const content = el.innerText;
+					navigator.clipboard.writeText(content).then(() => {
+						notice.style.opacity = 1;
+						setTimeout(() => {
+							notice.style.opacity = 0;
+						}, 1000);
+					});
+				});
+			});
+		</script>
+	</body>
+</html>

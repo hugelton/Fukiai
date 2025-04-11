@@ -1,600 +1,910 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Fukiai Icon Preview</title>
-  <style>
-    @font-face {
-      font-family: 'Fukiai';
-      src: url('fukiai.woff') format('woff');
-      font-weight: normal;
-      font-style: normal;
-    }
-    body {
-      font-family: sans-serif;
-      padding: 2rem;
-      background: #f7f7f7;
-    }
-    h1 {
-      font-size: 1.8rem;
-      margin-bottom: 1rem;
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-      gap: 1rem;
-    }
-    .icon {
-      background: white;
-      border: 1px solid #ddd;
-      border-radius: 6px;
-      padding: 1rem;
-      text-align: center;
-      font-size: 32px;
-    }
-    .icon-name {
-      font-size: 0.75rem;
-      margin-top: 0.5rem;
-      word-break: break-word;
-    }
-    .glyph {
-      font-family: 'Fukiai';
-      display: block;
-    }
-  </style>
-</head>
-<body>
-  <h1>Fukiai Icon Preview</h1>
-  <div class="grid">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Fukiai : Musical Icon Fonts</title>
+		<link rel="stylesheet" href="style.css" />
+		<style>
+			@font-face {
+				font-family: "Fukiai";
+				src: url("fukiai.woff") format("woff");
+				font-weight: normal;
+				font-style: normal;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1>Fukiai : Musical Icon Fonts</h1>
+			<p><a href="https://github.com/hugelton/Fukiai">GitHub</a></p>
+			<input type="text" id="search" placeholder="Filter icons..." />
+			<p><a href="#waveform" class="cat-link">waveform</a>
+<a href="#symbol" class="cat-link">symbol</a>
+<a href="#control" class="cat-link">control</a>
+<a href="#function" class="cat-link">function</a>
+<a href="#port" class="cat-link">port</a>
+<a href="#ui" class="cat-link">ui</a>
+<a href="#logic" class="cat-link">logic</a>
+<a href="#mod" class="cat-link">mod</a>
+<a href="#display" class="cat-link">display</a></p>
+		</header>
 
-    <div class="icon">
-      <span class="glyph">&#xEA00;</span>
-      <div class="icon-name">waveform_sawtooth_ac</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA01;</span>
-      <div class="icon-name">waveform_sawtooth_ac_inv</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA02;</span>
-      <div class="icon-name">waveform_sawtooth_dc</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA03;</span>
-      <div class="icon-name">waveform_sawtooth_dc_inv</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA04;</span>
-      <div class="icon-name">waveform_triangle_ac</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA05;</span>
-      <div class="icon-name">waveform_triangle_ac_inv</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA06;</span>
-      <div class="icon-name">waveform_triangle_dc</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA07;</span>
-      <div class="icon-name">waveform_triangle_dc_inv</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA08;</span>
-      <div class="icon-name">waveform_square</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA09;</span>
-      <div class="icon-name">waveform_square_inv</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA0A;</span>
-      <div class="icon-name">waveform_sine</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA0B;</span>
-      <div class="icon-name">waveform_sine_inv</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA0C;</span>
-      <div class="icon-name">waveform_cos</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA0D;</span>
-      <div class="icon-name">waveform_cos_inv</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA0E;</span>
-      <div class="icon-name">waveform_pulse_half</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA0F;</span>
-      <div class="icon-name">waveform_pulse_half_inv</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA10;</span>
-      <div class="icon-name">waveform_pulse_quarter</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA11;</span>
-      <div class="icon-name">waveform_pulse_quarter_inv</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA12;</span>
-      <div class="icon-name">waveform_pulse_eighth</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA13;</span>
-      <div class="icon-name">waveform_pulse_eighth_inv</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA14;</span>
-      <div class="icon-name">waveform_noise_white</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA15;</span>
-      <div class="icon-name">waveform_noise_pink</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA16;</span>
-      <div class="icon-name">waveform_noise_step</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA17;</span>
-      <div class="icon-name">waveform_noise_bit</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA18;</span>
-      <div class="icon-name">symbol_lock_close_f</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA19;</span>
-      <div class="icon-name">symbol_lock_close_o</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA1A;</span>
-      <div class="icon-name">symbol_lock_open_f</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA1B;</span>
-      <div class="icon-name">symbol_lock_open_o</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA1C;</span>
-      <div class="icon-name">symbol_cloud_f</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA1D;</span>
-      <div class="icon-name">symbol_cloud_o</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA1E;</span>
-      <div class="icon-name">symbol_thunder_f</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA1F;</span>
-      <div class="icon-name">symbol_thunder_o</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA20;</span>
-      <div class="icon-name">symbol_primitives_f</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA21;</span>
-      <div class="icon-name">symbol_primitives_o</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA22;</span>
-      <div class="icon-name">symbol_combine</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA23;</span>
-      <div class="icon-name">symbol_clock</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA24;</span>
-      <div class="icon-name">symbol_tempo</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA25;</span>
-      <div class="icon-name">symbol_swing</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA26;</span>
-      <div class="icon-name">symbol_volume</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA27;</span>
-      <div class="icon-name">symbol_pan</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA28;</span>
-      <div class="icon-name">symbol_audio</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA29;</span>
-      <div class="icon-name">control_play_f</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA2A;</span>
-      <div class="icon-name">control_play_o</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA2B;</span>
-      <div class="icon-name">control_stop_f</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA2C;</span>
-      <div class="icon-name">control_stop_o</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA2D;</span>
-      <div class="icon-name">control_pause_f</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA2E;</span>
-      <div class="icon-name">control_pause_o</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA2F;</span>
-      <div class="icon-name">control_skip_f</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA30;</span>
-      <div class="icon-name">control_skip_o</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA31;</span>
-      <div class="icon-name">control_rec_f</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA32;</span>
-      <div class="icon-name">control_rec_o</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA33;</span>
-      <div class="icon-name">control_forward_f</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA34;</span>
-      <div class="icon-name">control_forward_o</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA35;</span>
-      <div class="icon-name">control_reverse_f</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA36;</span>
-      <div class="icon-name">control_reverse_o</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA37;</span>
-      <div class="icon-name">control_eject_f</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA38;</span>
-      <div class="icon-name">control_eject_o</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA39;</span>
-      <div class="icon-name">function_signal_harmonic</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA3A;</span>
-      <div class="icon-name">function_signal_clip</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA3B;</span>
-      <div class="icon-name">function_signal_double</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA3C;</span>
-      <div class="icon-name">function_signal_pitch</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA3D;</span>
-      <div class="icon-name">function_signal_fold</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA3E;</span>
-      <div class="icon-name">function_signal_fade</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA3F;</span>
-      <div class="icon-name">function_signal_loop</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA40;</span>
-      <div class="icon-name">function_signal_bipolar</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA41;</span>
-      <div class="icon-name">function_signal_unipolar</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA42;</span>
-      <div class="icon-name">function_signal_gate_rise</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA43;</span>
-      <div class="icon-name">function_signal_gate_fall</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA44;</span>
-      <div class="icon-name">function_env_adsr_lin</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA45;</span>
-      <div class="icon-name">function_env_adsr_exp</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA46;</span>
-      <div class="icon-name">function_env_adsr_log</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA47;</span>
-      <div class="icon-name">function_env_ar_lin</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA48;</span>
-      <div class="icon-name">function_env_ar_exp</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA49;</span>
-      <div class="icon-name">function_env_ar_log</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA4A;</span>
-      <div class="icon-name">function_impulse</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA4B;</span>
-      <div class="icon-name">function_cross</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA4C;</span>
-      <div class="icon-name">function_multiply</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA4D;</span>
-      <div class="icon-name">function_phase</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA4E;</span>
-      <div class="icon-name">function_odd</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA4F;</span>
-      <div class="icon-name">function_even</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA50;</span>
-      <div class="icon-name">port_midi</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA51;</span>
-      <div class="icon-name">port_mic</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA52;</span>
-      <div class="icon-name">port_dmx</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA53;</span>
-      <div class="icon-name">port_usb_c</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA54;</span>
-      <div class="icon-name">port_usb_a</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA55;</span>
-      <div class="icon-name">port_usb_b</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA56;</span>
-      <div class="icon-name">port_rj45</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA57;</span>
-      <div class="icon-name">port_sd</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA58;</span>
-      <div class="icon-name">port_sd_micro</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA59;</span>
-      <div class="icon-name">ui_knob</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA5A;</span>
-      <div class="icon-name">ui_slider_vertical</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA5B;</span>
-      <div class="icon-name">ui_slider_horizontal</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA5C;</span>
-      <div class="icon-name">ui_button_toggle</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA5D;</span>
-      <div class="icon-name">ui_button_momentary</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA5E;</span>
-      <div class="icon-name">ui_toggle_switch</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA5F;</span>
-      <div class="icon-name">ui_led_round</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA60;</span>
-      <div class="icon-name">ui_led_square</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA61;</span>
-      <div class="icon-name">ui_display_meter</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA62;</span>
-      <div class="icon-name">ui_display_scope</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA63;</span>
-      <div class="icon-name">logic_and</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA64;</span>
-      <div class="icon-name">logic_or</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA65;</span>
-      <div class="icon-name">logic_xor</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA66;</span>
-      <div class="icon-name">logic_not</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA67;</span>
-      <div class="icon-name">logic_trigger</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA68;</span>
-      <div class="icon-name">logic_gate</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA69;</span>
-      <div class="icon-name">logic_hold</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA6A;</span>
-      <div class="icon-name">logic_flipflop</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA6B;</span>
-      <div class="icon-name">mod_lfo</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA6C;</span>
-      <div class="icon-name">mod_env</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA6D;</span>
-      <div class="icon-name">mod_sync</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA6E;</span>
-      <div class="icon-name">mod_phase</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA6F;</span>
-      <div class="icon-name">mod_ring</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA70;</span>
-      <div class="icon-name">mod_freq</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA71;</span>
-      <div class="icon-name">mod_amp</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA72;</span>
-      <div class="icon-name">mod_offset</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA73;</span>
-      <div class="icon-name">display_vu</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA74;</span>
-      <div class="icon-name">display_bargraph</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA75;</span>
-      <div class="icon-name">display_scope</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA76;</span>
-      <div class="icon-name">display_segment</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA77;</span>
-      <div class="icon-name">display_led</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA78;</span>
-      <div class="icon-name">display_screen</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA79;</span>
-      <div class="icon-name">display_dotmatrix</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA7A;</span>
-      <div class="icon-name">symbol_arrow_up</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA7B;</span>
-      <div class="icon-name">symbol_arrow_down</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA7C;</span>
-      <div class="icon-name">symbol_arrow_left</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA7D;</span>
-      <div class="icon-name">symbol_arrow_right</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA7E;</span>
-      <div class="icon-name">symbol_warning</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA7F;</span>
-      <div class="icon-name">symbol_alert</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA80;</span>
-      <div class="icon-name">symbol_info</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA81;</span>
-      <div class="icon-name">symbol_question</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA82;</span>
-      <div class="icon-name">port_cv</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA83;</span>
-      <div class="icon-name">port_gate</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA84;</span>
-      <div class="icon-name">port_trs</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA85;</span>
-      <div class="icon-name">port_ts</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA86;</span>
-      <div class="icon-name">port_hdmi</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA87;</span>
-      <div class="icon-name">port_optical</div>
-    </div>
-    <div class="icon">
-      <span class="glyph">&#xEA88;</span>
-      <div class="icon-name">port_bluetooth</div>
-    </div>
-  </div>
-</body>
+		<main><h2 id="waveform">waveform</h2>
+<div class="category">
+<div class="glyph" data-name="waveform_sawtooth_ac">
+  <div class="glyph-char">&#xEA01;</div>
+  <div class="glyph-name">waveform_sawtooth_ac</div>
+  <div class="codepoint">U+EA01</div>
+</div>
+
+<div class="glyph" data-name="waveform_sawtooth_ac_inv">
+  <div class="glyph-char">&#xEA02;</div>
+  <div class="glyph-name">waveform_sawtooth_ac_inv</div>
+  <div class="codepoint">U+EA02</div>
+</div>
+
+<div class="glyph" data-name="waveform_sawtooth_dc">
+  <div class="glyph-char">&#xEA03;</div>
+  <div class="glyph-name">waveform_sawtooth_dc</div>
+  <div class="codepoint">U+EA03</div>
+</div>
+
+<div class="glyph" data-name="waveform_sawtooth_dc_inv">
+  <div class="glyph-char">&#xEA04;</div>
+  <div class="glyph-name">waveform_sawtooth_dc_inv</div>
+  <div class="codepoint">U+EA04</div>
+</div>
+
+<div class="glyph" data-name="waveform_triangle_ac">
+  <div class="glyph-char">&#xEA05;</div>
+  <div class="glyph-name">waveform_triangle_ac</div>
+  <div class="codepoint">U+EA05</div>
+</div>
+
+<div class="glyph" data-name="waveform_triangle_ac_inv">
+  <div class="glyph-char">&#xEA06;</div>
+  <div class="glyph-name">waveform_triangle_ac_inv</div>
+  <div class="codepoint">U+EA06</div>
+</div>
+
+<div class="glyph" data-name="waveform_triangle_dc">
+  <div class="glyph-char">&#xEA07;</div>
+  <div class="glyph-name">waveform_triangle_dc</div>
+  <div class="codepoint">U+EA07</div>
+</div>
+
+<div class="glyph" data-name="waveform_triangle_dc_inv">
+  <div class="glyph-char">&#xEA08;</div>
+  <div class="glyph-name">waveform_triangle_dc_inv</div>
+  <div class="codepoint">U+EA08</div>
+</div>
+
+<div class="glyph" data-name="waveform_square">
+  <div class="glyph-char">&#xEA09;</div>
+  <div class="glyph-name">waveform_square</div>
+  <div class="codepoint">U+EA09</div>
+</div>
+
+<div class="glyph" data-name="waveform_square_inv">
+  <div class="glyph-char">&#xEA0A;</div>
+  <div class="glyph-name">waveform_square_inv</div>
+  <div class="codepoint">U+EA0A</div>
+</div>
+
+<div class="glyph" data-name="waveform_sine">
+  <div class="glyph-char">&#xEA0B;</div>
+  <div class="glyph-name">waveform_sine</div>
+  <div class="codepoint">U+EA0B</div>
+</div>
+
+<div class="glyph" data-name="waveform_sine_inv">
+  <div class="glyph-char">&#xEA0C;</div>
+  <div class="glyph-name">waveform_sine_inv</div>
+  <div class="codepoint">U+EA0C</div>
+</div>
+
+<div class="glyph" data-name="waveform_cos">
+  <div class="glyph-char">&#xEA0D;</div>
+  <div class="glyph-name">waveform_cos</div>
+  <div class="codepoint">U+EA0D</div>
+</div>
+
+<div class="glyph" data-name="waveform_cos_inv">
+  <div class="glyph-char">&#xEA0E;</div>
+  <div class="glyph-name">waveform_cos_inv</div>
+  <div class="codepoint">U+EA0E</div>
+</div>
+
+<div class="glyph" data-name="waveform_pulse_half">
+  <div class="glyph-char">&#xEA0F;</div>
+  <div class="glyph-name">waveform_pulse_half</div>
+  <div class="codepoint">U+EA0F</div>
+</div>
+
+<div class="glyph" data-name="waveform_pulse_half_inv">
+  <div class="glyph-char">&#xEA10;</div>
+  <div class="glyph-name">waveform_pulse_half_inv</div>
+  <div class="codepoint">U+EA10</div>
+</div>
+
+<div class="glyph" data-name="waveform_pulse_quarter">
+  <div class="glyph-char">&#xEA11;</div>
+  <div class="glyph-name">waveform_pulse_quarter</div>
+  <div class="codepoint">U+EA11</div>
+</div>
+
+<div class="glyph" data-name="waveform_pulse_quarter_inv">
+  <div class="glyph-char">&#xEA12;</div>
+  <div class="glyph-name">waveform_pulse_quarter_inv</div>
+  <div class="codepoint">U+EA12</div>
+</div>
+
+<div class="glyph" data-name="waveform_pulse_eighth">
+  <div class="glyph-char">&#xEA13;</div>
+  <div class="glyph-name">waveform_pulse_eighth</div>
+  <div class="codepoint">U+EA13</div>
+</div>
+
+<div class="glyph" data-name="waveform_pulse_eighth_inv">
+  <div class="glyph-char">&#xEA14;</div>
+  <div class="glyph-name">waveform_pulse_eighth_inv</div>
+  <div class="codepoint">U+EA14</div>
+</div>
+
+<div class="glyph" data-name="waveform_noise_white">
+  <div class="glyph-char">&#xEA15;</div>
+  <div class="glyph-name">waveform_noise_white</div>
+  <div class="codepoint">U+EA15</div>
+</div>
+
+<div class="glyph" data-name="waveform_noise_pink">
+  <div class="glyph-char">&#xEA16;</div>
+  <div class="glyph-name">waveform_noise_pink</div>
+  <div class="codepoint">U+EA16</div>
+</div>
+
+<div class="glyph" data-name="waveform_noise_step">
+  <div class="glyph-char">&#xEA17;</div>
+  <div class="glyph-name">waveform_noise_step</div>
+  <div class="codepoint">U+EA17</div>
+</div>
+
+<div class="glyph" data-name="waveform_noise_bit">
+  <div class="glyph-char">&#xEA18;</div>
+  <div class="glyph-name">waveform_noise_bit</div>
+  <div class="codepoint">U+EA18</div>
+</div>
+</div>
+<h2 id="symbol">symbol</h2>
+<div class="category">
+<div class="glyph" data-name="symbol_lock_close_f">
+  <div class="glyph-char">&#xEA19;</div>
+  <div class="glyph-name">symbol_lock_close_f</div>
+  <div class="codepoint">U+EA19</div>
+</div>
+
+<div class="glyph" data-name="symbol_lock_close_o">
+  <div class="glyph-char">&#xEA1A;</div>
+  <div class="glyph-name">symbol_lock_close_o</div>
+  <div class="codepoint">U+EA1A</div>
+</div>
+
+<div class="glyph" data-name="symbol_lock_open_f">
+  <div class="glyph-char">&#xEA1B;</div>
+  <div class="glyph-name">symbol_lock_open_f</div>
+  <div class="codepoint">U+EA1B</div>
+</div>
+
+<div class="glyph" data-name="symbol_lock_open_o">
+  <div class="glyph-char">&#xEA1C;</div>
+  <div class="glyph-name">symbol_lock_open_o</div>
+  <div class="codepoint">U+EA1C</div>
+</div>
+
+<div class="glyph" data-name="symbol_cloud_f">
+  <div class="glyph-char">&#xEA1D;</div>
+  <div class="glyph-name">symbol_cloud_f</div>
+  <div class="codepoint">U+EA1D</div>
+</div>
+
+<div class="glyph" data-name="symbol_cloud_o">
+  <div class="glyph-char">&#xEA1E;</div>
+  <div class="glyph-name">symbol_cloud_o</div>
+  <div class="codepoint">U+EA1E</div>
+</div>
+
+<div class="glyph" data-name="symbol_thunder_f">
+  <div class="glyph-char">&#xEA1F;</div>
+  <div class="glyph-name">symbol_thunder_f</div>
+  <div class="codepoint">U+EA1F</div>
+</div>
+
+<div class="glyph" data-name="symbol_thunder_o">
+  <div class="glyph-char">&#xEA20;</div>
+  <div class="glyph-name">symbol_thunder_o</div>
+  <div class="codepoint">U+EA20</div>
+</div>
+
+<div class="glyph" data-name="symbol_primitives_f">
+  <div class="glyph-char">&#xEA21;</div>
+  <div class="glyph-name">symbol_primitives_f</div>
+  <div class="codepoint">U+EA21</div>
+</div>
+
+<div class="glyph" data-name="symbol_primitives_o">
+  <div class="glyph-char">&#xEA22;</div>
+  <div class="glyph-name">symbol_primitives_o</div>
+  <div class="codepoint">U+EA22</div>
+</div>
+
+<div class="glyph" data-name="symbol_combine">
+  <div class="glyph-char">&#xEA23;</div>
+  <div class="glyph-name">symbol_combine</div>
+  <div class="codepoint">U+EA23</div>
+</div>
+
+<div class="glyph" data-name="symbol_clock">
+  <div class="glyph-char">&#xEA24;</div>
+  <div class="glyph-name">symbol_clock</div>
+  <div class="codepoint">U+EA24</div>
+</div>
+
+<div class="glyph" data-name="symbol_tempo">
+  <div class="glyph-char">&#xEA25;</div>
+  <div class="glyph-name">symbol_tempo</div>
+  <div class="codepoint">U+EA25</div>
+</div>
+
+<div class="glyph" data-name="symbol_swing">
+  <div class="glyph-char">&#xEA26;</div>
+  <div class="glyph-name">symbol_swing</div>
+  <div class="codepoint">U+EA26</div>
+</div>
+
+<div class="glyph" data-name="symbol_volume">
+  <div class="glyph-char">&#xEA27;</div>
+  <div class="glyph-name">symbol_volume</div>
+  <div class="codepoint">U+EA27</div>
+</div>
+
+<div class="glyph" data-name="symbol_pan">
+  <div class="glyph-char">&#xEA28;</div>
+  <div class="glyph-name">symbol_pan</div>
+  <div class="codepoint">U+EA28</div>
+</div>
+
+<div class="glyph" data-name="symbol_audio">
+  <div class="glyph-char">&#xEA29;</div>
+  <div class="glyph-name">symbol_audio</div>
+  <div class="codepoint">U+EA29</div>
+</div>
+
+<div class="glyph" data-name="symbol_arrow_up">
+  <div class="glyph-char">&#xEA7B;</div>
+  <div class="glyph-name">symbol_arrow_up</div>
+  <div class="codepoint">U+EA7B</div>
+</div>
+
+<div class="glyph" data-name="symbol_arrow_down">
+  <div class="glyph-char">&#xEA7C;</div>
+  <div class="glyph-name">symbol_arrow_down</div>
+  <div class="codepoint">U+EA7C</div>
+</div>
+
+<div class="glyph" data-name="symbol_arrow_left">
+  <div class="glyph-char">&#xEA7D;</div>
+  <div class="glyph-name">symbol_arrow_left</div>
+  <div class="codepoint">U+EA7D</div>
+</div>
+
+<div class="glyph" data-name="symbol_arrow_right">
+  <div class="glyph-char">&#xEA7E;</div>
+  <div class="glyph-name">symbol_arrow_right</div>
+  <div class="codepoint">U+EA7E</div>
+</div>
+
+<div class="glyph" data-name="symbol_warning">
+  <div class="glyph-char">&#xEA7F;</div>
+  <div class="glyph-name">symbol_warning</div>
+  <div class="codepoint">U+EA7F</div>
+</div>
+
+<div class="glyph" data-name="symbol_alert">
+  <div class="glyph-char">&#xEA80;</div>
+  <div class="glyph-name">symbol_alert</div>
+  <div class="codepoint">U+EA80</div>
+</div>
+
+<div class="glyph" data-name="symbol_info">
+  <div class="glyph-char">&#xEA81;</div>
+  <div class="glyph-name">symbol_info</div>
+  <div class="codepoint">U+EA81</div>
+</div>
+
+<div class="glyph" data-name="symbol_question">
+  <div class="glyph-char">&#xEA82;</div>
+  <div class="glyph-name">symbol_question</div>
+  <div class="codepoint">U+EA82</div>
+</div>
+</div>
+<h2 id="control">control</h2>
+<div class="category">
+<div class="glyph" data-name="control_play_f">
+  <div class="glyph-char">&#xEA2A;</div>
+  <div class="glyph-name">control_play_f</div>
+  <div class="codepoint">U+EA2A</div>
+</div>
+
+<div class="glyph" data-name="control_play_o">
+  <div class="glyph-char">&#xEA2B;</div>
+  <div class="glyph-name">control_play_o</div>
+  <div class="codepoint">U+EA2B</div>
+</div>
+
+<div class="glyph" data-name="control_stop_f">
+  <div class="glyph-char">&#xEA2C;</div>
+  <div class="glyph-name">control_stop_f</div>
+  <div class="codepoint">U+EA2C</div>
+</div>
+
+<div class="glyph" data-name="control_stop_o">
+  <div class="glyph-char">&#xEA2D;</div>
+  <div class="glyph-name">control_stop_o</div>
+  <div class="codepoint">U+EA2D</div>
+</div>
+
+<div class="glyph" data-name="control_pause_f">
+  <div class="glyph-char">&#xEA2E;</div>
+  <div class="glyph-name">control_pause_f</div>
+  <div class="codepoint">U+EA2E</div>
+</div>
+
+<div class="glyph" data-name="control_pause_o">
+  <div class="glyph-char">&#xEA2F;</div>
+  <div class="glyph-name">control_pause_o</div>
+  <div class="codepoint">U+EA2F</div>
+</div>
+
+<div class="glyph" data-name="control_skip_f">
+  <div class="glyph-char">&#xEA30;</div>
+  <div class="glyph-name">control_skip_f</div>
+  <div class="codepoint">U+EA30</div>
+</div>
+
+<div class="glyph" data-name="control_skip_o">
+  <div class="glyph-char">&#xEA31;</div>
+  <div class="glyph-name">control_skip_o</div>
+  <div class="codepoint">U+EA31</div>
+</div>
+
+<div class="glyph" data-name="control_rec_f">
+  <div class="glyph-char">&#xEA32;</div>
+  <div class="glyph-name">control_rec_f</div>
+  <div class="codepoint">U+EA32</div>
+</div>
+
+<div class="glyph" data-name="control_rec_o">
+  <div class="glyph-char">&#xEA33;</div>
+  <div class="glyph-name">control_rec_o</div>
+  <div class="codepoint">U+EA33</div>
+</div>
+
+<div class="glyph" data-name="control_forward_f">
+  <div class="glyph-char">&#xEA34;</div>
+  <div class="glyph-name">control_forward_f</div>
+  <div class="codepoint">U+EA34</div>
+</div>
+
+<div class="glyph" data-name="control_forward_o">
+  <div class="glyph-char">&#xEA35;</div>
+  <div class="glyph-name">control_forward_o</div>
+  <div class="codepoint">U+EA35</div>
+</div>
+
+<div class="glyph" data-name="control_reverse_f">
+  <div class="glyph-char">&#xEA36;</div>
+  <div class="glyph-name">control_reverse_f</div>
+  <div class="codepoint">U+EA36</div>
+</div>
+
+<div class="glyph" data-name="control_reverse_o">
+  <div class="glyph-char">&#xEA37;</div>
+  <div class="glyph-name">control_reverse_o</div>
+  <div class="codepoint">U+EA37</div>
+</div>
+
+<div class="glyph" data-name="control_eject_f">
+  <div class="glyph-char">&#xEA38;</div>
+  <div class="glyph-name">control_eject_f</div>
+  <div class="codepoint">U+EA38</div>
+</div>
+
+<div class="glyph" data-name="control_eject_o">
+  <div class="glyph-char">&#xEA39;</div>
+  <div class="glyph-name">control_eject_o</div>
+  <div class="codepoint">U+EA39</div>
+</div>
+</div>
+<h2 id="function">function</h2>
+<div class="category">
+<div class="glyph" data-name="function_signal_harmonic">
+  <div class="glyph-char">&#xEA3A;</div>
+  <div class="glyph-name">function_signal_harmonic</div>
+  <div class="codepoint">U+EA3A</div>
+</div>
+
+<div class="glyph" data-name="function_signal_clip">
+  <div class="glyph-char">&#xEA3B;</div>
+  <div class="glyph-name">function_signal_clip</div>
+  <div class="codepoint">U+EA3B</div>
+</div>
+
+<div class="glyph" data-name="function_signal_double">
+  <div class="glyph-char">&#xEA3C;</div>
+  <div class="glyph-name">function_signal_double</div>
+  <div class="codepoint">U+EA3C</div>
+</div>
+
+<div class="glyph" data-name="function_signal_pitch">
+  <div class="glyph-char">&#xEA3D;</div>
+  <div class="glyph-name">function_signal_pitch</div>
+  <div class="codepoint">U+EA3D</div>
+</div>
+
+<div class="glyph" data-name="function_signal_fold">
+  <div class="glyph-char">&#xEA3E;</div>
+  <div class="glyph-name">function_signal_fold</div>
+  <div class="codepoint">U+EA3E</div>
+</div>
+
+<div class="glyph" data-name="function_signal_fade">
+  <div class="glyph-char">&#xEA3F;</div>
+  <div class="glyph-name">function_signal_fade</div>
+  <div class="codepoint">U+EA3F</div>
+</div>
+
+<div class="glyph" data-name="function_signal_loop">
+  <div class="glyph-char">&#xEA40;</div>
+  <div class="glyph-name">function_signal_loop</div>
+  <div class="codepoint">U+EA40</div>
+</div>
+
+<div class="glyph" data-name="function_signal_bipolar">
+  <div class="glyph-char">&#xEA41;</div>
+  <div class="glyph-name">function_signal_bipolar</div>
+  <div class="codepoint">U+EA41</div>
+</div>
+
+<div class="glyph" data-name="function_signal_unipolar">
+  <div class="glyph-char">&#xEA42;</div>
+  <div class="glyph-name">function_signal_unipolar</div>
+  <div class="codepoint">U+EA42</div>
+</div>
+
+<div class="glyph" data-name="function_signal_gate_rise">
+  <div class="glyph-char">&#xEA43;</div>
+  <div class="glyph-name">function_signal_gate_rise</div>
+  <div class="codepoint">U+EA43</div>
+</div>
+
+<div class="glyph" data-name="function_signal_gate_fall">
+  <div class="glyph-char">&#xEA44;</div>
+  <div class="glyph-name">function_signal_gate_fall</div>
+  <div class="codepoint">U+EA44</div>
+</div>
+
+<div class="glyph" data-name="function_env_adsr_lin">
+  <div class="glyph-char">&#xEA45;</div>
+  <div class="glyph-name">function_env_adsr_lin</div>
+  <div class="codepoint">U+EA45</div>
+</div>
+
+<div class="glyph" data-name="function_env_adsr_exp">
+  <div class="glyph-char">&#xEA46;</div>
+  <div class="glyph-name">function_env_adsr_exp</div>
+  <div class="codepoint">U+EA46</div>
+</div>
+
+<div class="glyph" data-name="function_env_adsr_log">
+  <div class="glyph-char">&#xEA47;</div>
+  <div class="glyph-name">function_env_adsr_log</div>
+  <div class="codepoint">U+EA47</div>
+</div>
+
+<div class="glyph" data-name="function_env_ar_lin">
+  <div class="glyph-char">&#xEA48;</div>
+  <div class="glyph-name">function_env_ar_lin</div>
+  <div class="codepoint">U+EA48</div>
+</div>
+
+<div class="glyph" data-name="function_env_ar_exp">
+  <div class="glyph-char">&#xEA49;</div>
+  <div class="glyph-name">function_env_ar_exp</div>
+  <div class="codepoint">U+EA49</div>
+</div>
+
+<div class="glyph" data-name="function_env_ar_log">
+  <div class="glyph-char">&#xEA4A;</div>
+  <div class="glyph-name">function_env_ar_log</div>
+  <div class="codepoint">U+EA4A</div>
+</div>
+
+<div class="glyph" data-name="function_impulse">
+  <div class="glyph-char">&#xEA4B;</div>
+  <div class="glyph-name">function_impulse</div>
+  <div class="codepoint">U+EA4B</div>
+</div>
+
+<div class="glyph" data-name="function_cross">
+  <div class="glyph-char">&#xEA4C;</div>
+  <div class="glyph-name">function_cross</div>
+  <div class="codepoint">U+EA4C</div>
+</div>
+
+<div class="glyph" data-name="function_multiply">
+  <div class="glyph-char">&#xEA4D;</div>
+  <div class="glyph-name">function_multiply</div>
+  <div class="codepoint">U+EA4D</div>
+</div>
+
+<div class="glyph" data-name="function_phase">
+  <div class="glyph-char">&#xEA4E;</div>
+  <div class="glyph-name">function_phase</div>
+  <div class="codepoint">U+EA4E</div>
+</div>
+
+<div class="glyph" data-name="function_odd">
+  <div class="glyph-char">&#xEA4F;</div>
+  <div class="glyph-name">function_odd</div>
+  <div class="codepoint">U+EA4F</div>
+</div>
+
+<div class="glyph" data-name="function_even">
+  <div class="glyph-char">&#xEA50;</div>
+  <div class="glyph-name">function_even</div>
+  <div class="codepoint">U+EA50</div>
+</div>
+</div>
+<h2 id="port">port</h2>
+<div class="category">
+<div class="glyph" data-name="port_midi">
+  <div class="glyph-char">&#xEA51;</div>
+  <div class="glyph-name">port_midi</div>
+  <div class="codepoint">U+EA51</div>
+</div>
+
+<div class="glyph" data-name="port_mic">
+  <div class="glyph-char">&#xEA52;</div>
+  <div class="glyph-name">port_mic</div>
+  <div class="codepoint">U+EA52</div>
+</div>
+
+<div class="glyph" data-name="port_dmx">
+  <div class="glyph-char">&#xEA53;</div>
+  <div class="glyph-name">port_dmx</div>
+  <div class="codepoint">U+EA53</div>
+</div>
+
+<div class="glyph" data-name="port_usb_c">
+  <div class="glyph-char">&#xEA54;</div>
+  <div class="glyph-name">port_usb_c</div>
+  <div class="codepoint">U+EA54</div>
+</div>
+
+<div class="glyph" data-name="port_usb_a">
+  <div class="glyph-char">&#xEA55;</div>
+  <div class="glyph-name">port_usb_a</div>
+  <div class="codepoint">U+EA55</div>
+</div>
+
+<div class="glyph" data-name="port_usb_b">
+  <div class="glyph-char">&#xEA56;</div>
+  <div class="glyph-name">port_usb_b</div>
+  <div class="codepoint">U+EA56</div>
+</div>
+
+<div class="glyph" data-name="port_rj45">
+  <div class="glyph-char">&#xEA57;</div>
+  <div class="glyph-name">port_rj45</div>
+  <div class="codepoint">U+EA57</div>
+</div>
+
+<div class="glyph" data-name="port_sd">
+  <div class="glyph-char">&#xEA58;</div>
+  <div class="glyph-name">port_sd</div>
+  <div class="codepoint">U+EA58</div>
+</div>
+
+<div class="glyph" data-name="port_sd_micro">
+  <div class="glyph-char">&#xEA59;</div>
+  <div class="glyph-name">port_sd_micro</div>
+  <div class="codepoint">U+EA59</div>
+</div>
+
+<div class="glyph" data-name="port_cv">
+  <div class="glyph-char">&#xEA83;</div>
+  <div class="glyph-name">port_cv</div>
+  <div class="codepoint">U+EA83</div>
+</div>
+
+<div class="glyph" data-name="port_gate">
+  <div class="glyph-char">&#xEA84;</div>
+  <div class="glyph-name">port_gate</div>
+  <div class="codepoint">U+EA84</div>
+</div>
+
+<div class="glyph" data-name="port_trs">
+  <div class="glyph-char">&#xEA85;</div>
+  <div class="glyph-name">port_trs</div>
+  <div class="codepoint">U+EA85</div>
+</div>
+
+<div class="glyph" data-name="port_ts">
+  <div class="glyph-char">&#xEA86;</div>
+  <div class="glyph-name">port_ts</div>
+  <div class="codepoint">U+EA86</div>
+</div>
+
+<div class="glyph" data-name="port_hdmi">
+  <div class="glyph-char">&#xEA87;</div>
+  <div class="glyph-name">port_hdmi</div>
+  <div class="codepoint">U+EA87</div>
+</div>
+
+<div class="glyph" data-name="port_optical">
+  <div class="glyph-char">&#xEA88;</div>
+  <div class="glyph-name">port_optical</div>
+  <div class="codepoint">U+EA88</div>
+</div>
+
+<div class="glyph" data-name="port_bluetooth">
+  <div class="glyph-char">&#xEA89;</div>
+  <div class="glyph-name">port_bluetooth</div>
+  <div class="codepoint">U+EA89</div>
+</div>
+</div>
+<h2 id="ui">ui</h2>
+<div class="category">
+<div class="glyph" data-name="ui_knob">
+  <div class="glyph-char">&#xEA5A;</div>
+  <div class="glyph-name">ui_knob</div>
+  <div class="codepoint">U+EA5A</div>
+</div>
+
+<div class="glyph" data-name="ui_slider_vertical">
+  <div class="glyph-char">&#xEA5B;</div>
+  <div class="glyph-name">ui_slider_vertical</div>
+  <div class="codepoint">U+EA5B</div>
+</div>
+
+<div class="glyph" data-name="ui_slider_horizontal">
+  <div class="glyph-char">&#xEA5C;</div>
+  <div class="glyph-name">ui_slider_horizontal</div>
+  <div class="codepoint">U+EA5C</div>
+</div>
+
+<div class="glyph" data-name="ui_button_toggle">
+  <div class="glyph-char">&#xEA5D;</div>
+  <div class="glyph-name">ui_button_toggle</div>
+  <div class="codepoint">U+EA5D</div>
+</div>
+
+<div class="glyph" data-name="ui_button_momentary">
+  <div class="glyph-char">&#xEA5E;</div>
+  <div class="glyph-name">ui_button_momentary</div>
+  <div class="codepoint">U+EA5E</div>
+</div>
+
+<div class="glyph" data-name="ui_toggle_switch">
+  <div class="glyph-char">&#xEA5F;</div>
+  <div class="glyph-name">ui_toggle_switch</div>
+  <div class="codepoint">U+EA5F</div>
+</div>
+
+<div class="glyph" data-name="ui_led_round">
+  <div class="glyph-char">&#xEA60;</div>
+  <div class="glyph-name">ui_led_round</div>
+  <div class="codepoint">U+EA60</div>
+</div>
+
+<div class="glyph" data-name="ui_led_square">
+  <div class="glyph-char">&#xEA61;</div>
+  <div class="glyph-name">ui_led_square</div>
+  <div class="codepoint">U+EA61</div>
+</div>
+
+<div class="glyph" data-name="ui_display_meter">
+  <div class="glyph-char">&#xEA62;</div>
+  <div class="glyph-name">ui_display_meter</div>
+  <div class="codepoint">U+EA62</div>
+</div>
+
+<div class="glyph" data-name="ui_display_scope">
+  <div class="glyph-char">&#xEA63;</div>
+  <div class="glyph-name">ui_display_scope</div>
+  <div class="codepoint">U+EA63</div>
+</div>
+</div>
+<h2 id="logic">logic</h2>
+<div class="category">
+<div class="glyph" data-name="logic_and">
+  <div class="glyph-char">&#xEA64;</div>
+  <div class="glyph-name">logic_and</div>
+  <div class="codepoint">U+EA64</div>
+</div>
+
+<div class="glyph" data-name="logic_or">
+  <div class="glyph-char">&#xEA65;</div>
+  <div class="glyph-name">logic_or</div>
+  <div class="codepoint">U+EA65</div>
+</div>
+
+<div class="glyph" data-name="logic_xor">
+  <div class="glyph-char">&#xEA66;</div>
+  <div class="glyph-name">logic_xor</div>
+  <div class="codepoint">U+EA66</div>
+</div>
+
+<div class="glyph" data-name="logic_not">
+  <div class="glyph-char">&#xEA67;</div>
+  <div class="glyph-name">logic_not</div>
+  <div class="codepoint">U+EA67</div>
+</div>
+
+<div class="glyph" data-name="logic_trigger">
+  <div class="glyph-char">&#xEA68;</div>
+  <div class="glyph-name">logic_trigger</div>
+  <div class="codepoint">U+EA68</div>
+</div>
+
+<div class="glyph" data-name="logic_gate">
+  <div class="glyph-char">&#xEA69;</div>
+  <div class="glyph-name">logic_gate</div>
+  <div class="codepoint">U+EA69</div>
+</div>
+
+<div class="glyph" data-name="logic_hold">
+  <div class="glyph-char">&#xEA6A;</div>
+  <div class="glyph-name">logic_hold</div>
+  <div class="codepoint">U+EA6A</div>
+</div>
+
+<div class="glyph" data-name="logic_flipflop">
+  <div class="glyph-char">&#xEA6B;</div>
+  <div class="glyph-name">logic_flipflop</div>
+  <div class="codepoint">U+EA6B</div>
+</div>
+</div>
+<h2 id="mod">mod</h2>
+<div class="category">
+<div class="glyph" data-name="mod_lfo">
+  <div class="glyph-char">&#xEA6C;</div>
+  <div class="glyph-name">mod_lfo</div>
+  <div class="codepoint">U+EA6C</div>
+</div>
+
+<div class="glyph" data-name="mod_env">
+  <div class="glyph-char">&#xEA6D;</div>
+  <div class="glyph-name">mod_env</div>
+  <div class="codepoint">U+EA6D</div>
+</div>
+
+<div class="glyph" data-name="mod_sync">
+  <div class="glyph-char">&#xEA6E;</div>
+  <div class="glyph-name">mod_sync</div>
+  <div class="codepoint">U+EA6E</div>
+</div>
+
+<div class="glyph" data-name="mod_phase">
+  <div class="glyph-char">&#xEA6F;</div>
+  <div class="glyph-name">mod_phase</div>
+  <div class="codepoint">U+EA6F</div>
+</div>
+
+<div class="glyph" data-name="mod_ring">
+  <div class="glyph-char">&#xEA70;</div>
+  <div class="glyph-name">mod_ring</div>
+  <div class="codepoint">U+EA70</div>
+</div>
+
+<div class="glyph" data-name="mod_freq">
+  <div class="glyph-char">&#xEA71;</div>
+  <div class="glyph-name">mod_freq</div>
+  <div class="codepoint">U+EA71</div>
+</div>
+
+<div class="glyph" data-name="mod_amp">
+  <div class="glyph-char">&#xEA72;</div>
+  <div class="glyph-name">mod_amp</div>
+  <div class="codepoint">U+EA72</div>
+</div>
+
+<div class="glyph" data-name="mod_offset">
+  <div class="glyph-char">&#xEA73;</div>
+  <div class="glyph-name">mod_offset</div>
+  <div class="codepoint">U+EA73</div>
+</div>
+</div>
+<h2 id="display">display</h2>
+<div class="category">
+<div class="glyph" data-name="display_vu">
+  <div class="glyph-char">&#xEA74;</div>
+  <div class="glyph-name">display_vu</div>
+  <div class="codepoint">U+EA74</div>
+</div>
+
+<div class="glyph" data-name="display_bargraph">
+  <div class="glyph-char">&#xEA75;</div>
+  <div class="glyph-name">display_bargraph</div>
+  <div class="codepoint">U+EA75</div>
+</div>
+
+<div class="glyph" data-name="display_scope">
+  <div class="glyph-char">&#xEA76;</div>
+  <div class="glyph-name">display_scope</div>
+  <div class="codepoint">U+EA76</div>
+</div>
+
+<div class="glyph" data-name="display_segment">
+  <div class="glyph-char">&#xEA77;</div>
+  <div class="glyph-name">display_segment</div>
+  <div class="codepoint">U+EA77</div>
+</div>
+
+<div class="glyph" data-name="display_led">
+  <div class="glyph-char">&#xEA78;</div>
+  <div class="glyph-name">display_led</div>
+  <div class="codepoint">U+EA78</div>
+</div>
+
+<div class="glyph" data-name="display_screen">
+  <div class="glyph-char">&#xEA79;</div>
+  <div class="glyph-name">display_screen</div>
+  <div class="codepoint">U+EA79</div>
+</div>
+
+<div class="glyph" data-name="display_dotmatrix">
+  <div class="glyph-char">&#xEA7A;</div>
+  <div class="glyph-name">display_dotmatrix</div>
+  <div class="codepoint">U+EA7A</div>
+</div>
+</div></main>
+
+		<div id="copied-notice">Copied to clipboard</div>
+
+		<footer>
+			<p>
+				By Leo Kuroshita for
+				<a href="https://hugelton.com">Hügelton Instruments</a>, Kōbe, Japan.
+			</p>
+		</footer>
+
+		<script>
+			const search = document.getElementById("search");
+			const glyphs = document.querySelectorAll(".glyph");
+
+			search.addEventListener("input", () => {
+				const q = search.value.toLowerCase();
+				glyphs.forEach((el) => {
+					const name = el.dataset.name?.toLowerCase() || "";
+					el.style.display = name.includes(q) ? "" : "none";
+				});
+			});
+
+			// コピー＆通知
+			const notice = document.getElementById("copied-notice");
+			document.querySelectorAll(".glyph-char").forEach((el) => {
+				el.addEventListener("click", () => {
+					const content = el.innerText;
+					navigator.clipboard.writeText(content).then(() => {
+						notice.style.opacity = 1;
+						setTimeout(() => {
+							notice.style.opacity = 0;
+						}, 1000);
+					});
+				});
+			});
+		</script>
+	</body>
 </html>

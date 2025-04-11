@@ -1,0 +1,25 @@
+{
+  "name": "fukiai",
+  "version": "1.0.0",
+  "description": "Modular icon font project for synthesizer UIs and musical tools",
+  "main": "index.js",
+  "scripts": {
+    "prepare": "node scripts/ensure_directories.js",
+    "optimize-svg": "svgo -f svg/ -o temp_svg/ --config=svgo.config.js",
+    "build-font": "node scripts/build_font.js",
+    "fix-json-unicode": "node scripts/fix_json_unicode.js",
+    "generate-preview": "node scripts/generate_index_html.js",
+    "copy-woff": "cp build/fukiai.woff docs/",
+    "cleanup": "node scripts/cleanup.js",
+    "build-all": "npm run prepare && npm run optimize-svg && npm run build-font && npm run fix-json-unicode && npm run generate-preview && npm run copy-woff",
+    "build-and-clean": "npm run build-all && npm run cleanup"
+  },
+  "author": "Leo Kuroshita",
+  "license": "CC-BY-NC-SA-4.0",
+  "dependencies": {
+    "svg2ttf": "^6.0.3",
+    "svgicons2svgfont": "^12.0.0",
+    "ttf2woff": "^3.0.0",
+    "svgo": "^3.2.0"
+  }
+}
