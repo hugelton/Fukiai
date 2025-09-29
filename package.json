@@ -1,0 +1,32 @@
+{
+  "name": "fukiai",
+  "version": "0.2.0",
+  "description": "Musical icon font for electronic music production",
+  "main": "index.js",
+  "scripts": {
+    "build": "node scripts/build_font.js",
+    "generate-html": "node scripts/generate_index_html.js"
+  },
+  "keywords": [
+    "icon-font",
+    "music",
+    "svg",
+    "font",
+    "electronic-music"
+  ],
+  "author": "Leo Kuroshita <leo@hugelton.com>",
+  "license": "MIT",
+  "dependencies": {
+    "svgicons2svgfont": "^12.0.0",
+    "svg2ttf": "^6.0.3",
+    "ttf2woff": "^3.0.0"
+  },
+  "devDependencies": {
+    "svgo": "^3.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hugelton/Fukiai.git"
+  },
+  "homepage": "https://hugelton.github.io/Fukiai/"
+}
