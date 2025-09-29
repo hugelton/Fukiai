@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="a" data-name="layer1" xmlns="http://www.w3.org/2000/svg" width="1000" height="1000" viewBox="0 0 1000 1000">
-  <rect x="169.091" y="400" width="60" height="200" rx="20" ry="20" fill="#000" stroke-width="0"/>
-  <rect x="648.385" y="200" width="60" height="600" rx="20" ry="20" fill="#000" stroke-width="0"/>
-  <rect x="288.915" y="300" width="60" height="400" rx="20" ry="20" fill="#000" stroke-width="0"/>
-  <rect x="408.738" y="350" width="60" height="300" rx="20" ry="20" fill="#000" stroke-width="0"/>
-  <rect x="768.209" y="400" width="60" height="200" rx="20" ry="20" fill="#000" stroke-width="0"/>
-  <rect x="528.562" y="300" width="60" height="400" rx="20" ry="20" fill="#000" stroke-width="0"/>
+<svg id="a" data-name="layer1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+  <rect x="86.7" y="375" width="75" height="250" rx="25" ry="25"/>
+  <rect x="685.82" y="125" width="75" height="750" rx="25" ry="25"/>
+  <rect x="236.48" y="250" width="75" height="500" rx="25" ry="25"/>
+  <rect x="386.26" y="312.5" width="75" height="375" rx="25" ry="25"/>
+  <rect x="835.6" y="375" width="75" height="250" rx="25" ry="25"/>
+  <rect x="536.04" y="250" width="75" height="500" rx="25" ry="25"/>
 </svg>

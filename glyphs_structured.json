@@ -1,568 +1,132 @@
 {
-  "waveform": [
-    {
-      "name": "waveform_sawtooth_ac",
-      "code": "EA01"
-    },
-    {
-      "name": "waveform_sawtooth_ac_inv",
-      "code": "EA02"
-    },
-    {
-      "name": "waveform_sawtooth_dc",
-      "code": "EA03"
-    },
-    {
-      "name": "waveform_sawtooth_dc_inv",
-      "code": "EA04"
-    },
-    {
-      "name": "waveform_triangle_ac",
-      "code": "EA05"
-    },
-    {
-      "name": "waveform_triangle_ac_inv",
-      "code": "EA06"
-    },
-    {
-      "name": "waveform_triangle_dc",
-      "code": "EA07"
-    },
-    {
-      "name": "waveform_triangle_dc_inv",
-      "code": "EA08"
-    },
-    {
-      "name": "waveform_square",
-      "code": "EA09"
-    },
-    {
-      "name": "waveform_square_inv",
-      "code": "EA0A"
-    },
-    {
-      "name": "waveform_sine",
-      "code": "EA0B"
-    },
-    {
-      "name": "waveform_sine_inv",
-      "code": "EA0C"
-    },
-    {
-      "name": "waveform_cos",
-      "code": "EA0D"
-    },
-    {
-      "name": "waveform_cos_inv",
-      "code": "EA0E"
-    },
-    {
-      "name": "waveform_pulse_half",
-      "code": "EA0F"
-    },
-    {
-      "name": "waveform_pulse_half_inv",
-      "code": "EA10"
-    },
-    {
-      "name": "waveform_pulse_quarter",
-      "code": "EA11"
-    },
-    {
-      "name": "waveform_pulse_quarter_inv",
-      "code": "EA12"
-    },
-    {
-      "name": "waveform_pulse_eighth",
-      "code": "EA13"
-    },
-    {
-      "name": "waveform_pulse_eighth_inv",
-      "code": "EA14"
-    },
-    {
-      "name": "waveform_noise_white",
-      "code": "EA15"
-    },
-    {
-      "name": "waveform_noise_pink",
-      "code": "EA16"
-    },
-    {
-      "name": "waveform_noise_step",
-      "code": "EA17"
-    },
-    {
-      "name": "waveform_noise_bit",
-      "code": "EA18"
-    }
-  ],
-  "symbol": [
-    {
-      "name": "symbol_lock_close_f",
-      "code": "EA19"
-    },
-    {
-      "name": "symbol_lock_close_o",
-      "code": "EA1A"
-    },
-    {
-      "name": "symbol_lock_open_f",
-      "code": "EA1B"
-    },
-    {
-      "name": "symbol_lock_open_o",
-      "code": "EA1C"
-    },
-    {
-      "name": "symbol_cloud_f",
-      "code": "EA1D"
-    },
-    {
-      "name": "symbol_cloud_o",
-      "code": "EA1E"
-    },
-    {
-      "name": "symbol_thunder_f",
-      "code": "EA1F"
-    },
-    {
-      "name": "symbol_thunder_o",
-      "code": "EA20"
-    },
-    {
-      "name": "symbol_primitives_f",
-      "code": "EA21"
-    },
-    {
-      "name": "symbol_primitives_o",
-      "code": "EA22"
-    },
-    {
-      "name": "symbol_combine",
-      "code": "EA23"
-    },
-    {
-      "name": "symbol_clock",
-      "code": "EA24"
-    },
-    {
-      "name": "symbol_tempo",
-      "code": "EA25"
-    },
-    {
-      "name": "symbol_swing",
-      "code": "EA26"
-    },
-    {
-      "name": "symbol_volume",
-      "code": "EA27"
-    },
-    {
-      "name": "symbol_pan",
-      "code": "EA28"
-    },
-    {
-      "name": "symbol_audio",
-      "code": "EA29"
-    },
-    {
-      "name": "symbol_arrow_up",
-      "code": "EA7B"
-    },
-    {
-      "name": "symbol_arrow_down",
-      "code": "EA7C"
-    },
-    {
-      "name": "symbol_arrow_left",
-      "code": "EA7D"
-    },
-    {
-      "name": "symbol_arrow_right",
-      "code": "EA7E"
-    },
-    {
-      "name": "symbol_warning",
-      "code": "EA7F"
-    },
-    {
-      "name": "symbol_alert",
-      "code": "EA80"
-    },
-    {
-      "name": "symbol_info",
-      "code": "EA81"
-    },
-    {
-      "name": "symbol_question",
-      "code": "EA82"
-    }
+  "basic": [
+    {"name": "circle", "code": "EA01"},
+    {"name": "square", "code": "EA39"},
+    {"name": "triangle", "code": "EA55"},
+    {"name": "hugelton", "code": "EA2B"}
   ],
   "control": [
-    {
-      "name": "control_play_f",
-      "code": "EA2A"
-    },
-    {
-      "name": "control_play_o",
-      "code": "EA2B"
-    },
-    {
-      "name": "control_stop_f",
-      "code": "EA2C"
-    },
-    {
-      "name": "control_stop_o",
-      "code": "EA2D"
-    },
-    {
-      "name": "control_pause_f",
-      "code": "EA2E"
-    },
-    {
-      "name": "control_pause_o",
-      "code": "EA2F"
-    },
-    {
-      "name": "control_skip_f",
-      "code": "EA30"
-    },
-    {
-      "name": "control_skip_o",
-      "code": "EA31"
-    },
-    {
-      "name": "control_rec_f",
-      "code": "EA32"
-    },
-    {
-      "name": "control_rec_o",
-      "code": "EA33"
-    },
-    {
-      "name": "control_forward_f",
-      "code": "EA34"
-    },
-    {
-      "name": "control_forward_o",
-      "code": "EA35"
-    },
-    {
-      "name": "control_reverse_f",
-      "code": "EA36"
-    },
-    {
-      "name": "control_reverse_o",
-      "code": "EA37"
-    },
-    {
-      "name": "control_eject_f",
-      "code": "EA38"
-    },
-    {
-      "name": "control_eject_o",
-      "code": "EA39"
-    }
+    {"name": "control_eject_f", "code": "EA02"},
+    {"name": "control_eject_o", "code": "EA03"},
+    {"name": "control_forward_f", "code": "EA04"},
+    {"name": "control_forward_o", "code": "EA05"},
+    {"name": "control_pause_f", "code": "EA06"},
+    {"name": "control_pause_o", "code": "EA07"},
+    {"name": "control_play_f", "code": "EA08"},
+    {"name": "control_play_o", "code": "EA09"},
+    {"name": "control_rec_f", "code": "EA0A"},
+    {"name": "control_rec_o", "code": "EA0B"},
+    {"name": "control_reverse_f", "code": "EA0C"},
+    {"name": "control_reverse_o", "code": "EA0D"},
+    {"name": "control_skip_f", "code": "EA0E"},
+    {"name": "control_skip_o", "code": "EA0F"},
+    {"name": "control_stop_f", "code": "EA10"},
+    {"name": "control_stop_o", "code": "EA11"}
   ],
   "function": [
-    {
-      "name": "function_signal_harmonic",
-      "code": "EA3A"
-    },
-    {
-      "name": "function_signal_clip",
-      "code": "EA3B"
-    },
-    {
-      "name": "function_signal_double",
-      "code": "EA3C"
-    },
-    {
-      "name": "function_signal_pitch",
-      "code": "EA3D"
-    },
-    {
-      "name": "function_signal_fold",
-      "code": "EA3E"
-    },
-    {
-      "name": "function_signal_fade",
-      "code": "EA3F"
-    },
-    {
-      "name": "function_signal_loop",
-      "code": "EA40"
-    },
-    {
-      "name": "function_signal_bipolar",
-      "code": "EA41"
-    },
-    {
-      "name": "function_signal_unipolar",
-      "code": "EA42"
-    },
-    {
-      "name": "function_signal_gate_rise",
-      "code": "EA43"
-    },
-    {
-      "name": "function_signal_gate_fall",
-      "code": "EA44"
-    },
-    {
-      "name": "function_env_adsr_lin",
-      "code": "EA45"
-    },
-    {
-      "name": "function_env_adsr_exp",
-      "code": "EA46"
-    },
-    {
-      "name": "function_env_adsr_log",
-      "code": "EA47"
-    },
-    {
-      "name": "function_env_ar_lin",
-      "code": "EA48"
-    },
-    {
-      "name": "function_env_ar_exp",
-      "code": "EA49"
-    },
-    {
-      "name": "function_env_ar_log",
-      "code": "EA4A"
-    },
-    {
-      "name": "function_impulse",
-      "code": "EA4B"
-    },
-    {
-      "name": "function_cross",
-      "code": "EA4C"
-    },
-    {
-      "name": "function_multiply",
-      "code": "EA4D"
-    },
-    {
-      "name": "function_phase",
-      "code": "EA4E"
-    },
-    {
-      "name": "function_odd",
-      "code": "EA4F"
-    },
-    {
-      "name": "function_even",
-      "code": "EA50"
-    }
+    {"name": "function_cross", "code": "EA12"},
+    {"name": "function_env_adsr_exp", "code": "EA13"},
+    {"name": "function_env_adsr_lin", "code": "EA14"},
+    {"name": "function_env_adsr_log", "code": "EA15"},
+    {"name": "function_env_ar_exp", "code": "EA16"},
+    {"name": "function_env_ar_lin", "code": "EA17"},
+    {"name": "function_env_ar_log", "code": "EA18"},
+    {"name": "function_even", "code": "EA19"},
+    {"name": "function_impulse", "code": "EA1A"},
+    {"name": "function_multiply", "code": "EA1B"},
+    {"name": "function_odd", "code": "EA1C"},
+    {"name": "function_phase", "code": "EA1D"},
+    {"name": "function_signal_bipolar", "code": "EA1E"},
+    {"name": "function_signal_clip", "code": "EA1F"},
+    {"name": "function_signal_double", "code": "EA20"},
+    {"name": "function_signal_fade", "code": "EA21"},
+    {"name": "function_signal_fold", "code": "EA22"},
+    {"name": "function_signal_gate_fall", "code": "EA23"},
+    {"name": "function_signal_gate_rise", "code": "EA24"},
+    {"name": "function_signal_harmonic", "code": "EA25"},
+    {"name": "function_signal_input", "code": "EA26"},
+    {"name": "function_signal_loop", "code": "EA27"},
+    {"name": "function_signal_output", "code": "EA28"},
+    {"name": "function_signal_pitch", "code": "EA29"},
+    {"name": "function_signal_unipolar", "code": "EA2A"}
   ],
   "port": [
-    {
-      "name": "port_midi",
-      "code": "EA51"
-    },
-    {
-      "name": "port_mic",
-      "code": "EA52"
-    },
-    {
-      "name": "port_dmx",
-      "code": "EA53"
-    },
-    {
-      "name": "port_usb_c",
-      "code": "EA54"
-    },
-    {
-      "name": "port_usb_a",
-      "code": "EA55"
-    },
-    {
-      "name": "port_usb_b",
-      "code": "EA56"
-    },
-    {
-      "name": "port_rj45",
-      "code": "EA57"
-    },
-    {
-      "name": "port_sd",
-      "code": "EA58"
-    },
-    {
-      "name": "port_sd_micro",
-      "code": "EA59"
-    },
-    {
-      "name": "port_cv",
-      "code": "EA83"
-    },
-    {
-      "name": "port_gate",
-      "code": "EA84"
-    },
-    {
-      "name": "port_trs",
-      "code": "EA85"
-    },
-    {
-      "name": "port_ts",
-      "code": "EA86"
-    },
-    {
-      "name": "port_hdmi",
-      "code": "EA87"
-    },
-    {
-      "name": "port_optical",
-      "code": "EA88"
-    },
-    {
-      "name": "port_bluetooth",
-      "code": "EA89"
-    }
+    {"name": "port_dmx", "code": "EA2C"},
+    {"name": "port_gate", "code": "EA2D"},
+    {"name": "port_mic", "code": "EA2E"},
+    {"name": "port_midi", "code": "EA2F"},
+    {"name": "port_rj45", "code": "EA30"},
+    {"name": "port_sd", "code": "EA31"},
+    {"name": "port_sd_micro", "code": "EA32"},
+    {"name": "port_trrs", "code": "EA33"},
+    {"name": "port_trs", "code": "EA34"},
+    {"name": "port_ts", "code": "EA35"},
+    {"name": "port_usb_a", "code": "EA36"},
+    {"name": "port_usb_b", "code": "EA37"},
+    {"name": "port_usb_c", "code": "EA38"}
+  ],
+  "symbol": [
+    {"name": "symbol_audio", "code": "EA3A"},
+    {"name": "symbol_clock", "code": "EA3B"},
+    {"name": "symbol_cloud_f", "code": "EA3C"},
+    {"name": "symbol_cloud_o", "code": "EA3D"},
+    {"name": "symbol_cog", "code": "EA3E"},
+    {"name": "symbol_combine", "code": "EA3F"},
+    {"name": "symbol_lock_close_f", "code": "EA40"},
+    {"name": "symbol_lock_close_o", "code": "EA41"},
+    {"name": "symbol_lock_open_f", "code": "EA42"},
+    {"name": "symbol_lock_open_o", "code": "EA43"},
+    {"name": "symbol_minus", "code": "EA44"},
+    {"name": "symbol_minus_o", "code": "EA45"},
+    {"name": "symbol_pan", "code": "EA46"},
+    {"name": "symbol_plus", "code": "EA47"},
+    {"name": "symbol_plus_o", "code": "EA48"},
+    {"name": "symbol_primitives_f", "code": "EA49"},
+    {"name": "symbol_primitives_o", "code": "EA4A"},
+    {"name": "symbol_search", "code": "EA4B"},
+    {"name": "symbol_shift", "code": "EA4C"},
+    {"name": "symbol_sort", "code": "EA4D"},
+    {"name": "symbol_star", "code": "EA4E"},
+    {"name": "symbol_star_o", "code": "EA4F"},
+    {"name": "symbol_swing", "code": "EA50"},
+    {"name": "symbol_tempo", "code": "EA51"},
+    {"name": "symbol_thunder_f", "code": "EA52"},
+    {"name": "symbol_thunder_o", "code": "EA53"},
+    {"name": "symbol_volume", "code": "EA54"}
   ],
   "ui": [
-    {
-      "name": "ui_knob",
-      "code": "EA5A"
-    },
-    {
-      "name": "ui_slider_vertical",
-      "code": "EA5B"
-    },
-    {
-      "name": "ui_slider_horizontal",
-      "code": "EA5C"
-    },
-    {
-      "name": "ui_button_toggle",
-      "code": "EA5D"
-    },
-    {
-      "name": "ui_button_momentary",
-      "code": "EA5E"
-    },
-    {
-      "name": "ui_toggle_switch",
-      "code": "EA5F"
-    },
-    {
-      "name": "ui_led_round",
-      "code": "EA60"
-    },
-    {
-      "name": "ui_led_square",
-      "code": "EA61"
-    },
-    {
-      "name": "ui_display_meter",
-      "code": "EA62"
-    },
-    {
-      "name": "ui_display_scope",
-      "code": "EA63"
-    }
+    {"name": "ui_button_momentary", "code": "EA56"},
+    {"name": "ui_button_toggle", "code": "EA57"},
+    {"name": "ui_knob", "code": "EA58"},
+    {"name": "ui_knob_four", "code": "EA59"},
+    {"name": "ui_slider_horizontal", "code": "EA5A"},
+    {"name": "ui_slider_vertical", "code": "EA5B"},
+    {"name": "ui_toggle_switch", "code": "EA5C"}
   ],
-  "logic": [
-    {
-      "name": "logic_and",
-      "code": "EA64"
-    },
-    {
-      "name": "logic_or",
-      "code": "EA65"
-    },
-    {
-      "name": "logic_xor",
-      "code": "EA66"
-    },
-    {
-      "name": "logic_not",
-      "code": "EA67"
-    },
-    {
-      "name": "logic_trigger",
-      "code": "EA68"
-    },
-    {
-      "name": "logic_gate",
-      "code": "EA69"
-    },
-    {
-      "name": "logic_hold",
-      "code": "EA6A"
-    },
-    {
-      "name": "logic_flipflop",
-      "code": "EA6B"
-    }
-  ],
-  "mod": [
-    {
-      "name": "mod_lfo",
-      "code": "EA6C"
-    },
-    {
-      "name": "mod_env",
-      "code": "EA6D"
-    },
-    {
-      "name": "mod_sync",
-      "code": "EA6E"
-    },
-    {
-      "name": "mod_phase",
-      "code": "EA6F"
-    },
-    {
-      "name": "mod_ring",
-      "code": "EA70"
-    },
-    {
-      "name": "mod_freq",
-      "code": "EA71"
-    },
-    {
-      "name": "mod_amp",
-      "code": "EA72"
-    },
-    {
-      "name": "mod_offset",
-      "code": "EA73"
-    }
-  ],
-  "display": [
-    {
-      "name": "display_vu",
-      "code": "EA74"
-    },
-    {
-      "name": "display_bargraph",
-      "code": "EA75"
-    },
-    {
-      "name": "display_scope",
-      "code": "EA76"
-    },
-    {
-      "name": "display_segment",
-      "code": "EA77"
-    },
-    {
-      "name": "display_led",
-      "code": "EA78"
-    },
-    {
-      "name": "display_screen",
-      "code": "EA79"
-    },
-    {
-      "name": "display_dotmatrix",
-      "code": "EA7A"
-    }
+  "waveform": [
+    {"name": "waveform_cos", "code": "EA5D"},
+    {"name": "waveform_cos_inv", "code": "EA5E"},
+    {"name": "waveform_noise_bit", "code": "EA5F"},
+    {"name": "waveform_noise_pink", "code": "EA60"},
+    {"name": "waveform_noise_step", "code": "EA61"},
+    {"name": "waveform_noise_white", "code": "EA62"},
+    {"name": "waveform_pulse_eighth", "code": "EA63"},
+    {"name": "waveform_pulse_eighth_inv", "code": "EA64"},
+    {"name": "waveform_pulse_half", "code": "EA65"},
+    {"name": "waveform_pulse_half_inv", "code": "EA66"},
+    {"name": "waveform_pulse_quarter", "code": "EA67"},
+    {"name": "waveform_pulse_quarter_inv", "code": "EA68"},
+    {"name": "waveform_sawtooth_ac", "code": "EA69"},
+    {"name": "waveform_sawtooth_ac_inv", "code": "EA6A"},
+    {"name": "waveform_sawtooth_dc", "code": "EA6B"},
+    {"name": "waveform_sawtooth_dc_inv", "code": "EA6C"},
+    {"name": "waveform_sine", "code": "EA6D"},
+    {"name": "waveform_sine_inv", "code": "EA6E"},
+    {"name": "waveform_square", "code": "EA6F"},
+    {"name": "waveform_square_inv", "code": "EA70"},
+    {"name": "waveform_triangle_ac", "code": "EA71"},
+    {"name": "waveform_triangle_ac_inv", "code": "EA72"},
+    {"name": "waveform_triangle_dc", "code": "EA73"},
+    {"name": "waveform_triangle_dc_inv", "code": "EA74"}
   ]
 }

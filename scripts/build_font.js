@@ -20,24 +20,20 @@ if (!fs.existsSync(buildDir)) {
   fs.mkdirSync(buildDir, { recursive: true });
 }
 
-// temp_svgディレクトリの確認
-const tempSvgDir = path.join(rootDir, 'temp_svg');
-if (!fs.existsSync(tempSvgDir)) {
-  console.log('📁 Creating temp_svg directory...');
-  fs.mkdirSync(tempSvgDir, { recursive: true });
-  console.log('✅ temp_svg directory created');
-  
-  // 注意: SVG最適化を進める必要があります
-  console.log('⚠️ Please optimize SVG files by running: npm run optimize-svg');
+// svgディレクトリの確認
+const svgDir = path.join(rootDir, 'svg');
+if (!fs.existsSync(svgDir)) {
+  console.error('❌ svg directory not found!');
+  process.exit(1);
 }
 
 // フォント生成ストリームの作成
 const fontStream = new SVGIcons2SVGFontStream({
   fontName: 'Fukiai',
-  fontHeight: 1000,
+  fontHeight: 2048, // 1000から2048に変更してサイズを大きくする
   normalize: true,
   centerHorizontally: true,
-  fixedWidth: true
+  fixedWidth: false // 必要に応じて各文字に自然な幅を持たせる
 });
 
 // 出力ファイルパス
@@ -87,7 +83,7 @@ let addedGlyphs = 0;
 let missingGlyphs = 0;
 
 Object.entries(glyphs).forEach(([name, code]) => {
-  const svgPath = path.join(tempSvgDir, `${name}.svg`);
+  const svgPath = path.join(svgDir, `${name}.svg`);
   
   if (fs.existsSync(svgPath)) {
     const glyph = createReadStream(svgPath);
