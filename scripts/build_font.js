@@ -12,7 +12,20 @@ const rootDir = path.join(__dirname, '..');
 const glyphsPath = path.join(rootDir, 'glyphs.json');
 const glyphs = require(glyphsPath);
 
-console.log('🛠 Building Fukiai Font from glyphs.json...');
+// バージョンアップ機能
+const packageJsonPath = path.join(rootDir, 'package.json');
+const packageJson = require(packageJsonPath);
+const currentVersion = packageJson.version;
+const versionParts = currentVersion.split('.');
+versionParts[2] = (parseInt(versionParts[2]) + 1).toString();
+const newVersion = versionParts.join('.');
+
+// package.jsonのバージョンを更新
+packageJson.version = newVersion;
+fs.writeFileSync(packageJsonPath, JSON.stringify(packageJson, null, 2));
+
+console.log(`🛠 Building Fukiai Font v${newVersion} from glyphs.json...`);
+console.log(`📈 Version bumped: ${currentVersion} → ${newVersion}`);
 
 // ビルドディレクトリの準備
 const buildDir = path.join(rootDir, 'build');
