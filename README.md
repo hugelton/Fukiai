@@ -45,4 +45,4 @@ MIT License - see package.json for details
 
 ## Author
 
-Leo Kuroshita <leo@hugelton.com>
+Leo Kuroshita
