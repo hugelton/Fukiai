@@ -31,10 +31,24 @@ fontFiles.forEach(file => {
 // Copy JavaScript library
 const jsPath = path.join(srcDir, 'fukiai.js');
 const jsDestPath = path.join(distDir, 'fukiai.js');
+const jsMinDestPath = path.join(distDir, 'fukiai.min.js');
 
 if (fs.existsSync(jsPath)) {
+  // Copy original
   fs.copyFileSync(jsPath, jsDestPath);
   console.log('✅ Copied fukiai.js to dist/');
+  
+  // Create minified version (simple minification)
+  const jsContent = fs.readFileSync(jsPath, 'utf8');
+  const minified = jsContent
+    .replace(/\/\*[\s\S]*?\*\//g, '') // Remove block comments
+    .replace(/\/\/.*$/gm, '') // Remove line comments
+    .replace(/\s+/g, ' ') // Replace multiple spaces with single space
+    .replace(/;\s*}/g, '}') // Remove semicolons before closing braces
+    .trim();
+  
+  fs.writeFileSync(jsMinDestPath, minified);
+  console.log('✅ Created fukiai.min.js in dist/');
 } else {
   console.error('❌ fukiai.js not found in src/');
 }
