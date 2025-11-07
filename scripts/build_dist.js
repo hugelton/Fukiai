@@ -39,11 +39,11 @@ if (fs.existsSync(jsPath)) {
   console.error('❌ fukiai.js not found in src/');
 }
 
-// Create CSS file with embedded font
+// Create CSS file with CDN font URLs
 const cssContent = `@font-face {
   font-family: 'Fukiai';
-  src: url('fukiai.woff') format('woff'),
-       url('fukiai.ttf') format('truetype');
+  src: url('https://cdn.jsdelivr.net/npm/fukiai@latest/dist/fukiai.woff') format('woff'),
+       url('https://cdn.jsdelivr.net/npm/fukiai@latest/dist/fukiai.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
