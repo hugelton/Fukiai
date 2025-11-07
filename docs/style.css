@@ -433,3 +433,40 @@ a:hover::after {
 	outline: 2px solid var(--primary);
 	outline-offset: 2px;
 }
+
+/* Usage section styling */
+.usage-section {
+	margin-top: var(--spacing-2xl);
+	margin-bottom: var(--spacing-xl);
+	padding: var(--spacing-xl);
+	background-color: var(--card-bg);
+	border-radius: var(--radius-lg);
+	border: 1px solid var(--border-color);
+}
+
+.usage-section h2 {
+	margin-top: 0;
+	margin-bottom: var(--spacing-lg);
+	color: var(--fg-color);
+}
+
+.usage-section h3 {
+	margin-top: var(--spacing-lg);
+	margin-bottom: var(--spacing-md);
+	color: var(--primary);
+	font-size: var(--text-md);
+}
+
+.usage-section pre {
+	background-color: rgba(0, 0, 0, 0.05);
+	padding: var(--spacing-md);
+	border-radius: var(--radius-md);
+	margin: var(--spacing-sm) 0;
+	overflow-x: auto;
+}
+
+.usage-section code {
+	font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+	font-size: 0.875em;
+	line-height: 1.4;
+}
