@@ -1,12 +1,21 @@
 {
   "name": "fukiai",
-  "version": "0.2.4",
+  "version": "0.3.13",
   "description": "Musical icon font for electronic music production",
-  "main": "index.js",
+  "main": "dist/fukiai.js",
+  "files": [
+    "dist/",
+    "src/",
+    "build/",
+    "README.md",
+    "LICENSE"
+  ],
   "scripts": {
     "build": "node scripts/build_font.js",
     "generate-html": "node scripts/generate_index_html.js",
-    "build-all": "npm run build && npm run generate-html"
+    "build-all": "npm run build && npm run generate-html && npm run build-dist",
+    "build-dist": "node scripts/build_dist.js",
+    "prepublishOnly": "npm run build-all"
   },
   "keywords": [
     "icon-font",

@@ -1,141 +1,576 @@
 {
   "control": [
-    {"name": "control_eject_f", "code": "EA01"},
-    {"name": "control_eject_o", "code": "EA02"},
-    {"name": "control_forward_f", "code": "EA03"},
-    {"name": "control_forward_o", "code": "EA04"},
-    {"name": "control_pause_f", "code": "EA05"},
-    {"name": "control_pause_o", "code": "EA06"},
-    {"name": "control_play_f", "code": "EA07"},
-    {"name": "control_play_o", "code": "EA08"},
-    {"name": "control_rec_f", "code": "EA09"},
-    {"name": "control_rec_o", "code": "EA0A"},
-    {"name": "control_reverse_f", "code": "EA0B"},
-    {"name": "control_reverse_o", "code": "EA0C"},
-    {"name": "control_skip_f", "code": "EA0D"},
-    {"name": "control_skip_o", "code": "EA0E"},
-    {"name": "control_stop_f", "code": "EA0F"},
-    {"name": "control_stop_o", "code": "EA10"}
+    {
+      "name": "control_eject_f",
+      "code": "EA01"
+    },
+    {
+      "name": "control_eject_o",
+      "code": "EA02"
+    },
+    {
+      "name": "control_forward_f",
+      "code": "EA03"
+    },
+    {
+      "name": "control_forward_o",
+      "code": "EA04"
+    },
+    {
+      "name": "control_pause_f",
+      "code": "EA05"
+    },
+    {
+      "name": "control_pause_o",
+      "code": "EA06"
+    },
+    {
+      "name": "control_play_f",
+      "code": "EA07"
+    },
+    {
+      "name": "control_play_o",
+      "code": "EA08"
+    },
+    {
+      "name": "control_rec_f",
+      "code": "EA09"
+    },
+    {
+      "name": "control_rec_o",
+      "code": "EA0A"
+    },
+    {
+      "name": "control_reverse_f",
+      "code": "EA0B"
+    },
+    {
+      "name": "control_reverse_o",
+      "code": "EA0C"
+    },
+    {
+      "name": "control_skip_f",
+      "code": "EA0D"
+    },
+    {
+      "name": "control_skip_o",
+      "code": "EA0E"
+    },
+    {
+      "name": "control_stop_f",
+      "code": "EA0F"
+    },
+    {
+      "name": "control_stop_o",
+      "code": "EA10"
+    }
   ],
   "function": [
-    {"name": "function_cross", "code": "EA11"},
-    {"name": "function_env_adsr_exp", "code": "EA12"},
-    {"name": "function_env_adsr_lin", "code": "EA13"},
-    {"name": "function_env_adsr_log", "code": "EA14"},
-    {"name": "function_env_ar_exp", "code": "EA15"},
-    {"name": "function_env_ar_lin", "code": "EA16"},
-    {"name": "function_env_ar_log", "code": "EA17"},
-    {"name": "function_even", "code": "EA18"},
-    {"name": "function_impulse", "code": "EA19"},
-    {"name": "function_multiply", "code": "EA1A"},
-    {"name": "function_odd", "code": "EA1B"},
-    {"name": "function_phase", "code": "EA1C"},
-    {"name": "function_signal_bipolar", "code": "EA1D"},
-    {"name": "function_signal_clip", "code": "EA1E"},
-    {"name": "function_signal_double", "code": "EA1F"},
-    {"name": "function_signal_fade", "code": "EA20"},
-    {"name": "function_signal_fold", "code": "EA21"},
-    {"name": "function_signal_gate_fall", "code": "EA22"},
-    {"name": "function_signal_gate_rise", "code": "EA23"},
-    {"name": "function_signal_harmonic", "code": "EA24"},
-    {"name": "function_signal_input", "code": "EA25"},
-    {"name": "function_signal_loop", "code": "EA26"},
-    {"name": "function_signal_output", "code": "EA27"},
-    {"name": "function_signal_pitch", "code": "EA28"},
-    {"name": "function_signal_unipolar", "code": "EA29"},
-    {"name": "function_signal_both", "code": "EA7D"}
+    {
+      "name": "function_cross",
+      "code": "EA11"
+    },
+    {
+      "name": "function_env_adsr_exp",
+      "code": "EA12"
+    },
+    {
+      "name": "function_env_adsr_lin",
+      "code": "EA13"
+    },
+    {
+      "name": "function_env_adsr_log",
+      "code": "EA14"
+    },
+    {
+      "name": "function_env_ar_exp",
+      "code": "EA15"
+    },
+    {
+      "name": "function_env_ar_lin",
+      "code": "EA16"
+    },
+    {
+      "name": "function_env_ar_log",
+      "code": "EA17"
+    },
+    {
+      "name": "function_even",
+      "code": "EA18"
+    },
+    {
+      "name": "function_impulse",
+      "code": "EA19"
+    },
+    {
+      "name": "function_multiply",
+      "code": "EA1A"
+    },
+    {
+      "name": "function_odd",
+      "code": "EA1B"
+    },
+    {
+      "name": "function_phase",
+      "code": "EA1C"
+    },
+    {
+      "name": "function_signal_bipolar",
+      "code": "EA1D"
+    },
+    {
+      "name": "function_signal_both",
+      "code": "EA1E"
+    },
+    {
+      "name": "function_signal_clip",
+      "code": "EA1F"
+    },
+    {
+      "name": "function_signal_double",
+      "code": "EA20"
+    },
+    {
+      "name": "function_signal_fade",
+      "code": "EA21"
+    },
+    {
+      "name": "function_signal_fold",
+      "code": "EA22"
+    },
+    {
+      "name": "function_signal_gate_fall",
+      "code": "EA23"
+    },
+    {
+      "name": "function_signal_gate_rise",
+      "code": "EA24"
+    },
+    {
+      "name": "function_signal_harmonic",
+      "code": "EA25"
+    },
+    {
+      "name": "function_signal_input",
+      "code": "EA26"
+    },
+    {
+      "name": "function_signal_loop",
+      "code": "EA27"
+    },
+    {
+      "name": "function_signal_output",
+      "code": "EA28"
+    },
+    {
+      "name": "function_signal_pitch",
+      "code": "EA29"
+    },
+    {
+      "name": "function_signal_unipolar",
+      "code": "EA2A"
+    }
   ],
   "numbers": [
-    {"name": "numbers_circle_1_roman_f", "code": "EA2A"},
-    {"name": "numbers_circle_1_roman_o", "code": "EA2B"},
-    {"name": "numbers_circle_2_roman_f", "code": "EA2C"},
-    {"name": "numbers_circle_2_roman_o", "code": "EA2D"},
-    {"name": "numbers_circle_3_roman_f", "code": "EA2E"},
-    {"name": "numbers_circle_3_roman_o", "code": "EA2F"},
-    {"name": "numbers_circle_4_roman_f", "code": "EA30"},
-    {"name": "numbers_circle_4_roman_o", "code": "EA31"}
+    {
+      "name": "numbers_circle_1_roman_f",
+      "code": "EA2B"
+    },
+    {
+      "name": "numbers_circle_1_roman_o",
+      "code": "EA2C"
+    },
+    {
+      "name": "numbers_circle_2_roman_f",
+      "code": "EA2D"
+    },
+    {
+      "name": "numbers_circle_2_roman_o",
+      "code": "EA2E"
+    },
+    {
+      "name": "numbers_circle_3_roman_f",
+      "code": "EA2F"
+    },
+    {
+      "name": "numbers_circle_3_roman_o",
+      "code": "EA30"
+    },
+    {
+      "name": "numbers_circle_4_roman_f",
+      "code": "EA31"
+    },
+    {
+      "name": "numbers_circle_4_roman_o",
+      "code": "EA32"
+    }
   ],
   "port": [
-    {"name": "port_dmx", "code": "EA32"},
-    {"name": "port_gate", "code": "EA33"},
-    {"name": "port_mic", "code": "EA34"},
-    {"name": "port_midi", "code": "EA35"},
-    {"name": "port_rj45", "code": "EA36"},
-    {"name": "port_sd", "code": "EA37"},
-    {"name": "port_sd_micro", "code": "EA38"},
-    {"name": "port_trrs", "code": "EA39"},
-    {"name": "port_trs", "code": "EA3A"},
-    {"name": "port_ts", "code": "EA3B"},
-    {"name": "port_usb_a", "code": "EA3C"},
-    {"name": "port_usb_b", "code": "EA3D"},
-    {"name": "port_usb_c", "code": "EA3E"}
+    {
+      "name": "port_dmx",
+      "code": "EA33"
+    },
+    {
+      "name": "port_gate",
+      "code": "EA34"
+    },
+    {
+      "name": "port_mic",
+      "code": "EA35"
+    },
+    {
+      "name": "port_midi",
+      "code": "EA36"
+    },
+    {
+      "name": "port_rj45",
+      "code": "EA37"
+    },
+    {
+      "name": "port_sd",
+      "code": "EA38"
+    },
+    {
+      "name": "port_sd_micro",
+      "code": "EA39"
+    },
+    {
+      "name": "port_trrs",
+      "code": "EA3A"
+    },
+    {
+      "name": "port_trs",
+      "code": "EA3B"
+    },
+    {
+      "name": "port_ts",
+      "code": "EA3C"
+    },
+    {
+      "name": "port_usb_a",
+      "code": "EA3D"
+    },
+    {
+      "name": "port_usb_b",
+      "code": "EA3E"
+    },
+    {
+      "name": "port_usb_c",
+      "code": "EA3F"
+    }
   ],
   "symbol": [
-    {"name": "symbol_audio", "code": "EA3F"},
-    {"name": "symbol_circle", "code": "EA40"},
-    {"name": "symbol_clock", "code": "EA41"},
-    {"name": "symbol_cloud_f", "code": "EA42"},
-    {"name": "symbol_cloud_o", "code": "EA43"},
-    {"name": "symbol_cog", "code": "EA44"},
-    {"name": "symbol_combine", "code": "EA45"},
-    {"name": "symbol_hugelton", "code": "EA46"},
-    {"name": "symbol_lock_close_f", "code": "EA47"},
-    {"name": "symbol_lock_close_o", "code": "EA48"},
-    {"name": "symbol_lock_open_f", "code": "EA49"},
-    {"name": "symbol_lock_open_o", "code": "EA4A"},
-    {"name": "symbol_minus", "code": "EA4B"},
-    {"name": "symbol_minus_o", "code": "EA4C"},
-    {"name": "symbol_pan", "code": "EA4D"},
-    {"name": "symbol_plus", "code": "EA4E"},
-    {"name": "symbol_plus_o", "code": "EA4F"},
-    {"name": "symbol_primitives_f", "code": "EA50"},
-    {"name": "symbol_primitives_o", "code": "EA51"},
-    {"name": "symbol_search", "code": "EA52"},
-    {"name": "symbol_shift", "code": "EA53"},
-    {"name": "symbol_sort", "code": "EA54"},
-    {"name": "symbol_square", "code": "EA55"},
-    {"name": "symbol_star", "code": "EA56"},
-    {"name": "symbol_star_o", "code": "EA57"},
-    {"name": "symbol_swing", "code": "EA58"},
-    {"name": "symbol_tempo", "code": "EA59"},
-    {"name": "symbol_thunder_f", "code": "EA5A"},
-    {"name": "symbol_thunder_o", "code": "EA5B"},
-    {"name": "symbol_triangle", "code": "EA5C"},
-    {"name": "symbol_volume", "code": "EA5D"}
+    {
+      "name": "symbol_audio",
+      "code": "EA40"
+    },
+    {
+      "name": "symbol_circle",
+      "code": "EA41"
+    },
+    {
+      "name": "symbol_clock",
+      "code": "EA42"
+    },
+    {
+      "name": "symbol_cloud_f",
+      "code": "EA43"
+    },
+    {
+      "name": "symbol_cloud_o",
+      "code": "EA44"
+    },
+    {
+      "name": "symbol_cocktail",
+      "code": "EA45"
+    },
+    {
+      "name": "symbol_cog",
+      "code": "EA46"
+    },
+    {
+      "name": "symbol_combine",
+      "code": "EA47"
+    },
+    {
+      "name": "symbol_hugelton",
+      "code": "EA48"
+    },
+    {
+      "name": "symbol_lock_close_f",
+      "code": "EA49"
+    },
+    {
+      "name": "symbol_lock_close_o",
+      "code": "EA4A"
+    },
+    {
+      "name": "symbol_lock_open_f",
+      "code": "EA4B"
+    },
+    {
+      "name": "symbol_lock_open_o",
+      "code": "EA4C"
+    },
+    {
+      "name": "symbol_metronome",
+      "code": "EA4D"
+    },
+    {
+      "name": "symbol_metronome_flip",
+      "code": "EA4E"
+    },
+    {
+      "name": "symbol_minus",
+      "code": "EA4F"
+    },
+    {
+      "name": "symbol_minus_o",
+      "code": "EA50"
+    },
+    {
+      "name": "symbol_moon_f",
+      "code": "EA51"
+    },
+    {
+      "name": "symbol_moon_o",
+      "code": "EA52"
+    },
+    {
+      "name": "symbol_pan",
+      "code": "EA53"
+    },
+    {
+      "name": "symbol_plus",
+      "code": "EA54"
+    },
+    {
+      "name": "symbol_plus_o",
+      "code": "EA55"
+    },
+    {
+      "name": "symbol_primitives_f",
+      "code": "EA56"
+    },
+    {
+      "name": "symbol_primitives_o",
+      "code": "EA57"
+    },
+    {
+      "name": "symbol_search",
+      "code": "EA58"
+    },
+    {
+      "name": "symbol_shift",
+      "code": "EA59"
+    },
+    {
+      "name": "symbol_sort",
+      "code": "EA5A"
+    },
+    {
+      "name": "symbol_speaker_f",
+      "code": "EA5B"
+    },
+    {
+      "name": "symbol_speaker_o",
+      "code": "EA5C"
+    },
+    {
+      "name": "symbol_speaker_one_f",
+      "code": "EA5D"
+    },
+    {
+      "name": "symbol_speaker_one_o",
+      "code": "EA5E"
+    },
+    {
+      "name": "symbol_speaker_three_f",
+      "code": "EA5F"
+    },
+    {
+      "name": "symbol_speaker_three_o",
+      "code": "EA60"
+    },
+    {
+      "name": "symbol_speaker_two_f",
+      "code": "EA61"
+    },
+    {
+      "name": "symbol_speaker_two_o",
+      "code": "EA62"
+    },
+    {
+      "name": "symbol_square",
+      "code": "EA63"
+    },
+    {
+      "name": "symbol_star",
+      "code": "EA64"
+    },
+    {
+      "name": "symbol_star_o",
+      "code": "EA65"
+    },
+    {
+      "name": "symbol_sun_dim_f",
+      "code": "EA66"
+    },
+    {
+      "name": "symbol_sun_dim_o",
+      "code": "EA67"
+    },
+    {
+      "name": "symbol_sun_f",
+      "code": "EA68"
+    },
+    {
+      "name": "symbol_sun_o",
+      "code": "EA69"
+    },
+    {
+      "name": "symbol_thunder_f",
+      "code": "EA6A"
+    },
+    {
+      "name": "symbol_thunder_o",
+      "code": "EA6B"
+    },
+    {
+      "name": "symbol_triangle",
+      "code": "EA6C"
+    },
+    {
+      "name": "symbol_volume",
+      "code": "EA6D"
+    }
   ],
   "ui": [
-    {"name": "ui_button_momentary", "code": "EA5E"},
-    {"name": "ui_button_toggle", "code": "EA5F"},
-    {"name": "ui_knob", "code": "EA60"},
-    {"name": "ui_knob_four", "code": "EA61"},
-    {"name": "ui_slider_horizontal", "code": "EA62"},
-    {"name": "ui_slider_vertical", "code": "EA63"},
-    {"name": "ui_toggle_switch", "code": "EA64"}
+    {
+      "name": "ui_button_momentary",
+      "code": "EA6E"
+    },
+    {
+      "name": "ui_button_toggle",
+      "code": "EA6F"
+    },
+    {
+      "name": "ui_knob",
+      "code": "EA70"
+    },
+    {
+      "name": "ui_knob_four",
+      "code": "EA71"
+    },
+    {
+      "name": "ui_slider_horizontal",
+      "code": "EA72"
+    },
+    {
+      "name": "ui_slider_vertical",
+      "code": "EA73"
+    },
+    {
+      "name": "ui_toggle_switch",
+      "code": "EA74"
+    }
   ],
   "waveform": [
-    {"name": "waveform_cos", "code": "EA65"},
-    {"name": "waveform_cos_inv", "code": "EA66"},
-    {"name": "waveform_noise_bit", "code": "EA67"},
-    {"name": "waveform_noise_pink", "code": "EA68"},
-    {"name": "waveform_noise_step", "code": "EA69"},
-    {"name": "waveform_noise_white", "code": "EA6A"},
-    {"name": "waveform_pulse_eighth", "code": "EA6B"},
-    {"name": "waveform_pulse_eighth_inv", "code": "EA6C"},
-    {"name": "waveform_pulse_half", "code": "EA6D"},
-    {"name": "waveform_pulse_half_inv", "code": "EA6E"},
-    {"name": "waveform_pulse_quarter", "code": "EA6F"},
-    {"name": "waveform_pulse_quarter_inv", "code": "EA70"},
-    {"name": "waveform_sawtooth_ac", "code": "EA71"},
-    {"name": "waveform_sawtooth_ac_inv", "code": "EA72"},
-    {"name": "waveform_sawtooth_dc", "code": "EA73"},
-    {"name": "waveform_sawtooth_dc_inv", "code": "EA74"},
-    {"name": "waveform_sine", "code": "EA75"},
-    {"name": "waveform_sine_inv", "code": "EA76"},
-    {"name": "waveform_square", "code": "EA77"},
-    {"name": "waveform_square_inv", "code": "EA78"},
-    {"name": "waveform_triangle_ac", "code": "EA79"},
-    {"name": "waveform_triangle_ac_inv", "code": "EA7A"},
-    {"name": "waveform_triangle_dc", "code": "EA7B"},
-    {"name": "waveform_triangle_dc_inv", "code": "EA7C"}
+    {
+      "name": "waveform_cos",
+      "code": "EA75"
+    },
+    {
+      "name": "waveform_cos_inv",
+      "code": "EA76"
+    },
+    {
+      "name": "waveform_noise_bit",
+      "code": "EA77"
+    },
+    {
+      "name": "waveform_noise_pink",
+      "code": "EA78"
+    },
+    {
+      "name": "waveform_noise_step",
+      "code": "EA79"
+    },
+    {
+      "name": "waveform_noise_white",
+      "code": "EA7A"
+    },
+    {
+      "name": "waveform_pulse_eighth",
+      "code": "EA7B"
+    },
+    {
+      "name": "waveform_pulse_eighth_inv",
+      "code": "EA7C"
+    },
+    {
+      "name": "waveform_pulse_half",
+      "code": "EA7D"
+    },
+    {
+      "name": "waveform_pulse_half_inv",
+      "code": "EA7E"
+    },
+    {
+      "name": "waveform_pulse_quarter",
+      "code": "EA7F"
+    },
+    {
+      "name": "waveform_pulse_quarter_inv",
+      "code": "EA80"
+    },
+    {
+      "name": "waveform_sawtooth_ac",
+      "code": "EA81"
+    },
+    {
+      "name": "waveform_sawtooth_ac_inv",
+      "code": "EA82"
+    },
+    {
+      "name": "waveform_sawtooth_dc",
+      "code": "EA83"
+    },
+    {
+      "name": "waveform_sawtooth_dc_inv",
+      "code": "EA84"
+    },
+    {
+      "name": "waveform_sine",
+      "code": "EA85"
+    },
+    {
+      "name": "waveform_sine_inv",
+      "code": "EA86"
+    },
+    {
+      "name": "waveform_square",
+      "code": "EA87"
+    },
+    {
+      "name": "waveform_square_inv",
+      "code": "EA88"
+    },
+    {
+      "name": "waveform_triangle_ac",
+      "code": "EA89"
+    },
+    {
+      "name": "waveform_triangle_ac_inv",
+      "code": "EA8A"
+    },
+    {
+      "name": "waveform_triangle_dc",
+      "code": "EA8B"
+    },
+    {
+      "name": "waveform_triangle_dc_inv",
+      "code": "EA8C"
+    }
   ]
 }

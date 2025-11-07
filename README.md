@@ -19,11 +19,41 @@ Fukiai is a comprehensive icon font designed specifically for electronic music p
 
 ## Installation
 
-```bash
-npm install
+### Via CDN (Recommended)
+
+Add this script to your HTML:
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/fukiai@latest/dist/fukiai.js"></script>
 ```
 
-## Build
+### Via npm
+
+```bash
+npm install fukiai
+```
+
+## Usage
+
+### Simple Usage
+
+```html
+<i class="fukiai" name="control_rec_f"></i>
+<i class="fukiai" name="waveform_sine"></i>
+<i class="fukiai" name="ui_knob"></i>
+```
+
+### CSS Only (without JavaScript)
+
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fukiai@latest/dist/fukiai.css">
+```
+
+Then use Unicode characters directly or create CSS classes.
+
+## Development
+
+### Build
 
 ```bash
 npm run build-all
@@ -32,6 +62,7 @@ npm run build-all
 This will:
 1. Generate the font files from SVG icons
 2. Create the preview HTML page
+3. Build distribution files for npm
 
 ## Files
 
