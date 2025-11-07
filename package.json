@@ -1,6 +1,6 @@
 {
   "name": "fukiai",
-  "version": "0.3.22",
+  "version": "0.3.23",
   "description": "Musical icon font for electronic music production",
   "main": "dist/fukiai.js",
   "files": [
