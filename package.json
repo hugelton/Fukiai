@@ -11,7 +11,7 @@
     "LICENSE"
   ],
   "scripts": {
-    "build": "node scripts/build_font.js",
+    "build": "node scripts/build_font_new.js",
     "generate-html": "node scripts/generate_index_html.js",
     "build-all": "npm run build && npm run generate-html && npm run build-dist",
     "build-dist": "node scripts/build_dist.js",
