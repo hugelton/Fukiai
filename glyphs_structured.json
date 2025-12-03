@@ -1,50 +1,44 @@
 {
-  "circle": [
-    {
-      "name": "circle",
-      "code": "EA8E"
-    }
-  ],
   "control": [
     {
       "name": "control_arow_scale",
-      "code": "EA92"
+      "code": "EA8E"
     },
     {
       "name": "control_arrow_back",
-      "code": "EA93"
+      "code": "EA8F"
     },
     {
       "name": "control_arrow_backward",
-      "code": "EA94"
+      "code": "EA90"
     },
     {
       "name": "control_arrow_both",
-      "code": "EA95"
+      "code": "EA91"
     },
     {
       "name": "control_arrow_end",
-      "code": "EA96"
+      "code": "EA92"
     },
     {
       "name": "control_arrow_forward",
-      "code": "EA97"
+      "code": "EA93"
     },
     {
       "name": "control_arrow_head",
-      "code": "EA98"
+      "code": "EA94"
     },
     {
       "name": "control_arrow_pingpong",
-      "code": "EA99"
+      "code": "EA95"
     },
     {
       "name": "control_arrow_random",
-      "code": "EA9A"
+      "code": "EA96"
     },
     {
       "name": "control_arrow_start",
-      "code": "EA9B"
+      "code": "EA97"
     },
     {
       "name": "control_eject_f",
@@ -118,11 +112,11 @@
     },
     {
       "name": "function_env_adsr_attack",
-      "code": "EA9C"
+      "code": "EA98"
     },
     {
       "name": "function_env_adsr_decay",
-      "code": "EA9D"
+      "code": "EA99"
     },
     {
       "name": "function_env_adsr_exp",
@@ -138,11 +132,11 @@
     },
     {
       "name": "function_env_adsr_release",
-      "code": "EA9E"
+      "code": "EA9A"
     },
     {
       "name": "function_env_adsr_sustain",
-      "code": "EA9F"
+      "code": "EA9B"
     },
     {
       "name": "function_env_ar_exp",
@@ -162,31 +156,31 @@
     },
     {
       "name": "function_filter_band",
-      "code": "EAA0"
+      "code": "EA9C"
     },
     {
       "name": "function_filter_hpf",
-      "code": "EAA1"
+      "code": "EA9D"
     },
     {
       "name": "function_filter_hpf_peak",
-      "code": "EAA2"
+      "code": "EA9E"
     },
     {
       "name": "function_filter_lpf",
-      "code": "EAA3"
+      "code": "EA9F"
     },
     {
       "name": "function_filter_lpf_peak",
-      "code": "EAA4"
+      "code": "EAA0"
     },
     {
       "name": "function_gate_bipolar",
-      "code": "EAA5"
+      "code": "EAA1"
     },
     {
       "name": "function_gate_unipolar",
-      "code": "EAA6"
+      "code": "EAA2"
     },
     {
       "name": "function_impulse",
@@ -259,12 +253,6 @@
     {
       "name": "function_signal_unipolar",
       "code": "EA2A"
-    }
-  ],
-  "hugelton": [
-    {
-      "name": "hugelton",
-      "code": "EA91"
     }
   ],
   "numbers": [
@@ -355,12 +343,6 @@
       "code": "EA3F"
     }
   ],
-  "square": [
-    {
-      "name": "square",
-      "code": "EA8F"
-    }
-  ],
   "symbol": [
     {
       "name": "symbol_audio",
@@ -396,11 +378,11 @@
     },
     {
       "name": "symbol_cross",
-      "code": "EAA7"
+      "code": "EAA3"
     },
     {
       "name": "symbol_cross_o",
-      "code": "EAA8"
+      "code": "EAA4"
     },
     {
       "name": "symbol_hugelton",
@@ -540,11 +522,11 @@
     },
     {
       "name": "symbol_swing",
-      "code": "EAA9"
+      "code": "EAA5"
     },
     {
       "name": "symbol_tempo",
-      "code": "EAAA"
+      "code": "EAA6"
     },
     {
       "name": "symbol_thunder_f",
@@ -560,17 +542,11 @@
     },
     {
       "name": "symbol_tuning",
-      "code": "EAAB"
+      "code": "EAA7"
     },
     {
       "name": "symbol_volume",
       "code": "EA6D"
-    }
-  ],
-  "triangle": [
-    {
-      "name": "triangle",
-      "code": "EA90"
     }
   ],
   "ui": [
