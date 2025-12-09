@@ -41,6 +41,10 @@
       "code": "EA97"
     },
     {
+      "name": "control_countdown",
+      "code": "EAA8"
+    },
+    {
       "name": "control_eject_f",
       "code": "EA01"
     },
@@ -49,12 +53,20 @@
       "code": "EA02"
     },
     {
+      "name": "control_fantom",
+      "code": "EAA9"
+    },
+    {
       "name": "control_forward_f",
       "code": "EA03"
     },
     {
       "name": "control_forward_o",
       "code": "EA04"
+    },
+    {
+      "name": "control_fx",
+      "code": "EAAA"
     },
     {
       "name": "control_pause_f",
@@ -155,6 +167,14 @@
       "code": "EA18"
     },
     {
+      "name": "function_exp",
+      "code": "EAAB"
+    },
+    {
+      "name": "function_exp_biscuit",
+      "code": "EAAC"
+    },
+    {
       "name": "function_filter_band",
       "code": "EA9C"
     },
@@ -175,6 +195,10 @@
       "code": "EAA0"
     },
     {
+      "name": "function_filter_notch",
+      "code": "EAAD"
+    },
+    {
       "name": "function_gate_bipolar",
       "code": "EAA1"
     },
@@ -187,6 +211,22 @@
       "code": "EA19"
     },
     {
+      "name": "function_linear",
+      "code": "EAAE"
+    },
+    {
+      "name": "function_linear_biscuit",
+      "code": "EAAF"
+    },
+    {
+      "name": "function_log",
+      "code": "EAB0"
+    },
+    {
+      "name": "function_log_biscuit",
+      "code": "EAB1"
+    },
+    {
       "name": "function_multiply",
       "code": "EA1A"
     },
@@ -197,6 +237,10 @@
     {
       "name": "function_phase",
       "code": "EA1C"
+    },
+    {
+      "name": "function_phaseout",
+      "code": "EAB2"
     },
     {
       "name": "function_signal_bipolar",
@@ -290,6 +334,10 @@
     }
   ],
   "port": [
+    {
+      "name": "port_disk",
+      "code": "EAB3"
+    },
     {
       "name": "port_dmx",
       "code": "EA33"
@@ -385,8 +433,44 @@
       "code": "EAA4"
     },
     {
+      "name": "symbol_document",
+      "code": "EAB4"
+    },
+    {
+      "name": "symbol_echo",
+      "code": "EAB5"
+    },
+    {
+      "name": "symbol_echo_oval",
+      "code": "EAB6"
+    },
+    {
+      "name": "symbol_effector",
+      "code": "EAB7"
+    },
+    {
+      "name": "symbol_folder",
+      "code": "EAB8"
+    },
+    {
+      "name": "symbol_folder_open",
+      "code": "EAB9"
+    },
+    {
+      "name": "symbol_grid",
+      "code": "EABA"
+    },
+    {
+      "name": "symbol_grid_nine",
+      "code": "EABB"
+    },
+    {
       "name": "symbol_hugelton",
       "code": "EA48"
+    },
+    {
+      "name": "symbol_keyboardv",
+      "code": "EABC"
     },
     {
       "name": "symbol_lock_close_f",
@@ -421,6 +505,10 @@
       "code": "EA50"
     },
     {
+      "name": "symbol_modular",
+      "code": "EABD"
+    },
+    {
       "name": "symbol_moon_f",
       "code": "EA51"
     },
@@ -429,8 +517,16 @@
       "code": "EA52"
     },
     {
+      "name": "symbol_mouth",
+      "code": "EABE"
+    },
+    {
       "name": "symbol_pan",
       "code": "EA53"
+    },
+    {
+      "name": "symbol_pedal",
+      "code": "EABF"
     },
     {
       "name": "symbol_plus",
@@ -493,6 +589,10 @@
       "code": "EA62"
     },
     {
+      "name": "symbol_speed",
+      "code": "EAC0"
+    },
+    {
       "name": "symbol_square",
       "code": "EA63"
     },
@@ -537,6 +637,10 @@
       "code": "EA6B"
     },
     {
+      "name": "symbol_trash",
+      "code": "EAC1"
+    },
+    {
       "name": "symbol_triangle",
       "code": "EA6C"
     },
@@ -547,6 +651,10 @@
     {
       "name": "symbol_volume",
       "code": "EA6D"
+    },
+    {
+      "name": "symbol_wheels",
+      "code": "EAC2"
     }
   ],
   "ui": [
@@ -589,6 +697,22 @@
       "code": "EA76"
     },
     {
+      "name": "waveform_fade",
+      "code": "EAC3"
+    },
+    {
+      "name": "waveform_fold",
+      "code": "EAC4"
+    },
+    {
+      "name": "waveform_harmonic",
+      "code": "EAC5"
+    },
+    {
+      "name": "waveform_loop",
+      "code": "EAC6"
+    },
+    {
       "name": "waveform_noise_bit",
       "code": "EA77"
     },
@@ -603,6 +727,10 @@
     {
       "name": "waveform_noise_white",
       "code": "EA7A"
+    },
+    {
+      "name": "waveform_pitch",
+      "code": "EAC7"
     },
     {
       "name": "waveform_pulse_eighth",
@@ -679,6 +807,10 @@
     {
       "name": "waveform_triangle_dc_inv",
       "code": "EA8C"
+    },
+    {
+      "name": "waveform_variant",
+      "code": "EAC8"
     }
   ]
 }
