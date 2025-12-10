@@ -397,6 +397,14 @@
       "code": "EA40"
     },
     {
+      "name": "symbol_carret_left",
+      "code": "EAC9"
+    },
+    {
+      "name": "symbol_carret_right",
+      "code": "EACA"
+    },
+    {
       "name": "symbol_circle",
       "code": "EA41"
     },
@@ -527,6 +535,10 @@
     {
       "name": "symbol_pedal",
       "code": "EABF"
+    },
+    {
+      "name": "symbol_pencil",
+      "code": "EACB"
     },
     {
       "name": "symbol_plus",

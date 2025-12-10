@@ -198,5 +198,8 @@
   "waveform_harmonic": "EAC5",
   "waveform_loop": "EAC6",
   "waveform_pitch": "EAC7",
-  "waveform_variant": "EAC8"
+  "waveform_variant": "EAC8",
+  "symbol_carret_left": "EAC9",
+  "symbol_carret_right": "EACA",
+  "symbol_pencil": "EACB"
 }
