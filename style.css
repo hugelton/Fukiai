@@ -261,6 +261,14 @@ input#search::placeholder {
 	transform: scale(1.1);
 }
 
+.glyph-title {
+	font-size: var(--text-sm);
+	font-weight: 700;
+	margin-bottom: var(--spacing-xs);
+	text-align: center;
+	color: var(--fg-color);
+}
+
 .glyph-name {
 	font-size: var(--text-xs);
 	font-weight: 500;
