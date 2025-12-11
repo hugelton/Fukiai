@@ -11,6 +11,25 @@ const templatePath = path.join(__dirname, 'preview_template.html');
 const outputPath = path.join(rootDir, 'docs', 'index.html');
 const structuredPath = path.join(rootDir, 'glyphs_structured.json');
 
+// グリフ名を読みやすいタイトルに変換する関数
+function formatTitle(name) {
+  // プレフィックスを削除
+  let title = name
+    .replace(/^control_/, '')
+    .replace(/^function_/, '')
+    .replace(/^symbol_/, '')
+    .replace(/^waveform_/, '')
+    .replace(/^port_/, '')
+    .replace(/^ui_/, '')
+    .replace(/^numbers_/, '');
+
+  // アンダースコアをスペースに変換し、各単語の最初を大文字に
+  return title
+    .split('_')
+    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(' ');
+}
+
 // テンプレートを読み込む
 console.log('🔄 テンプレートを読み込んでいます...');
 const template = fs.readFileSync(templatePath, 'utf8');
@@ -41,9 +60,12 @@ Object.entries(structured).forEach(([category, items]) => {
       displayCode = 'EA' + num.toString(16).toUpperCase().padStart(2, '0');
     }
     
+    const title = formatTitle(item.name);
+
     block += `
 <div class="glyph" data-name="${item.name}">
   <div class="glyph-char">&#x${displayCode};</div>
+  <div class="glyph-title">${title}</div>
   <div class="glyph-name">${item.name}</div>
   <div class="codepoint">U+${displayCode}</div>
 </div>
