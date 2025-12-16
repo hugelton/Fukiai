@@ -71,7 +71,6 @@
         const value = badge.dataset.copy || badge.textContent;
         navigator.clipboard.writeText(value).then(() => {
           if (badge.classList.contains('copy-name')) showNotice(`Copied name: ${value}`);
-          else if (badge.classList.contains('copy-class')) showNotice(`Copied class: ${value}`);
           else if (badge.classList.contains('copy-unicode')) showNotice(`Copied unicode: ${value}`);
           else showNotice('Copied');
         });

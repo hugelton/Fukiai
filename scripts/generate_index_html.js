@@ -61,14 +61,16 @@ Object.entries(structured).forEach(([category, items]) => {
       displayCode = 'EA' + num.toString(16).toUpperCase().padStart(2, '0');
     }
     
-    // ミニマル表示: アイコン + コピー用バッジ（name / class / unicode）
+    // ミニマル表示: タイトル + アイコン + コピー用バッジ（name / unicode[xEEEE]）
+    const title = formatTitle(item.name);
+    const unicodeX = `x${displayCode}`;
     block += `
 <div class="glyph" data-name="${item.name}">
   <div class="glyph-char" title="Click to copy entity">&#x${displayCode};</div>
+  <div class="glyph-title">${title}</div>
   <div class="glyph-meta">
     <span class="badge copy-name" data-copy="${item.name}" title="Copy name">${item.name}</span>
-    <span class="badge copy-class" data-copy="fukiai" title="Copy class">fukiai</span>
-    <span class="badge copy-unicode" data-copy="U+${displayCode}" title="Copy unicode">U+${displayCode}</span>
+    <span class="badge copy-unicode" data-copy="${unicodeX}" title="Copy unicode">${unicodeX}</span>
   </div>
 </div>
 `;
