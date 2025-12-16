@@ -13,7 +13,8 @@
   "scripts": {
     "build": "node scripts/build_font_new.js",
     "generate-html": "node scripts/generate_index_html.js",
-    "build-all": "npm run build && npm run generate-html && npm run build-dist",
+    "sync-docs": "node scripts/sync_docs_assets.js",
+    "build-all": "npm run build && npm run generate-html && npm run sync-docs && npm run build-dist",
     "build-dist": "node scripts/build_dist.js",
     "prepublishOnly": "npm run build-all"
   },
