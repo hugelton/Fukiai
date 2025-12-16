@@ -28,7 +28,7 @@
       "name": "control_arrow_head",
       "code": "EA94"
     },
-    {
+  {
       "name": "control_arrow_pingpong",
       "code": "EA95"
     },
@@ -39,6 +39,18 @@
     {
       "name": "control_arrow_start",
       "code": "EA97"
+    },
+    {
+      "name": "control_arrow_up",
+      "code": "EACD"
+    },
+    {
+      "name": "control_arrow_down",
+      "code": "EACE"
+    },
+    {
+      "name": "control_arrow_up_down",
+      "code": "EACF"
     },
     {
       "name": "control_countdown",

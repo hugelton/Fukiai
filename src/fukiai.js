@@ -5,7 +5,7 @@
   'use strict';
 
   // Icon mapping from glyphs.json
-          const ICON_MAP = {
+            const ICON_MAP = {
     "control_eject_f": "EA01",
     "control_eject_o": "EA02",
     "control_forward_f": "EA03",
@@ -156,6 +156,9 @@
     "control_arrow_pingpong": "EA95",
     "control_arrow_random": "EA96",
     "control_arrow_start": "EA97",
+    "control_arrow_up": "EACD",
+    "control_arrow_down": "EACE",
+    "control_arrow_up_down": "EACF",
     "function_env_adsr_attack": "EA98",
     "function_env_adsr_decay": "EA99",
     "function_env_adsr_release": "EA9A",
