@@ -277,11 +277,13 @@ input#search::placeholder {
 .glyph-meta {
   display: flex;
   gap: var(--spacing-xs);
-  flex-wrap: wrap;
+  flex-wrap: nowrap; /* 折り返さない */
+  align-items: center;
   justify-content: center;
   width: 100%;
   margin-top: var(--spacing-sm);
   min-height: 28px; /* バッジ1行分の高さを確保 */
+  overflow: hidden; /* はみ出し防止 */
 }
 
 .badge {
@@ -295,6 +297,20 @@ input#search::placeholder {
   cursor: pointer;
   transition: background-color var(--transition-fast), border-color var(--transition-fast), transform var(--transition-fast), color var(--transition-fast);
   user-select: none;
+  max-width: 100%;
+}
+
+/* 長いnameを省略表示（...）し、パネル高さを一定に保つ */
+.badge.copy-name {
+  flex: 1 1 auto;
+  min-width: 0;            /* 省略が効くように */
+  overflow: hidden;
+  text-overflow: ellipsis;  /* … 省略 */
+  white-space: nowrap;      /* 折り返さない */
+}
+
+.badge.copy-unicode {
+  flex: 0 0 auto;           /* 固定幅側 */
 }
 
 .badge:hover { background: var(--primary); color: #fff; border-color: var(--primary); transform: translateY(-1px); }
