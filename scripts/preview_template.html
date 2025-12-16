@@ -23,7 +23,7 @@
 			<h1>Fukiai : Musical Icon Fonts</h1>
 			<p><a href="https://github.com/hugelton/Fukiai">GitHub</a></p>
 			<input type="text" id="search" placeholder="Filter icons..." />
-			<p>{{category_links}}</p>
+    {{category_links}}
 		</header>
 
 		<main>{{glyph_blocks}}</main>
@@ -49,19 +49,34 @@
 				});
 			});
 
-			// コピー＆通知
-			const notice = document.getElementById("copied-notice");
-			document.querySelectorAll(".glyph-char").forEach((el) => {
-				el.addEventListener("click", () => {
-					const content = el.innerText;
-					navigator.clipboard.writeText(content).then(() => {
-						notice.style.opacity = 1;
-						setTimeout(() => {
-							notice.style.opacity = 0;
-						}, 1000);
-					});
-				});
-			});
+    // コピー＆通知（要素ごとにコピー内容を分離）
+    const notice = document.getElementById("copied-notice");
+    function showNotice(text) {
+      notice.textContent = text || 'Copied to clipboard';
+      notice.classList.add('show');
+      clearTimeout(window.__copyTimer);
+      window.__copyTimer = setTimeout(() => notice.classList.remove('show'), 1200);
+    }
+
+    // アイコンクリックで実体をコピー
+    document.addEventListener('click', (e) => {
+      const icon = e.target.closest('.glyph-char');
+      if (icon) {
+        const content = icon.textContent;
+        navigator.clipboard.writeText(content).then(() => showNotice('Copied entity'));
+        return;
+      }
+      const badge = e.target.closest('.badge');
+      if (badge) {
+        const value = badge.dataset.copy || badge.textContent;
+        navigator.clipboard.writeText(value).then(() => {
+          if (badge.classList.contains('copy-name')) showNotice(`Copied name: ${value}`);
+          else if (badge.classList.contains('copy-class')) showNotice(`Copied class: ${value}`);
+          else if (badge.classList.contains('copy-unicode')) showNotice(`Copied unicode: ${value}`);
+          else showNotice('Copied');
+        });
+      }
+    });
 		</script>
 	</body>
 </html>

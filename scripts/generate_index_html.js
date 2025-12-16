@@ -38,10 +38,11 @@ const template = fs.readFileSync(templatePath, 'utf8');
 console.log('🔄 glyphs_structured.jsonを読み込んでいます...');
 const structured = JSON.parse(fs.readFileSync(structuredPath, 'utf8'));
 
-// カテゴリーリンクを生成
-const categoryLinks = Object.keys(structured).map(category => 
-  `<a href="#${category}" class="cat-link">${category}</a>`
-).join('\n');
+// カテゴリーリンクを生成（ミニマルUIラッパー付き）
+const categoryLinks = '<div class="cat-links">' +
+  Object.keys(structured).map(category => 
+    `<a href="#${category}" class="cat-link">${category}</a>`
+  ).join('\n') + '</div>';
 
 // グリフブロックを生成
 const glyphBlocks = [];
@@ -60,14 +61,15 @@ Object.entries(structured).forEach(([category, items]) => {
       displayCode = 'EA' + num.toString(16).toUpperCase().padStart(2, '0');
     }
     
-    const title = formatTitle(item.name);
-
+    // ミニマル表示: アイコン + コピー用バッジ（name / class / unicode）
     block += `
 <div class="glyph" data-name="${item.name}">
-  <div class="glyph-char">&#x${displayCode};</div>
-  <div class="glyph-title">${title}</div>
-  <div class="glyph-name">${item.name}</div>
-  <div class="codepoint">U+${displayCode}</div>
+  <div class="glyph-char" title="Click to copy entity">&#x${displayCode};</div>
+  <div class="glyph-meta">
+    <span class="badge copy-name" data-copy="${item.name}" title="Copy name">${item.name}</span>
+    <span class="badge copy-class" data-copy="fukiai" title="Copy class">fukiai</span>
+    <span class="badge copy-unicode" data-copy="U+${displayCode}" title="Copy unicode">U+${displayCode}</span>
+  </div>
 </div>
 `;
   });
