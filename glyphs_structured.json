@@ -255,6 +255,10 @@
       "code": "EAB2"
     },
     {
+      "name": "function_mask",
+      "code": "EAD0"
+    },
+    {
       "name": "function_signal_bipolar",
       "code": "EA1D"
     },
@@ -417,6 +421,14 @@
       "code": "EACA"
     },
     {
+      "name": "symbol_carret_down",
+      "code": "EAD2"
+    },
+    {
+      "name": "symbol_carret_up",
+      "code": "EAD3"
+    },
+    {
       "name": "symbol_circle",
       "code": "EA41"
     },
@@ -451,6 +463,10 @@
     {
       "name": "symbol_document",
       "code": "EAB4"
+    },
+    {
+      "name": "symbol_download",
+      "code": "EAD4"
     },
     {
       "name": "symbol_echo",
@@ -539,6 +555,14 @@
     {
       "name": "symbol_mouth",
       "code": "EABE"
+    },
+    {
+      "name": "symbol__comb",
+      "code": "EA45"
+    },
+    {
+      "name": "symbol__spring",
+      "code": "EAD1"
     },
     {
       "name": "symbol_pan",
@@ -663,6 +687,10 @@
     {
       "name": "symbol_trash",
       "code": "EAC1"
+    },
+    {
+      "name": "symbol_upload",
+      "code": "EAD5"
     },
     {
       "name": "symbol_triangle",

@@ -5,7 +5,7 @@
   'use strict';
 
   // Icon mapping from glyphs.json
-            const ICON_MAP = {
+              const ICON_MAP = {
     "control_eject_f": "EA01",
     "control_eject_o": "EA02",
     "control_forward_f": "EA03",
@@ -211,7 +211,14 @@
     "waveform_variant": "EAC8",
     "symbol_carret_left": "EAC9",
     "symbol_carret_right": "EACA",
-    "symbol_pencil": "EACB"
+    "symbol_pencil": "EACB",
+    "symbol__comb": "EA45",
+    "function_mask": "EAD0",
+    "symbol__spring": "EAD1",
+    "symbol_carret_down": "EAD2",
+    "symbol_carret_up": "EAD3",
+    "symbol_download": "EAD4",
+    "symbol_upload": "EAD5"
   };
 
   // Inject font CSS
