@@ -473,8 +473,12 @@
       "code": "EA48"
     },
     {
-      "name": "symbol_keyboardv",
+      "name": "symbol_keyboard",
       "code": "EABC"
+    },
+    {
+      "name": "symbol_piano",
+      "code": "EACC"
     },
     {
       "name": "symbol_lock_close_f",
