@@ -15,17 +15,17 @@ const structuredPath = path.join(rootDir, 'glyphs_structured.json');
 function formatTitle(name) {
   // プレフィックスを削除
   let title = name
-    .replace(/^control_/, '')
-    .replace(/^function_/, '')
-    .replace(/^symbol_/, '')
-    .replace(/^waveform_/, '')
-    .replace(/^port_/, '')
-    .replace(/^ui_/, '')
-    .replace(/^numbers_/, '');
+    .replace(/^control[-_]/, '')
+    .replace(/^function[-_]/, '')
+    .replace(/^symbol[-_]/, '')
+    .replace(/^waveform[-_]/, '')
+    .replace(/^port[-_]/, '')
+    .replace(/^ui[-_]/, '')
+    .replace(/^numbers[-_]/, '');
 
   // アンダースコアをスペースに変換し、各単語の最初を大文字に
   return title
-    .split('_')
+    .split(/[_-]/)
     .map(word => word.charAt(0).toUpperCase() + word.slice(1))
     .join(' ');
 }
