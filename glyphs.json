@@ -194,5 +194,13 @@
   "symbol_inbox": "EADE",
   "symbol_message": "EADF",
   "symbol_tag": "EAE0",
-  "symbol_volume_inv": "EAE1"
+  "symbol_volume_inv": "EAE1",
+  "numbers_circle_1_roman_f": "EA00",
+  "numbers_circle_1_roman_o": "EA21",
+  "numbers_circle_2_roman_f": "EA22",
+  "numbers_circle_2_roman_o": "EA25",
+  "numbers_circle_3_roman_f": "EA27",
+  "numbers_circle_3_roman_o": "EA29",
+  "numbers_circle_4_roman_f": "EA2B",
+  "numbers_circle_4_roman_o": "EA2C"
 }

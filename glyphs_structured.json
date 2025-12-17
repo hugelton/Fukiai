@@ -311,7 +311,40 @@
       "code": "EA2A"
     }
   ],
-  "numbers": [],
+  "numbers": [
+    {
+      "name": "numbers_circle_1_roman_f",
+      "code": "EA00"
+    },
+    {
+      "name": "numbers_circle_1_roman_o",
+      "code": "EA21"
+    },
+    {
+      "name": "numbers_circle_2_roman_f",
+      "code": "EA22"
+    },
+    {
+      "name": "numbers_circle_2_roman_o",
+      "code": "EA25"
+    },
+    {
+      "name": "numbers_circle_3_roman_f",
+      "code": "EA27"
+    },
+    {
+      "name": "numbers_circle_3_roman_o",
+      "code": "EA29"
+    },
+    {
+      "name": "numbers_circle_4_roman_f",
+      "code": "EA2B"
+    },
+    {
+      "name": "numbers_circle_4_roman_o",
+      "code": "EA2C"
+    }
+  ],
   "port": [
     {
       "name": "port_disk",
