@@ -259,6 +259,10 @@
       "code": "EAD0"
     },
     {
+      "name": "function_mask_xor",
+      "code": "EA2D"
+    },
+    {
       "name": "function_multiply",
       "code": "EA1A"
     },
@@ -437,6 +441,10 @@
       "code": "EAD3"
     },
     {
+      "name": "symbol_check",
+      "code": "EA2E"
+    },
+    {
       "name": "symbol_circle",
       "code": "EA41"
     },
@@ -491,6 +499,10 @@
     {
       "name": "symbol_effector",
       "code": "EAB7"
+    },
+    {
+      "name": "symbol_eye",
+      "code": "EA2F"
     },
     {
       "name": "symbol_folder",
@@ -623,6 +635,10 @@
     {
       "name": "symbol_star_o",
       "code": "EA65"
+    },
+    {
+      "name": "symbol_stopwatch",
+      "code": "EA30"
     },
     {
       "name": "symbol_swing",

@@ -209,7 +209,11 @@
       "numbers_circle_3_roman_f": "EA27",
       "numbers_circle_3_roman_o": "EA29",
       "numbers_circle_4_roman_f": "EA2B",
-      "numbers_circle_4_roman_o": "EA2C"
+      "numbers_circle_4_roman_o": "EA2C",
+      "function_mask_xor": "EA2D",
+      "symbol_check": "EA2E",
+      "symbol_eye": "EA2F",
+      "symbol_stopwatch": "EA30"
     };
 
   // Inject font CSS
