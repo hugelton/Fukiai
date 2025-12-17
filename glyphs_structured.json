@@ -17,6 +17,10 @@
       "code": "EA91"
     },
     {
+      "name": "control_arrow_down",
+      "code": "EACE"
+    },
+    {
       "name": "control_arrow_end",
       "code": "EA92"
     },
@@ -28,7 +32,11 @@
       "name": "control_arrow_head",
       "code": "EA94"
     },
-  {
+    {
+      "name": "control_arrow_loop",
+      "code": "EAD6"
+    },
+    {
       "name": "control_arrow_pingpong",
       "code": "EA95"
     },
@@ -37,16 +45,16 @@
       "code": "EA96"
     },
     {
+      "name": "control_arrow_randomize",
+      "code": "EAD7"
+    },
+    {
       "name": "control_arrow_start",
       "code": "EA97"
     },
     {
       "name": "control_arrow_up",
       "code": "EACD"
-    },
-    {
-      "name": "control_arrow_down",
-      "code": "EACE"
     },
     {
       "name": "control_arrow_up_down",
@@ -191,6 +199,14 @@
       "code": "EA9C"
     },
     {
+      "name": "function_filter_cells",
+      "code": "EAD8"
+    },
+    {
+      "name": "function_filter_comb",
+      "code": "EAD9"
+    },
+    {
       "name": "function_filter_hpf",
       "code": "EA9D"
     },
@@ -239,6 +255,10 @@
       "code": "EAB1"
     },
     {
+      "name": "function_mask",
+      "code": "EAD0"
+    },
+    {
       "name": "function_multiply",
       "code": "EA1A"
     },
@@ -253,10 +273,6 @@
     {
       "name": "function_phaseout",
       "code": "EAB2"
-    },
-    {
-      "name": "function_mask",
-      "code": "EAD0"
     },
     {
       "name": "function_signal_bipolar",
@@ -275,14 +291,6 @@
       "code": "EA20"
     },
     {
-      "name": "function_signal_fade",
-      "code": "EA21"
-    },
-    {
-      "name": "function_signal_fold",
-      "code": "EA22"
-    },
-    {
       "name": "function_signal_gate_fall",
       "code": "EA23"
     },
@@ -291,64 +299,19 @@
       "code": "EA24"
     },
     {
-      "name": "function_signal_harmonic",
-      "code": "EA25"
-    },
-    {
       "name": "function_signal_input",
       "code": "EA26"
-    },
-    {
-      "name": "function_signal_loop",
-      "code": "EA27"
     },
     {
       "name": "function_signal_output",
       "code": "EA28"
     },
     {
-      "name": "function_signal_pitch",
-      "code": "EA29"
-    },
-    {
       "name": "function_signal_unipolar",
       "code": "EA2A"
     }
   ],
-  "numbers": [
-    {
-      "name": "numbers_circle_1_roman_f",
-      "code": "EA2B"
-    },
-    {
-      "name": "numbers_circle_1_roman_o",
-      "code": "EA2C"
-    },
-    {
-      "name": "numbers_circle_2_roman_f",
-      "code": "EA2D"
-    },
-    {
-      "name": "numbers_circle_2_roman_o",
-      "code": "EA2E"
-    },
-    {
-      "name": "numbers_circle_3_roman_f",
-      "code": "EA2F"
-    },
-    {
-      "name": "numbers_circle_3_roman_o",
-      "code": "EA30"
-    },
-    {
-      "name": "numbers_circle_4_roman_f",
-      "code": "EA31"
-    },
-    {
-      "name": "numbers_circle_4_roman_o",
-      "code": "EA32"
-    }
-  ],
+  "numbers": [],
   "port": [
     {
       "name": "port_disk",
@@ -409,8 +372,24 @@
   ],
   "symbol": [
     {
+      "name": "symbol_arrow_redo",
+      "code": "EADA"
+    },
+    {
+      "name": "symbol_arrow_undo",
+      "code": "EADB"
+    },
+    {
       "name": "symbol_audio",
       "code": "EA40"
+    },
+    {
+      "name": "symbol_books",
+      "code": "EADC"
+    },
+    {
+      "name": "symbol_carret_down",
+      "code": "EAD2"
     },
     {
       "name": "symbol_carret_left",
@@ -419,10 +398,6 @@
     {
       "name": "symbol_carret_right",
       "code": "EACA"
-    },
-    {
-      "name": "symbol_carret_down",
-      "code": "EAD2"
     },
     {
       "name": "symbol_carret_up",
@@ -447,6 +422,10 @@
     {
       "name": "symbol_cog",
       "code": "EA46"
+    },
+    {
+      "name": "symbol_comb",
+      "code": "EA45"
     },
     {
       "name": "symbol_combine",
@@ -501,12 +480,16 @@
       "code": "EA48"
     },
     {
-      "name": "symbol_keyboard",
-      "code": "EABC"
+      "name": "symbol_id",
+      "code": "EADD"
     },
     {
-      "name": "symbol_piano",
-      "code": "EACC"
+      "name": "symbol_inbox",
+      "code": "EADE"
+    },
+    {
+      "name": "symbol_keyboard",
+      "code": "EABC"
     },
     {
       "name": "symbol_lock_close_f",
@@ -525,12 +508,8 @@
       "code": "EA4C"
     },
     {
-      "name": "symbol_metronome",
-      "code": "EA4D"
-    },
-    {
-      "name": "symbol_metronome_flip",
-      "code": "EA4E"
+      "name": "symbol_message",
+      "code": "EADF"
     },
     {
       "name": "symbol_minus",
@@ -545,24 +524,8 @@
       "code": "EABD"
     },
     {
-      "name": "symbol_moon_f",
-      "code": "EA51"
-    },
-    {
-      "name": "symbol_moon_o",
-      "code": "EA52"
-    },
-    {
       "name": "symbol_mouth",
       "code": "EABE"
-    },
-    {
-      "name": "symbol-comb",
-      "code": "EA45"
-    },
-    {
-      "name": "symbol-spring",
-      "code": "EAD1"
     },
     {
       "name": "symbol_pan",
@@ -575,6 +538,10 @@
     {
       "name": "symbol_pencil",
       "code": "EACB"
+    },
+    {
+      "name": "symbol_piano",
+      "code": "EACC"
     },
     {
       "name": "symbol_plus",
@@ -605,40 +572,12 @@
       "code": "EA5A"
     },
     {
-      "name": "symbol_speaker_f",
-      "code": "EA5B"
-    },
-    {
-      "name": "symbol_speaker_o",
-      "code": "EA5C"
-    },
-    {
-      "name": "symbol_speaker_one_f",
-      "code": "EA5D"
-    },
-    {
-      "name": "symbol_speaker_one_o",
-      "code": "EA5E"
-    },
-    {
-      "name": "symbol_speaker_three_f",
-      "code": "EA5F"
-    },
-    {
-      "name": "symbol_speaker_three_o",
-      "code": "EA60"
-    },
-    {
-      "name": "symbol_speaker_two_f",
-      "code": "EA61"
-    },
-    {
-      "name": "symbol_speaker_two_o",
-      "code": "EA62"
-    },
-    {
       "name": "symbol_speed",
       "code": "EAC0"
+    },
+    {
+      "name": "symbol_spring",
+      "code": "EAD1"
     },
     {
       "name": "symbol_square",
@@ -653,24 +592,12 @@
       "code": "EA65"
     },
     {
-      "name": "symbol_sun_dim_f",
-      "code": "EA66"
-    },
-    {
-      "name": "symbol_sun_dim_o",
-      "code": "EA67"
-    },
-    {
-      "name": "symbol_sun_f",
-      "code": "EA68"
-    },
-    {
-      "name": "symbol_sun_o",
-      "code": "EA69"
-    },
-    {
       "name": "symbol_swing",
       "code": "EAA5"
+    },
+    {
+      "name": "symbol_tag",
+      "code": "EAE0"
     },
     {
       "name": "symbol_tempo",
@@ -689,10 +616,6 @@
       "code": "EAC1"
     },
     {
-      "name": "symbol_upload",
-      "code": "EAD5"
-    },
-    {
       "name": "symbol_triangle",
       "code": "EA6C"
     },
@@ -701,8 +624,16 @@
       "code": "EAA7"
     },
     {
+      "name": "symbol_upload",
+      "code": "EAD5"
+    },
+    {
       "name": "symbol_volume",
       "code": "EA6D"
+    },
+    {
+      "name": "symbol_volume_inv",
+      "code": "EAE1"
     },
     {
       "name": "symbol_wheels",
