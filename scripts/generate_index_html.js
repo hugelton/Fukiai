@@ -32,7 +32,11 @@ function formatTitle(name) {
 
 // テンプレートを読み込む
 console.log('🔄 テンプレートを読み込んでいます...');
-const template = fs.readFileSync(templatePath, 'utf8');
+const templateRaw = fs.readFileSync(templatePath, 'utf8');
+// Append cache-busting query to font urls using package.json version
+const pkg = JSON.parse(fs.readFileSync(path.join(rootDir, 'package.json'), 'utf8'));
+const version = pkg.version || Date.now().toString();
+const template = templateRaw.replace(/fukiai\.(woff|ttf)/g, (m, ext) => `fukiai.${ext}?v=${version}`);
 
 // glyphs_structured.jsonを読み込む
 console.log('🔄 glyphs_structured.jsonを読み込んでいます...');
