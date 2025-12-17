@@ -38,9 +38,20 @@ const pkg = JSON.parse(fs.readFileSync(path.join(rootDir, 'package.json'), 'utf8
 const version = (pkg.version || Date.now().toString()).replace(/[^0-9A-Za-z_.-]/g, '');
 // For Pages, point to versioned subfolder to defeat CDN caches
 const assetPrefix = `assets/${version}`;
-const template = templateRaw
+let template = templateRaw
   .replace(/fukiai\.woff/g, `${assetPrefix}/fukiai.woff`)
   .replace(/fukiai\.ttf/g, `${assetPrefix}/fukiai.ttf`);
+
+// Inline WOFF as data URL to avoid any external font caching issues on GH Pages
+try {
+  const woffPath = path.join(rootDir, 'docs', assetPrefix, 'fukiai.woff');
+  const woffData = fs.readFileSync(woffPath);
+  const woffB64 = woffData.toString('base64');
+  const dataUrl = `data:font/woff;base64,${woffB64}`;
+  template = template.replace(`${assetPrefix}/fukiai.woff`, dataUrl);
+} catch (e) {
+  // If missing, keep URL fallback
+}
 
 // glyphs_structured.jsonを読み込む
 console.log('🔄 glyphs_structured.jsonを読み込んでいます...');
