@@ -89,6 +89,7 @@ Object.entries(structured).forEach(([category, items]) => {
 // テンプレートに挿入
 let finalHtml = template.replace('{{category_links}}', categoryLinks);
 finalHtml = finalHtml.replace('{{glyph_blocks}}', glyphBlocks.join('\n'));
+finalHtml = finalHtml.replace(/{{version}}/g, version);
 
 // HTMLをファイルに保存
 fs.writeFileSync(outputPath, finalHtml);
