@@ -33,10 +33,12 @@ function formatTitle(name) {
 // テンプレートを読み込む
 console.log('🔄 テンプレートを読み込んでいます...');
 const templateRaw = fs.readFileSync(templatePath, 'utf8');
-// Append cache-busting query to font urls using package.json version
+// Use versioned filenames to avoid GH Pages cache issues
 const pkg = JSON.parse(fs.readFileSync(path.join(rootDir, 'package.json'), 'utf8'));
-const version = pkg.version || Date.now().toString();
-const template = templateRaw.replace(/fukiai\.(woff|ttf)/g, (m, ext) => `fukiai.${ext}?v=${version}`);
+const version = (pkg.version || Date.now().toString()).replace(/[^0-9A-Za-z_.-]/g, '');
+const template = templateRaw
+  .replace(/fukiai\.woff/g, `fukiai.v${version}.woff`)
+  .replace(/fukiai\.ttf/g, `fukiai.v${version}.ttf`);
 
 // glyphs_structured.jsonを読み込む
 console.log('🔄 glyphs_structured.jsonを読み込んでいます...');
