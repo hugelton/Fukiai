@@ -28,3 +28,10 @@
 ## よくある注意
 - `JSだけ` ではアイコンは出ません（要素が無い/スタイル不可/CSP等）。`fukiai.css` の読み込みを基本とし、必要に応じて JS を併用してください。
 - `dist/` と `build/` は手編集禁止。変更時はスクリプトで再生成してください。
+
+## GitHub Pages のキャッシュ対策（重要メモ）
+- プレビューのフォントは `docs/assets/<version>/` から提供。`package.json` の `version` を上げると新パスに切替。
+- `docs/.nojekyll` を設置済み。削除しないこと。
+- ルート直下（`docs/`）にフォントは置かない（誤参照/キャッシュ混在を防止）。
+- プレビューは WOFF を `index.html` に直埋め（data URL）。外部フォントキャッシュの影響を受けません（TTFはフォールバック）。
+- 反映確認手順: ヘッダーの “Build vX.Y.Z” を確認 → Network で `assets/<version>/fukiai.woff` が 200 か確認。
