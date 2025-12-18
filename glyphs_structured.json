@@ -533,6 +533,10 @@
       "code": "EA5F"
     },
     {
+      "name": "symbol_drum",
+      "code": "EA66"
+    },
+    {
       "name": "symbol_echo",
       "code": "EAB5"
     },
@@ -569,6 +573,10 @@
       "code": "EABB"
     },
     {
+      "name": "symbol_hat",
+      "code": "EA61"
+    },
+    {
       "name": "symbol_hugelton",
       "code": "EA48"
     },
@@ -583,6 +591,10 @@
     {
       "name": "symbol_keyboard",
       "code": "EABC"
+    },
+    {
+      "name": "symbol_kick",
+      "code": "EA62"
     },
     {
       "name": "symbol_lock_close_f",
@@ -635,6 +647,10 @@
     {
       "name": "symbol_piano",
       "code": "EACC"
+    },
+    {
+      "name": "symbol_pick",
+      "code": "EA67"
     },
     {
       "name": "symbol_plus",

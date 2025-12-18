@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="a" data-name="layer1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+  <rect x="225" y="150" width="50" height="12" rx="6" ry="6"/>
+  <rect x="215" y="175" width="70" height="12" rx="6" ry="6"/>
+  <rect x="242.5" y="195" width="15" height="200" rx="7.5" ry="7.5"/>
+  <path d="M250,405l-40,45h80l-40-45Z"/>
+  <rect x="110" y="260" width="280" height="14" rx="7" ry="7"/>
+  <rect x="150" y="285" width="200" height="10" rx="5" ry="5"/>
+</svg>

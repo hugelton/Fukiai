@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="a" data-name="layer1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+  <circle cx="230" cy="270" r="120"/>
+  <rect x="355" y="210" width="16" height="100" rx="8" ry="8"/>
+  <rect x="330" y="255" width="40" height="14" rx="7" ry="7"/>
+</svg>

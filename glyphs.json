@@ -218,5 +218,9 @@
   "symbol_cloud_disabled_o": "EA5D",
   "symbol_document_disabled": "EA5E",
   "symbol_download_as": "EA5F",
-  "symbol_folder_disabled": "EA60"
+  "symbol_folder_disabled": "EA60",
+  "symbol_hat": "EA61",
+  "symbol_kick": "EA62",
+  "symbol_drum": "EA66",
+  "symbol_pick": "EA67"
 }
