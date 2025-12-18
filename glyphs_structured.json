@@ -1,6 +1,10 @@
 {
   "control": [
     {
+      "name": "control_add",
+      "code": "EA31"
+    },
+    {
       "name": "control_arow_scale",
       "code": "EA8E"
     },
@@ -65,6 +69,10 @@
       "code": "EAA8"
     },
     {
+      "name": "control_duplicate",
+      "code": "EA32"
+    },
+    {
       "name": "control_eject_f",
       "code": "EA01"
     },
@@ -87,6 +95,22 @@
     {
       "name": "control_fx",
       "code": "EAAA"
+    },
+    {
+      "name": "control_menu_dots",
+      "code": "EA4D"
+    },
+    {
+      "name": "control_menu_dots_vertical",
+      "code": "EA4E"
+    },
+    {
+      "name": "control_menu_lines",
+      "code": "EA51"
+    },
+    {
+      "name": "control_menu_lines_vertical",
+      "code": "EA52"
     },
     {
       "name": "control_pause_f",
@@ -371,6 +395,10 @@
       "code": "EA36"
     },
     {
+      "name": "port_midi_disabled",
+      "code": "EA5B"
+    },
+    {
       "name": "port_rj45",
       "code": "EA37"
     },
@@ -453,6 +481,14 @@
       "code": "EA42"
     },
     {
+      "name": "symbol_cloud_disabled_f",
+      "code": "EA5C"
+    },
+    {
+      "name": "symbol_cloud_disabled_o",
+      "code": "EA5D"
+    },
+    {
       "name": "symbol_cloud_f",
       "code": "EA43"
     },
@@ -485,8 +521,16 @@
       "code": "EAB4"
     },
     {
+      "name": "symbol_document_disabled",
+      "code": "EA5E"
+    },
+    {
       "name": "symbol_download",
       "code": "EAD4"
+    },
+    {
+      "name": "symbol_download_as",
+      "code": "EA5F"
     },
     {
       "name": "symbol_echo",
@@ -507,6 +551,10 @@
     {
       "name": "symbol_folder",
       "code": "EAB8"
+    },
+    {
+      "name": "symbol_folder_disabled",
+      "code": "EA60"
     },
     {
       "name": "symbol_folder_open",

@@ -206,5 +206,17 @@
   "function_mask_xor": "EA2D",
   "symbol_check": "EA2E",
   "symbol_eye": "EA2F",
-  "symbol_stopwatch": "EA30"
+  "symbol_stopwatch": "EA30",
+  "control_add": "EA31",
+  "control_duplicate": "EA32",
+  "control_menu_dots": "EA4D",
+  "control_menu_dots_vertical": "EA4E",
+  "control_menu_lines": "EA51",
+  "control_menu_lines_vertical": "EA52",
+  "port_midi_disabled": "EA5B",
+  "symbol_cloud_disabled_f": "EA5C",
+  "symbol_cloud_disabled_o": "EA5D",
+  "symbol_document_disabled": "EA5E",
+  "symbol_download_as": "EA5F",
+  "symbol_folder_disabled": "EA60"
 }
