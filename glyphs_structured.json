@@ -129,6 +129,10 @@
       "code": "EA08"
     },
     {
+      "name": "control_power",
+      "code": "EAE7"
+    },
+    {
       "name": "control_rec_f",
       "code": "EA09"
     },
@@ -151,6 +155,22 @@
     {
       "name": "control_skip_o",
       "code": "EA0E"
+    },
+    {
+      "name": "control_speaker_1",
+      "code": "EAE8"
+    },
+    {
+      "name": "control_speaker_2",
+      "code": "EAE9"
+    },
+    {
+      "name": "control_speaker_3",
+      "code": "EAEA"
+    },
+    {
+      "name": "control_speaker_mute",
+      "code": "EAEB"
     },
     {
       "name": "control_stop_f",
@@ -281,6 +301,10 @@
     {
       "name": "function_mask",
       "code": "EAD0"
+    },
+    {
+      "name": "function_mask_off",
+      "code": "EAEC"
     },
     {
       "name": "function_mask_xor",
@@ -553,6 +577,10 @@
       "code": "EA2F"
     },
     {
+      "name": "symbol_feedback",
+      "code": "EAE2"
+    },
+    {
       "name": "symbol_folder",
       "code": "EAB8"
     },
@@ -631,6 +659,10 @@
     {
       "name": "symbol_mouth",
       "code": "EABE"
+    },
+    {
+      "name": "symbol_node",
+      "code": "EAE3"
     },
     {
       "name": "symbol_pan",
@@ -725,6 +757,10 @@
       "code": "EA6B"
     },
     {
+      "name": "symbol_transition",
+      "code": "EAE4"
+    },
+    {
       "name": "symbol_trash",
       "code": "EAC1"
     },
@@ -747,6 +783,14 @@
     {
       "name": "symbol_volume_inv",
       "code": "EAE1"
+    },
+    {
+      "name": "symbol_warp",
+      "code": "EAE5"
+    },
+    {
+      "name": "symbol_waves",
+      "code": "EAE6"
     },
     {
       "name": "symbol_wheels",
@@ -907,6 +951,10 @@
     {
       "name": "waveform_variant",
       "code": "EAC8"
+    },
+    {
+      "name": "waveform_variant_four",
+      "code": "EAED"
     }
   ]
 }

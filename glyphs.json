@@ -222,5 +222,17 @@
   "symbol_hat": "EA61",
   "symbol_kick": "EA62",
   "symbol_drum": "EA66",
+  "symbol_feedback": "EAE2",
+  "symbol_node": "EAE3",
+  "symbol_transition": "EAE4",
+  "symbol_warp": "EAE5",
+  "symbol_waves": "EAE6",
+  "control_power": "EAE7",
+  "control_speaker_1": "EAE8",
+  "control_speaker_2": "EAE9",
+  "control_speaker_3": "EAEA",
+  "control_speaker_mute": "EAEB",
+  "function_mask_off": "EAEC",
+  "waveform_variant_four": "EAED",
   "symbol_pick": "EA67"
 }
