@@ -17,6 +17,7 @@ function formatTitle(name) {
   let title = name
     .replace(/^control[-_]/, '')
     .replace(/^function[-_]/, '')
+    .replace(/^note[-_]/, '')
     .replace(/^symbol[-_]/, '')
     .replace(/^waveform[-_]/, '')
     .replace(/^port[-_]/, '')

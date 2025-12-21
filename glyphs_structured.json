@@ -267,6 +267,10 @@
       "code": "EAA0"
     },
     {
+      "name": "function_filter_modal",
+      "code": "EAEE"
+    },
+    {
       "name": "function_filter_notch",
       "code": "EAAD"
     },
@@ -459,6 +463,20 @@
       "code": "EA3F"
     }
   ],
+  "note": [
+    {
+      "name": "note_eight",
+      "code": "EAEF"
+    },
+    {
+      "name": "note_half",
+      "code": "EAF0"
+    },
+    {
+      "name": "note_quarter",
+      "code": "EAF1"
+    }
+  ],
   "symbol": [
     {
       "name": "symbol_arrow_redo",
@@ -577,6 +595,30 @@
       "code": "EA2F"
     },
     {
+      "name": "symbol_amp",
+      "code": "EAF2"
+    },
+    {
+      "name": "symbol_enjoy",
+      "code": "EAF3"
+    },
+    {
+      "name": "symbol_error",
+      "code": "EAF4"
+    },
+    {
+      "name": "symbol_face_angry",
+      "code": "EAF5"
+    },
+    {
+      "name": "symbol_face_sad",
+      "code": "EAF6"
+    },
+    {
+      "name": "symbol_face_smile",
+      "code": "EAF7"
+    },
+    {
       "name": "symbol_feedback",
       "code": "EAE2"
     },
@@ -601,6 +643,10 @@
       "code": "EABB"
     },
     {
+      "name": "symbol_ladder",
+      "code": "EAF8"
+    },
+    {
       "name": "symbol_hat",
       "code": "EA61"
     },
@@ -621,6 +667,10 @@
       "code": "EABC"
     },
     {
+      "name": "symbol_link",
+      "code": "EAF9"
+    },
+    {
       "name": "symbol_kick",
       "code": "EA62"
     },
@@ -639,6 +689,10 @@
     {
       "name": "symbol_lock_open_o",
       "code": "EA4C"
+    },
+    {
+      "name": "symbol_rise",
+      "code": "EAFA"
     },
     {
       "name": "symbol_message",
@@ -725,6 +779,10 @@
       "code": "EA63"
     },
     {
+      "name": "symbol_unlink",
+      "code": "EAFB"
+    },
+    {
       "name": "symbol_star",
       "code": "EA64"
     },
@@ -791,6 +849,10 @@
     {
       "name": "symbol_waves",
       "code": "EAE6"
+    },
+    {
+      "name": "symbol_weight",
+      "code": "EAFC"
     },
     {
       "name": "symbol_wheels",

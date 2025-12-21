@@ -234,5 +234,20 @@
   "control_speaker_mute": "EAEB",
   "function_mask_off": "EAEC",
   "waveform_variant_four": "EAED",
-  "symbol_pick": "EA67"
+  "symbol_pick": "EA67",
+  "function_filter_modal": "EAEE",
+  "note_eight": "EAEF",
+  "note_half": "EAF0",
+  "note_quarter": "EAF1",
+  "symbol_amp": "EAF2",
+  "symbol_enjoy": "EAF3",
+  "symbol_error": "EAF4",
+  "symbol_face_angry": "EAF5",
+  "symbol_face_sad": "EAF6",
+  "symbol_face_smile": "EAF7",
+  "symbol_ladder": "EAF8",
+  "symbol_link": "EAF9",
+  "symbol_rise": "EAFA",
+  "symbol_unlink": "EAFB",
+  "symbol_weight": "EAFC"
 }
