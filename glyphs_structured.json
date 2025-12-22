@@ -2,1073 +2,959 @@
   "control": [
     {
       "name": "control_add",
-      "code": "EA01"
+      "code": "EA31"
     },
     {
       "name": "control_arow_scale",
-      "code": "EA02"
+      "code": "EA8E"
     },
     {
       "name": "control_arrow_back",
-      "code": "EA03"
+      "code": "EA8F"
     },
     {
       "name": "control_arrow_backward",
-      "code": "EA04"
+      "code": "EA90"
     },
     {
       "name": "control_arrow_both",
-      "code": "EA05"
+      "code": "EA91"
     },
     {
       "name": "control_arrow_down",
-      "code": "EA06"
+      "code": "EACE"
     },
     {
       "name": "control_arrow_end",
-      "code": "EA07"
+      "code": "EA92"
     },
     {
       "name": "control_arrow_forward",
-      "code": "EA08"
+      "code": "EA93"
     },
     {
       "name": "control_arrow_head",
-      "code": "EA09"
+      "code": "EA94"
     },
     {
       "name": "control_arrow_loop",
-      "code": "EA0A"
+      "code": "EAD6"
     },
     {
       "name": "control_arrow_pingpong",
-      "code": "EA0B"
+      "code": "EA95"
     },
     {
       "name": "control_arrow_random",
-      "code": "EA0C"
+      "code": "EA96"
     },
     {
       "name": "control_arrow_randomize",
-      "code": "EA0D"
+      "code": "EAD7"
     },
     {
       "name": "control_arrow_start",
-      "code": "EA0E"
+      "code": "EA97"
     },
     {
       "name": "control_arrow_up",
-      "code": "EA0F"
+      "code": "EACD"
     },
     {
       "name": "control_arrow_up_down",
-      "code": "EA10"
+      "code": "EACF"
     },
     {
       "name": "control_countdown",
-      "code": "EA11"
+      "code": "EAA8"
     },
     {
       "name": "control_duplicate",
-      "code": "EA12"
+      "code": "EA32"
     },
     {
       "name": "control_eject_f",
-      "code": "EA13"
+      "code": "EA01"
     },
     {
       "name": "control_eject_o",
-      "code": "EA14"
+      "code": "EA02"
     },
     {
       "name": "control_fantom",
-      "code": "EA15"
+      "code": "EAA9"
     },
     {
       "name": "control_forward_f",
-      "code": "EA16"
+      "code": "EA03"
     },
     {
       "name": "control_forward_o",
-      "code": "EA17"
+      "code": "EA04"
     },
     {
       "name": "control_fx",
-      "code": "EA18"
+      "code": "EAAA"
     },
     {
       "name": "control_menu_dots",
-      "code": "EA19"
+      "code": "EA4D"
     },
     {
       "name": "control_menu_dots_vertical",
-      "code": "EA1A"
+      "code": "EA4E"
     },
     {
       "name": "control_menu_lines",
-      "code": "EA1B"
+      "code": "EA51"
     },
     {
       "name": "control_menu_lines_vertical",
-      "code": "EA1C"
+      "code": "EA52"
     },
     {
       "name": "control_pause_f",
-      "code": "EA1D"
+      "code": "EA05"
     },
     {
       "name": "control_pause_o",
-      "code": "EA1E"
+      "code": "EA06"
     },
     {
       "name": "control_play_f",
-      "code": "EA1F"
+      "code": "EA07"
     },
     {
       "name": "control_play_o",
-      "code": "EA20"
+      "code": "EA08"
     },
     {
       "name": "control_power",
-      "code": "EA21"
+      "code": "EAE7"
     },
     {
       "name": "control_rec_f",
-      "code": "EA22"
+      "code": "EA09"
     },
     {
       "name": "control_rec_o",
-      "code": "EA23"
+      "code": "EA0A"
     },
     {
       "name": "control_reverse_f",
-      "code": "EA24"
+      "code": "EA0B"
     },
     {
       "name": "control_reverse_o",
-      "code": "EA25"
+      "code": "EA0C"
     },
     {
       "name": "control_skip_f",
-      "code": "EA26"
+      "code": "EA0D"
     },
     {
       "name": "control_skip_o",
-      "code": "EA27"
+      "code": "EA0E"
     },
     {
       "name": "control_speaker_1",
-      "code": "EA28"
+      "code": "EAE8"
     },
     {
       "name": "control_speaker_2",
-      "code": "EA29"
+      "code": "EAE9"
     },
     {
       "name": "control_speaker_3",
-      "code": "EA2A"
+      "code": "EAEA"
     },
     {
       "name": "control_speaker_mute",
-      "code": "EA2B"
+      "code": "EAEB"
     },
     {
       "name": "control_stop_f",
-      "code": "EA2C"
+      "code": "EA0F"
     },
     {
       "name": "control_stop_o",
-      "code": "EA2D"
+      "code": "EA10"
     }
   ],
   "function": [
     {
       "name": "function_cross",
-      "code": "EA2E"
+      "code": "EA11"
     },
     {
       "name": "function_env_adsr_attack",
-      "code": "EA2F"
+      "code": "EA98"
     },
     {
       "name": "function_env_adsr_decay",
-      "code": "EA30"
+      "code": "EA99"
     },
     {
       "name": "function_env_adsr_exp",
-      "code": "EA31"
+      "code": "EA12"
     },
     {
       "name": "function_env_adsr_lin",
-      "code": "EA32"
+      "code": "EA13"
     },
     {
       "name": "function_env_adsr_log",
-      "code": "EA33"
+      "code": "EA14"
     },
     {
       "name": "function_env_adsr_release",
-      "code": "EA34"
+      "code": "EA9A"
     },
     {
       "name": "function_env_adsr_sustain",
-      "code": "EA35"
+      "code": "EA9B"
     },
     {
       "name": "function_env_ar_exp",
-      "code": "EA36"
+      "code": "EA15"
     },
     {
       "name": "function_env_ar_lin",
-      "code": "EA37"
+      "code": "EA16"
     },
     {
       "name": "function_env_ar_log",
-      "code": "EA38"
+      "code": "EA17"
     },
     {
       "name": "function_even",
-      "code": "EA39"
+      "code": "EA18"
     },
     {
       "name": "function_exp",
-      "code": "EA3A"
+      "code": "EAAB"
     },
     {
       "name": "function_exp_biscuit",
-      "code": "EA3B"
+      "code": "EAAC"
     },
     {
       "name": "function_filter_band",
-      "code": "EA3C"
+      "code": "EA9C"
     },
     {
       "name": "function_filter_cells",
-      "code": "EA3D"
+      "code": "EAD8"
     },
     {
       "name": "function_filter_comb",
-      "code": "EA3E"
+      "code": "EAD9"
     },
     {
       "name": "function_filter_hpf",
-      "code": "EA3F"
+      "code": "EA9D"
     },
     {
       "name": "function_filter_hpf_peak",
-      "code": "EA40"
+      "code": "EA9E"
     },
     {
       "name": "function_filter_lpf",
-      "code": "EA41"
+      "code": "EA9F"
     },
     {
       "name": "function_filter_lpf_peak",
-      "code": "EA42"
-    },
-    {
-      "name": "function_filter_modal",
-      "code": "EA43"
+      "code": "EAA0"
     },
     {
       "name": "function_filter_notch",
-      "code": "EA44"
+      "code": "EAAD"
     },
     {
       "name": "function_gate_bipolar",
-      "code": "EA45"
+      "code": "EAA1"
     },
     {
       "name": "function_gate_unipolar",
-      "code": "EA46"
+      "code": "EAA2"
     },
     {
       "name": "function_impulse",
-      "code": "EA47"
+      "code": "EA19"
     },
     {
       "name": "function_linear",
-      "code": "EA48"
+      "code": "EAAE"
     },
     {
       "name": "function_linear_biscuit",
-      "code": "EA49"
+      "code": "EAAF"
     },
     {
       "name": "function_log",
-      "code": "EA4A"
+      "code": "EAB0"
     },
     {
       "name": "function_log_biscuit",
-      "code": "EA4B"
+      "code": "EAB1"
     },
     {
       "name": "function_mask",
-      "code": "EA4C"
+      "code": "EAD0"
     },
     {
       "name": "function_mask_off",
-      "code": "EA4D"
+      "code": "EAEC"
     },
     {
       "name": "function_mask_xor",
-      "code": "EA4E"
+      "code": "EA2D"
     },
     {
       "name": "function_multiply",
-      "code": "EA4F"
+      "code": "EA1A"
     },
     {
       "name": "function_odd",
-      "code": "EA50"
+      "code": "EA1B"
     },
     {
       "name": "function_phase",
-      "code": "EA51"
+      "code": "EA1C"
     },
     {
       "name": "function_phaseout",
-      "code": "EA52"
+      "code": "EAB2"
     },
     {
       "name": "function_signal_bipolar",
-      "code": "EA53"
+      "code": "EA1D"
     },
     {
       "name": "function_signal_both",
-      "code": "EA54"
+      "code": "EA1E"
     },
     {
       "name": "function_signal_clip",
-      "code": "EA55"
+      "code": "EA1F"
     },
     {
       "name": "function_signal_double",
-      "code": "EA56"
+      "code": "EA20"
     },
     {
       "name": "function_signal_gate_fall",
-      "code": "EA57"
+      "code": "EA23"
     },
     {
       "name": "function_signal_gate_rise",
-      "code": "EA58"
+      "code": "EA24"
     },
     {
       "name": "function_signal_input",
-      "code": "EA59"
+      "code": "EA26"
     },
     {
       "name": "function_signal_output",
-      "code": "EA5A"
+      "code": "EA28"
     },
     {
       "name": "function_signal_unipolar",
-      "code": "EA5B"
-    }
-  ],
-  "note": [
-    {
-      "name": "note_eight",
-      "code": "EA5C"
-    },
-    {
-      "name": "note_half",
-      "code": "EA5D"
-    },
-    {
-      "name": "note_quarter",
-      "code": "EA5E"
+      "code": "EA2A"
     }
   ],
   "numbers": [
     {
       "name": "numbers_circle_1_roman_f",
-      "code": "EA5F"
+      "code": "EA00"
     },
     {
       "name": "numbers_circle_1_roman_o",
-      "code": "EA60"
+      "code": "EA21"
     },
     {
       "name": "numbers_circle_2_roman_f",
-      "code": "EA61"
+      "code": "EA22"
     },
     {
       "name": "numbers_circle_2_roman_o",
-      "code": "EA62"
+      "code": "EA25"
     },
     {
       "name": "numbers_circle_3_roman_f",
-      "code": "EA63"
+      "code": "EA27"
     },
     {
       "name": "numbers_circle_3_roman_o",
-      "code": "EA64"
+      "code": "EA29"
     },
     {
       "name": "numbers_circle_4_roman_f",
-      "code": "EA65"
+      "code": "EA2B"
     },
     {
       "name": "numbers_circle_4_roman_o",
-      "code": "EA66"
+      "code": "EA2C"
     }
   ],
   "port": [
     {
       "name": "port_disk",
-      "code": "EA67"
-    },
-    {
-      "name": "port_disk_dual",
-      "code": "EA68"
+      "code": "EAB3"
     },
     {
       "name": "port_dmx",
-      "code": "EA69"
+      "code": "EA33"
     },
     {
       "name": "port_gate",
-      "code": "EA6A"
+      "code": "EA34"
     },
     {
       "name": "port_mic",
-      "code": "EA6B"
+      "code": "EA35"
     },
     {
       "name": "port_midi",
-      "code": "EA6C"
+      "code": "EA36"
     },
     {
       "name": "port_midi_disabled",
-      "code": "EA6D"
+      "code": "EA5B"
     },
     {
       "name": "port_rj45",
-      "code": "EA6E"
+      "code": "EA37"
     },
     {
       "name": "port_sd",
-      "code": "EA6F"
+      "code": "EA38"
     },
     {
       "name": "port_sd_micro",
-      "code": "EA70"
+      "code": "EA39"
     },
     {
       "name": "port_trrs",
-      "code": "EA71"
+      "code": "EA3A"
     },
     {
       "name": "port_trs",
-      "code": "EA72"
+      "code": "EA3B"
     },
     {
       "name": "port_ts",
-      "code": "EA73"
+      "code": "EA3C"
     },
     {
       "name": "port_usb_a",
-      "code": "EA74"
+      "code": "EA3D"
     },
     {
       "name": "port_usb_b",
-      "code": "EA75"
+      "code": "EA3E"
     },
     {
       "name": "port_usb_c",
-      "code": "EA76"
+      "code": "EA3F"
     }
   ],
   "symbol": [
     {
-      "name": "symbol_amp",
-      "code": "EA77"
-    },
-    {
       "name": "symbol_arrow_redo",
-      "code": "EA78"
-    },
-    {
-      "name": "symbol_arrow_undo",
-      "code": "EA79"
-    },
-    {
-      "name": "symbol_audio",
-      "code": "EA7A"
-    },
-    {
-      "name": "symbol_bass",
-      "code": "EA7B"
-    },
-    {
-      "name": "symbol_bell",
-      "code": "EA7C"
-    },
-    {
-      "name": "symbol_books",
-      "code": "EA7D"
-    },
-    {
-      "name": "symbol_carret_down",
-      "code": "EA7E"
-    },
-    {
-      "name": "symbol_carret_left",
-      "code": "EA7F"
-    },
-    {
-      "name": "symbol_carret_right",
-      "code": "EA80"
-    },
-    {
-      "name": "symbol_carret_up",
-      "code": "EA81"
-    },
-    {
-      "name": "symbol_check",
-      "code": "EA82"
-    },
-    {
-      "name": "symbol_circle",
-      "code": "EA83"
-    },
-    {
-      "name": "symbol_clock",
-      "code": "EA84"
-    },
-    {
-      "name": "symbol_cloud_disabled_f",
-      "code": "EA85"
-    },
-    {
-      "name": "symbol_cloud_disabled_o",
-      "code": "EA86"
-    },
-    {
-      "name": "symbol_cloud_f",
-      "code": "EA87"
-    },
-    {
-      "name": "symbol_cloud_o",
-      "code": "EA88"
-    },
-    {
-      "name": "symbol_cog",
-      "code": "EA89"
-    },
-    {
-      "name": "symbol_comb",
-      "code": "EA8A"
-    },
-    {
-      "name": "symbol_combine",
-      "code": "EA8B"
-    },
-    {
-      "name": "symbol_cross",
-      "code": "EA8C"
-    },
-    {
-      "name": "symbol_cross_o",
-      "code": "EA8D"
-    },
-    {
-      "name": "symbol_diode",
-      "code": "EA8E"
-    },
-    {
-      "name": "symbol_document",
-      "code": "EA8F"
-    },
-    {
-      "name": "symbol_document_disabled",
-      "code": "EA90"
-    },
-    {
-      "name": "symbol_download",
-      "code": "EA91"
-    },
-    {
-      "name": "symbol_download_as",
-      "code": "EA92"
-    },
-    {
-      "name": "symbol_drum",
-      "code": "EA93"
-    },
-    {
-      "name": "symbol_echo",
-      "code": "EA94"
-    },
-    {
-      "name": "symbol_echo_oval",
-      "code": "EA95"
-    },
-    {
-      "name": "symbol_effector",
-      "code": "EA96"
-    },
-    {
-      "name": "symbol_efx",
-      "code": "EA97"
-    },
-    {
-      "name": "symbol_enjoy",
-      "code": "EA98"
-    },
-    {
-      "name": "symbol_error",
-      "code": "EA99"
-    },
-    {
-      "name": "symbol_eye",
-      "code": "EA9A"
-    },
-    {
-      "name": "symbol_face_angry",
-      "code": "EA9B"
-    },
-    {
-      "name": "symbol_face_sad",
-      "code": "EA9C"
-    },
-    {
-      "name": "symbol_face_smile",
-      "code": "EA9D"
-    },
-    {
-      "name": "symbol_feedback",
-      "code": "EA9E"
-    },
-    {
-      "name": "symbol_folder",
-      "code": "EA9F"
-    },
-    {
-      "name": "symbol_folder_disabled",
-      "code": "EAA0"
-    },
-    {
-      "name": "symbol_folder_open",
-      "code": "EAA1"
-    },
-    {
-      "name": "symbol_grid",
-      "code": "EAA2"
-    },
-    {
-      "name": "symbol_grid_nine",
-      "code": "EAA3"
-    },
-    {
-      "name": "symbol_hat",
-      "code": "EAA4"
-    },
-    {
-      "name": "symbol_hit",
-      "code": "EAA5"
-    },
-    {
-      "name": "symbol_horn",
-      "code": "EAA6"
-    },
-    {
-      "name": "symbol_hugelton",
-      "code": "EAA7"
-    },
-    {
-      "name": "symbol_id",
-      "code": "EAA8"
-    },
-    {
-      "name": "symbol_inbox",
-      "code": "EAA9"
-    },
-    {
-      "name": "symbol_intelligence",
-      "code": "EAAA"
-    },
-    {
-      "name": "symbol_keyboard",
-      "code": "EAAB"
-    },
-    {
-      "name": "symbol_kick",
-      "code": "EAAC"
-    },
-    {
-      "name": "symbol_ladder",
-      "code": "EAAD"
-    },
-    {
-      "name": "symbol_lead",
-      "code": "EAAE"
-    },
-    {
-      "name": "symbol_link",
-      "code": "EAAF"
-    },
-    {
-      "name": "symbol_lock_close_f",
-      "code": "EAB0"
-    },
-    {
-      "name": "symbol_lock_close_o",
-      "code": "EAB1"
-    },
-    {
-      "name": "symbol_lock_open_f",
-      "code": "EAB2"
-    },
-    {
-      "name": "symbol_lock_open_o",
-      "code": "EAB3"
-    },
-    {
-      "name": "symbol_message",
-      "code": "EAB4"
-    },
-    {
-      "name": "symbol_minus",
-      "code": "EAB5"
-    },
-    {
-      "name": "symbol_minus_o",
-      "code": "EAB6"
-    },
-    {
-      "name": "symbol_modular",
-      "code": "EAB7"
-    },
-    {
-      "name": "symbol_mouth",
-      "code": "EAB8"
-    },
-    {
-      "name": "symbol_node",
-      "code": "EAB9"
-    },
-    {
-      "name": "symbol_pad",
-      "code": "EABA"
-    },
-    {
-      "name": "symbol_pan",
-      "code": "EABB"
-    },
-    {
-      "name": "symbol_pedal",
-      "code": "EABC"
-    },
-    {
-      "name": "symbol_pencil",
-      "code": "EABD"
-    },
-    {
-      "name": "symbol_piano",
-      "code": "EABE"
-    },
-    {
-      "name": "symbol_pick",
-      "code": "EABF"
-    },
-    {
-      "name": "symbol_plus",
-      "code": "EAC0"
-    },
-    {
-      "name": "symbol_plus_o",
-      "code": "EAC1"
-    },
-    {
-      "name": "symbol_primitives_f",
-      "code": "EAC2"
-    },
-    {
-      "name": "symbol_primitives_o",
-      "code": "EAC3"
-    },
-    {
-      "name": "symbol_rise",
-      "code": "EAC4"
-    },
-    {
-      "name": "symbol_saturn",
-      "code": "EAC5"
-    },
-    {
-      "name": "symbol_search",
-      "code": "EAC6"
-    },
-    {
-      "name": "symbol_shift",
-      "code": "EAC7"
-    },
-    {
-      "name": "symbol_sleep",
-      "code": "EAC8"
-    },
-    {
-      "name": "symbol_sort",
-      "code": "EAC9"
-    },
-    {
-      "name": "symbol_speed",
-      "code": "EACA"
-    },
-    {
-      "name": "symbol_spring",
-      "code": "EACB"
-    },
-    {
-      "name": "symbol_square",
-      "code": "EACC"
-    },
-    {
-      "name": "symbol_star",
-      "code": "EACD"
-    },
-    {
-      "name": "symbol_star_o",
-      "code": "EACE"
-    },
-    {
-      "name": "symbol_stopwatch",
-      "code": "EACF"
-    },
-    {
-      "name": "symbol_swing",
-      "code": "EAD0"
-    },
-    {
-      "name": "symbol_tag",
-      "code": "EAD1"
-    },
-    {
-      "name": "symbol_tempo",
-      "code": "EAD2"
-    },
-    {
-      "name": "symbol_thunder_f",
-      "code": "EAD3"
-    },
-    {
-      "name": "symbol_thunder_o",
-      "code": "EAD4"
-    },
-    {
-      "name": "symbol_transistor",
-      "code": "EAD5"
-    },
-    {
-      "name": "symbol_transition",
-      "code": "EAD6"
-    },
-    {
-      "name": "symbol_trash",
-      "code": "EAD7"
-    },
-    {
-      "name": "symbol_triangle",
-      "code": "EAD8"
-    },
-    {
-      "name": "symbol_tuning",
-      "code": "EAD9"
-    },
-    {
-      "name": "symbol_unlink",
       "code": "EADA"
     },
     {
-      "name": "symbol_upload",
+      "name": "symbol_arrow_undo",
       "code": "EADB"
     },
     {
-      "name": "symbol_volume",
+      "name": "symbol_audio",
+      "code": "EA40"
+    },
+    {
+      "name": "symbol_books",
       "code": "EADC"
     },
     {
-      "name": "symbol_volume_inv",
+      "name": "symbol_carret_down",
+      "code": "EAD2"
+    },
+    {
+      "name": "symbol_carret_left",
+      "code": "EAC9"
+    },
+    {
+      "name": "symbol_carret_right",
+      "code": "EACA"
+    },
+    {
+      "name": "symbol_carret_up",
+      "code": "EAD3"
+    },
+    {
+      "name": "symbol_check",
+      "code": "EA2E"
+    },
+    {
+      "name": "symbol_circle",
+      "code": "EA41"
+    },
+    {
+      "name": "symbol_clock",
+      "code": "EA42"
+    },
+    {
+      "name": "symbol_cloud_disabled_f",
+      "code": "EA5C"
+    },
+    {
+      "name": "symbol_cloud_disabled_o",
+      "code": "EA5D"
+    },
+    {
+      "name": "symbol_cloud_f",
+      "code": "EA43"
+    },
+    {
+      "name": "symbol_cloud_o",
+      "code": "EA44"
+    },
+    {
+      "name": "symbol_cog",
+      "code": "EA46"
+    },
+    {
+      "name": "symbol_comb",
+      "code": "EA45"
+    },
+    {
+      "name": "symbol_combine",
+      "code": "EA47"
+    },
+    {
+      "name": "symbol_cross",
+      "code": "EAA3"
+    },
+    {
+      "name": "symbol_cross_o",
+      "code": "EAA4"
+    },
+    {
+      "name": "symbol_document",
+      "code": "EAB4"
+    },
+    {
+      "name": "symbol_document_disabled",
+      "code": "EA5E"
+    },
+    {
+      "name": "symbol_download",
+      "code": "EAD4"
+    },
+    {
+      "name": "symbol_download_as",
+      "code": "EA5F"
+    },
+    {
+      "name": "symbol_drum",
+      "code": "EA66"
+    },
+    {
+      "name": "symbol_echo",
+      "code": "EAB5"
+    },
+    {
+      "name": "symbol_echo_oval",
+      "code": "EAB6"
+    },
+    {
+      "name": "symbol_effector",
+      "code": "EAB7"
+    },
+    {
+      "name": "symbol_eye",
+      "code": "EA2F"
+    },
+    {
+      "name": "symbol_feedback",
+      "code": "EAE2"
+    },
+    {
+      "name": "symbol_folder",
+      "code": "EAB8"
+    },
+    {
+      "name": "symbol_folder_disabled",
+      "code": "EA60"
+    },
+    {
+      "name": "symbol_folder_open",
+      "code": "EAB9"
+    },
+    {
+      "name": "symbol_grid",
+      "code": "EABA"
+    },
+    {
+      "name": "symbol_grid_nine",
+      "code": "EABB"
+    },
+    {
+      "name": "symbol_hat",
+      "code": "EA61"
+    },
+    {
+      "name": "symbol_hugelton",
+      "code": "EA48"
+    },
+    {
+      "name": "symbol_id",
       "code": "EADD"
     },
     {
-      "name": "symbol_warp",
+      "name": "symbol_inbox",
       "code": "EADE"
     },
     {
-      "name": "symbol_waves",
+      "name": "symbol_keyboard",
+      "code": "EABC"
+    },
+    {
+      "name": "symbol_kick",
+      "code": "EA62"
+    },
+    {
+      "name": "symbol_lock_close_f",
+      "code": "EA49"
+    },
+    {
+      "name": "symbol_lock_close_o",
+      "code": "EA4A"
+    },
+    {
+      "name": "symbol_lock_open_f",
+      "code": "EA4B"
+    },
+    {
+      "name": "symbol_lock_open_o",
+      "code": "EA4C"
+    },
+    {
+      "name": "symbol_message",
       "code": "EADF"
     },
     {
-      "name": "symbol_weight",
+      "name": "symbol_minus",
+      "code": "EA4F"
+    },
+    {
+      "name": "symbol_minus_o",
+      "code": "EA50"
+    },
+    {
+      "name": "symbol_modular",
+      "code": "EABD"
+    },
+    {
+      "name": "symbol_mouth",
+      "code": "EABE"
+    },
+    {
+      "name": "symbol_node",
+      "code": "EAE3"
+    },
+    {
+      "name": "symbol_pan",
+      "code": "EA53"
+    },
+    {
+      "name": "symbol_pedal",
+      "code": "EABF"
+    },
+    {
+      "name": "symbol_pencil",
+      "code": "EACB"
+    },
+    {
+      "name": "symbol_piano",
+      "code": "EACC"
+    },
+    {
+      "name": "symbol_pick",
+      "code": "EA67"
+    },
+    {
+      "name": "symbol_plus",
+      "code": "EA54"
+    },
+    {
+      "name": "symbol_plus_o",
+      "code": "EA55"
+    },
+    {
+      "name": "symbol_primitives_f",
+      "code": "EA56"
+    },
+    {
+      "name": "symbol_primitives_o",
+      "code": "EA57"
+    },
+    {
+      "name": "symbol_search",
+      "code": "EA58"
+    },
+    {
+      "name": "symbol_shift",
+      "code": "EA59"
+    },
+    {
+      "name": "symbol_sort",
+      "code": "EA5A"
+    },
+    {
+      "name": "symbol_speed",
+      "code": "EAC0"
+    },
+    {
+      "name": "symbol_spring",
+      "code": "EAD1"
+    },
+    {
+      "name": "symbol_square",
+      "code": "EA63"
+    },
+    {
+      "name": "symbol_star",
+      "code": "EA64"
+    },
+    {
+      "name": "symbol_star_o",
+      "code": "EA65"
+    },
+    {
+      "name": "symbol_stopwatch",
+      "code": "EA30"
+    },
+    {
+      "name": "symbol_swing",
+      "code": "EAA5"
+    },
+    {
+      "name": "symbol_tag",
       "code": "EAE0"
     },
     {
-      "name": "symbol_wheels",
+      "name": "symbol_tempo",
+      "code": "EAA6"
+    },
+    {
+      "name": "symbol_thunder_f",
+      "code": "EA6A"
+    },
+    {
+      "name": "symbol_thunder_o",
+      "code": "EA6B"
+    },
+    {
+      "name": "symbol_transition",
+      "code": "EAE4"
+    },
+    {
+      "name": "symbol_trash",
+      "code": "EAC1"
+    },
+    {
+      "name": "symbol_triangle",
+      "code": "EA6C"
+    },
+    {
+      "name": "symbol_tuning",
+      "code": "EAA7"
+    },
+    {
+      "name": "symbol_upload",
+      "code": "EAD5"
+    },
+    {
+      "name": "symbol_volume",
+      "code": "EA6D"
+    },
+    {
+      "name": "symbol_volume_inv",
       "code": "EAE1"
+    },
+    {
+      "name": "symbol_warp",
+      "code": "EAE5"
+    },
+    {
+      "name": "symbol_waves",
+      "code": "EAE6"
+    },
+    {
+      "name": "symbol_wheels",
+      "code": "EAC2"
     }
   ],
   "ui": [
     {
       "name": "ui_button_momentary",
-      "code": "EAE2"
+      "code": "EA6E"
     },
     {
       "name": "ui_button_toggle",
-      "code": "EAE3"
+      "code": "EA6F"
     },
     {
       "name": "ui_knob",
-      "code": "EAE4"
+      "code": "EA70"
     },
     {
       "name": "ui_knob_four",
-      "code": "EAE5"
+      "code": "EA71"
     },
     {
       "name": "ui_slider_horizontal",
-      "code": "EAE6"
+      "code": "EA72"
     },
     {
       "name": "ui_slider_vertical",
-      "code": "EAE7"
+      "code": "EA73"
     },
     {
       "name": "ui_toggle_switch",
-      "code": "EAE8"
+      "code": "EA74"
     }
   ],
   "waveform": [
     {
       "name": "waveform_cos",
-      "code": "EAE9"
+      "code": "EA75"
     },
     {
       "name": "waveform_cos_inv",
-      "code": "EAEA"
+      "code": "EA76"
     },
     {
       "name": "waveform_fade",
-      "code": "EAEB"
+      "code": "EAC3"
     },
     {
       "name": "waveform_fold",
-      "code": "EAEC"
+      "code": "EAC4"
     },
     {
       "name": "waveform_harmonic",
-      "code": "EAED"
+      "code": "EAC5"
     },
     {
       "name": "waveform_loop",
-      "code": "EAEE"
+      "code": "EAC6"
     },
     {
       "name": "waveform_noise_bit",
-      "code": "EAEF"
+      "code": "EA77"
     },
     {
       "name": "waveform_noise_pink",
-      "code": "EAF0"
+      "code": "EA78"
     },
     {
       "name": "waveform_noise_step",
-      "code": "EAF1"
+      "code": "EA79"
     },
     {
       "name": "waveform_noise_white",
-      "code": "EAF2"
+      "code": "EA7A"
     },
     {
       "name": "waveform_pitch",
-      "code": "EAF3"
+      "code": "EAC7"
     },
     {
       "name": "waveform_pulse_eighth",
-      "code": "EAF4"
+      "code": "EA7B"
     },
     {
       "name": "waveform_pulse_eighth_inv",
-      "code": "EAF5"
+      "code": "EA7C"
     },
     {
       "name": "waveform_pulse_half",
-      "code": "EAF6"
+      "code": "EA7D"
     },
     {
       "name": "waveform_pulse_half_inv",
-      "code": "EAF7"
+      "code": "EA7E"
     },
     {
       "name": "waveform_pulse_quarter",
-      "code": "EAF8"
+      "code": "EA7F"
     },
     {
       "name": "waveform_pulse_quarter_inv",
-      "code": "EAF9"
+      "code": "EA80"
     },
     {
       "name": "waveform_sawtooth_ac",
-      "code": "EAFA"
+      "code": "EA81"
     },
     {
       "name": "waveform_sawtooth_ac_inv",
-      "code": "EAFB"
+      "code": "EA82"
     },
     {
       "name": "waveform_sawtooth_dc",
-      "code": "EAFC"
+      "code": "EA83"
     },
     {
       "name": "waveform_sawtooth_dc_inv",
-      "code": "EAFD"
+      "code": "EA84"
     },
     {
       "name": "waveform_sine",
-      "code": "EAFE"
+      "code": "EA85"
     },
     {
       "name": "waveform_sine_inv",
-      "code": "EAFF"
+      "code": "EA86"
     },
     {
       "name": "waveform_square",
-      "code": "EB00"
+      "code": "EA87"
     },
     {
       "name": "waveform_square_inv",
-      "code": "EB01"
+      "code": "EA88"
     },
     {
       "name": "waveform_sync",
-      "code": "EB02"
+      "code": "EA8D"
     },
     {
       "name": "waveform_triangle_ac",
-      "code": "EB03"
+      "code": "EA89"
     },
     {
       "name": "waveform_triangle_ac_inv",
-      "code": "EB04"
+      "code": "EA8A"
     },
     {
       "name": "waveform_triangle_dc",
-      "code": "EB05"
+      "code": "EA8B"
     },
     {
       "name": "waveform_triangle_dc_inv",
-      "code": "EB06"
+      "code": "EA8C"
     },
     {
       "name": "waveform_variant",
-      "code": "EB07"
+      "code": "EAC8"
     },
     {
       "name": "waveform_variant_four",
-      "code": "EB08"
+      "code": "EAED"
     }
   ]
 }
