@@ -13,6 +13,13 @@ if (!fs.existsSync(distDir)) {
 
 console.log('🛠 Building distribution files...');
 
+// Keep JS icon map in sync with glyphs.json before packaging
+try {
+  require(path.join(__dirname, 'update_js_library.js'));
+} catch (e) {
+  console.warn('⚠️ Failed to update JS library mapping before dist:', e.message);
+}
+
 // Copy font files from build to dist
 const fontFiles = ['fukiai.woff', 'fukiai.ttf', 'fukiai.svg'];
 
