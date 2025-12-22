@@ -267,6 +267,10 @@
       "code": "EAA0"
     },
     {
+      "name": "function_filter_modal",
+      "code": "EAEE"
+    },
+    {
       "name": "function_filter_notch",
       "code": "EAAD"
     },
@@ -363,6 +367,20 @@
       "code": "EA2A"
     }
   ],
+  "note": [
+    {
+      "name": "note_eight",
+      "code": "EAEF"
+    },
+    {
+      "name": "note_half",
+      "code": "EAF0"
+    },
+    {
+      "name": "note_quarter",
+      "code": "EAF1"
+    }
+  ],
   "numbers": [
     {
       "name": "numbers_circle_1_roman_f",
@@ -401,6 +419,10 @@
     {
       "name": "port_disk",
       "code": "EAB3"
+    },
+    {
+      "name": "port_disk_dual",
+      "code": "EAF2"
     },
     {
       "name": "port_dmx",
@@ -461,6 +483,10 @@
   ],
   "symbol": [
     {
+      "name": "symbol_amp",
+      "code": "EAF3"
+    },
+    {
       "name": "symbol_arrow_redo",
       "code": "EADA"
     },
@@ -471,6 +497,14 @@
     {
       "name": "symbol_audio",
       "code": "EA40"
+    },
+    {
+      "name": "symbol_bass",
+      "code": "EAF4"
+    },
+    {
+      "name": "symbol_bell",
+      "code": "EAF5"
     },
     {
       "name": "symbol_books",
@@ -541,6 +575,10 @@
       "code": "EAA4"
     },
     {
+      "name": "symbol_diode",
+      "code": "EAF6"
+    },
+    {
       "name": "symbol_document",
       "code": "EAB4"
     },
@@ -573,8 +611,32 @@
       "code": "EAB7"
     },
     {
+      "name": "symbol_efx",
+      "code": "EAF7"
+    },
+    {
+      "name": "symbol_enjoy",
+      "code": "EAF8"
+    },
+    {
+      "name": "symbol_error",
+      "code": "EAF9"
+    },
+    {
       "name": "symbol_eye",
       "code": "EA2F"
+    },
+    {
+      "name": "symbol_face_angry",
+      "code": "EAFA"
+    },
+    {
+      "name": "symbol_face_sad",
+      "code": "EAFB"
+    },
+    {
+      "name": "symbol_face_smile",
+      "code": "EAFC"
     },
     {
       "name": "symbol_feedback",
@@ -605,6 +667,14 @@
       "code": "EA61"
     },
     {
+      "name": "symbol_hit",
+      "code": "EAFD"
+    },
+    {
+      "name": "symbol_horn",
+      "code": "EAFE"
+    },
+    {
       "name": "symbol_hugelton",
       "code": "EA48"
     },
@@ -617,12 +687,28 @@
       "code": "EADE"
     },
     {
+      "name": "symbol_intelligence",
+      "code": "EAFF"
+    },
+    {
       "name": "symbol_keyboard",
       "code": "EABC"
     },
     {
       "name": "symbol_kick",
       "code": "EA62"
+    },
+    {
+      "name": "symbol_ladder",
+      "code": "EB00"
+    },
+    {
+      "name": "symbol_lead",
+      "code": "EB01"
+    },
+    {
+      "name": "symbol_link",
+      "code": "EB02"
     },
     {
       "name": "symbol_lock_close_f",
@@ -665,6 +751,10 @@
       "code": "EAE3"
     },
     {
+      "name": "symbol_pad",
+      "code": "EB03"
+    },
+    {
       "name": "symbol_pan",
       "code": "EA53"
     },
@@ -701,12 +791,24 @@
       "code": "EA57"
     },
     {
+      "name": "symbol_rise",
+      "code": "EB04"
+    },
+    {
+      "name": "symbol_saturn",
+      "code": "EB05"
+    },
+    {
       "name": "symbol_search",
       "code": "EA58"
     },
     {
       "name": "symbol_shift",
       "code": "EA59"
+    },
+    {
+      "name": "symbol_sleep",
+      "code": "EB06"
     },
     {
       "name": "symbol_sort",
@@ -757,6 +859,10 @@
       "code": "EA6B"
     },
     {
+      "name": "symbol_transistor",
+      "code": "EB07"
+    },
+    {
       "name": "symbol_transition",
       "code": "EAE4"
     },
@@ -771,6 +877,10 @@
     {
       "name": "symbol_tuning",
       "code": "EAA7"
+    },
+    {
+      "name": "symbol_unlink",
+      "code": "EB08"
     },
     {
       "name": "symbol_upload",
@@ -791,6 +901,10 @@
     {
       "name": "symbol_waves",
       "code": "EAE6"
+    },
+    {
+      "name": "symbol_weight",
+      "code": "EB09"
     },
     {
       "name": "symbol_wheels",
