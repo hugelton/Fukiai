@@ -5,7 +5,7 @@
   'use strict';
 
   // Icon mapping from glyphs.json
-                      const ICON_MAP = {
+                        const ICON_MAP = {
     "control_eject_f": "EA01",
     "control_eject_o": "EA02",
     "control_forward_f": "EA03",
@@ -269,7 +269,22 @@
     "symbol_sleep": "EB06",
     "symbol_transistor": "EB07",
     "symbol_unlink": "EB08",
-    "symbol_weight": "EB09"
+    "symbol_weight": "EB09",
+    "system_antenna_0": "EB0A",
+    "system_antenna_1": "EB0B",
+    "system_antenna_2": "EB0C",
+    "system_antenna_3": "EB0D",
+    "system_antenna_4": "EB0E",
+    "system_battery_0": "EB0F",
+    "system_battery_1": "EB10",
+    "system_battery_2": "EB11",
+    "system_battery_3": "EB12",
+    "system_battery_4": "EB13",
+    "system_wifi_0": "EB14",
+    "system_wifi_1": "EB15",
+    "system_wifi_2": "EB16",
+    "system_wifi_3": "EB17",
+    "system_wifi_error": "EB18"
   };
 
   // Inject font CSS
