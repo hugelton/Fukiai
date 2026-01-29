@@ -911,6 +911,68 @@
       "code": "EAC2"
     }
   ],
+  "system": [
+    {
+      "name": "system_antenna_0",
+      "code": "EB0A"
+    },
+    {
+      "name": "system_antenna_1",
+      "code": "EB0B"
+    },
+    {
+      "name": "system_antenna_2",
+      "code": "EB0C"
+    },
+    {
+      "name": "system_antenna_3",
+      "code": "EB0D"
+    },
+    {
+      "name": "system_antenna_4",
+      "code": "EB0E"
+    },
+    {
+      "name": "system_battery_0",
+      "code": "EB0F"
+    },
+    {
+      "name": "system_battery_1",
+      "code": "EB10"
+    },
+    {
+      "name": "system_battery_2",
+      "code": "EB11"
+    },
+    {
+      "name": "system_battery_3",
+      "code": "EB12"
+    },
+    {
+      "name": "system_battery_4",
+      "code": "EB13"
+    },
+    {
+      "name": "system_wifi_0",
+      "code": "EB14"
+    },
+    {
+      "name": "system_wifi_1",
+      "code": "EB15"
+    },
+    {
+      "name": "system_wifi_2",
+      "code": "EB16"
+    },
+    {
+      "name": "system_wifi_3",
+      "code": "EB17"
+    },
+    {
+      "name": "system_wifi_error",
+      "code": "EB18"
+    }
+  ],
   "ui": [
     {
       "name": "ui_button_momentary",
