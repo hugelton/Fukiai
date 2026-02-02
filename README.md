@@ -53,22 +53,81 @@ Then use Unicode characters directly or create CSS classes.
 
 ## Development
 
-### Build
+### Prerequisites
 
 ```bash
-npm run build-all
+npm install
 ```
 
-This will:
-1. Generate the font files from SVG icons
-2. Create the preview HTML page
-3. Build distribution files for npm
+### Build Commands
 
-## Files
+```bash
+# Complete build (recommended)
+npm run build-all
 
-- `svg/` - Source SVG icons
-- `build/` - Generated font files
-- `docs/` - Preview website files
+# Individual steps
+npm run build           # Generate font files from SVG icons
+npm run generate-html   # Create preview HTML page
+npm run sync-docs       # Sync font files to docs directory
+npm run build-dist      # Create distribution files for npm/CDN
+```
+
+### Build Process Details
+
+The `build-all` command performs these steps:
+
+1. **Generate Font Files** (`npm run build`)
+   - Reads icon mappings from `glyphs.json`
+   - Processes SVG files from `svg/` directory
+   - Generates font files in `build/` directory:
+     - `fukiai.svg` - SVG font
+     - `fukiai.ttf` - TrueType font
+     - `fukiai.woff` - Web Open Font Format
+
+2. **Generate Preview HTML** (`npm run generate-html`)
+   - Creates interactive preview page in `docs/index.html`
+   - Requires `glyphs_structured.json` to be up-to-date
+
+3. **Sync Documentation Assets** (`npm run sync-docs`)
+   - Copies font files to `docs/assets/{version}/`
+   - Updates preview page assets
+
+4. **Build Distribution** (`npm run build-dist`)
+   - Updates JavaScript library with latest icon mappings
+   - Copies font files to `dist/` directory
+   - Creates minified JavaScript and CSS files
+
+### Adding New Icons
+
+1. Create SVG file in `svg/` directory (e.g., `my_icon.svg`)
+2. Add mapping to `glyphs.json`:
+   ```json
+   "my_icon": "EB19"
+   ```
+3. Regenerate structured data:
+   ```bash
+   node scripts/generate_structured_glyphs.js
+   ```
+4. Run full build:
+   ```bash
+   npm run build-all
+   ```
+
+### File Structure
+
+```
+Fukiai/
+├── svg/                      # Source SVG icons
+├── src/                      # JavaScript library source
+├── build/                    # Generated font files
+├── dist/                     # Distribution files for npm/CDN
+├── docs/                     # Preview website files
+│   └── assets/{version}/     # Versioned font files
+├── scripts/                  # Build and generation scripts
+├── glyphs.json               # Icon to Unicode mapping
+├── glyphs_structured.json    # Categorized icon data (auto-generated)
+└── package.json              # Project configuration
+```
 
 ## License
 

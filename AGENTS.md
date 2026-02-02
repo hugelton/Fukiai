@@ -13,8 +13,14 @@
 - `npm run build`: Generate fonts from `svg/` using `glyphs.json` → outputs to `build/`.
 - `npm run generate-html`: Build `docs/index.html` preview from structured glyphs.
 - `npm run build-dist`: Copy fonts and bundle JS/CSS into `dist/`.
-- `npm run build-all`: Full pipeline (fonts + preview + dist).
+- `npm run build-all`: Full pipeline (fonts + preview + dist). **Recommended for most changes.**
+- `node scripts/generate_structured_glyphs.js`: **Must run after modifying glyphs.json** before generating HTML.
 - Quick check: run `npm run build-all`, then open `docs/index.html` locally and verify icons render and names map correctly.
+
+## Important Build Process Notes
+- **CRITICAL**: After adding/removing icons in `glyphs.json`, ALWAYS run `node scripts/generate_structured_glyphs.js` before `npm run build-all`
+- The HTML preview uses `glyphs_structured.json`, not `glyphs.json` directly
+- Forgetting to regenerate structured data will cause new icons to not appear in the preview
 
 ## Coding Style & Naming Conventions
 - JavaScript: 2‑space indentation, single quotes, semicolons, CommonJS modules.
