@@ -607,6 +607,10 @@
       "code": "EA5F"
     },
     {
+      "name": "symbol_drawbar",
+      "code": "EB22"
+    },
+    {
       "name": "symbol_drum",
       "code": "EA66"
     },
