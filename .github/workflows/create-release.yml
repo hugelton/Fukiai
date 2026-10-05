@@ -1,15 +1,15 @@
 name: Create Release
 
 on:
-  push:
-    tags:
-      - 'v*.*.*'
   workflow_dispatch:
     inputs:
       version:
         description: 'Version to release (e.g. v0.1.0)'
         required: true
         default: 'v0.0.1'
+
+permissions:
+  contents: write
 
 jobs:
   build:
@@ -34,7 +34,7 @@ jobs:
         run: |
           mkdir -p release/fukiai
           cp -r build/* release/fukiai/
-          cp LICENSE.md release/fukiai/
+          cp LICENSE release/fukiai/
           cp README.md release/fukiai/
           cd release
           zip -r fukiai-${{ github.event.inputs.version || github.ref_name }}.zip fukiai

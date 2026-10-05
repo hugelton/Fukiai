@@ -575,8 +575,20 @@
       "code": "EAA4"
     },
     {
+      "name": "symbol_dice",
+      "code": "EB19"
+    },
+    {
       "name": "symbol_diode",
       "code": "EAF6"
+    },
+    {
+      "name": "symbol_disc",
+      "code": "EB1A"
+    },
+    {
+      "name": "symbol_doctor",
+      "code": "EB1B"
     },
     {
       "name": "symbol_document",
@@ -687,6 +699,14 @@
       "code": "EADE"
     },
     {
+      "name": "symbol_info_f",
+      "code": "EB1C"
+    },
+    {
+      "name": "symbol_info_o",
+      "code": "EB1D"
+    },
+    {
       "name": "symbol_intelligence",
       "code": "EAFF"
     },
@@ -741,6 +761,18 @@
     {
       "name": "symbol_modular",
       "code": "EABD"
+    },
+    {
+      "name": "symbol_motion",
+      "code": "EB1E"
+    },
+    {
+      "name": "symbol_motion_delete",
+      "code": "EB1F"
+    },
+    {
+      "name": "symbol_motion_rec",
+      "code": "EB20"
     },
     {
       "name": "symbol_mouth",
@@ -951,6 +983,10 @@
     {
       "name": "system_battery_4",
       "code": "EB13"
+    },
+    {
+      "name": "system_battery_charging",
+      "code": "EB21"
     },
     {
       "name": "system_wifi_0",

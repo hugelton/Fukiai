@@ -31,7 +31,7 @@ jobs:
         run: |
           mkdir -p release/fukiai
           cp -r build/* release/fukiai/
-          cp LICENSE.md README.md release/fukiai/
+          cp LICENSE README.md release/fukiai/
           cd release
           zip -r fukiai-${{ github.ref_name }}.zip fukiai
           cd ..
@@ -39,7 +39,7 @@ jobs:
       - name: Create GitHub Release
         uses: ncipollo/release-action@v1
         with:
-          artifacts: release/fukiai-${{ github.ref_name }}.zip
+          artifacts: release/fukiai-${{ github.ref_name }}.zip,build/fukiai.svg,build/fukiai.ttf,build/fukiai.woff
           tag: ${{ github.ref_name }}
           name: Fukiai ${{ github.ref_name }}
           body: |
