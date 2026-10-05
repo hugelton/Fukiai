@@ -287,5 +287,9 @@
   "symbol_motion_delete": "EB1F",
   "symbol_motion_rec": "EB20",
   "system_battery_charging": "EB21",
-  "symbol_drawbar": "EB22"
+  "symbol_drawbar": "EB22",
+  "symbol_break": "EB23",
+  "symbol_freeze": "EB24",
+  "symbol_stop": "EB25",
+  "symbol_tape": "EB26"
 }

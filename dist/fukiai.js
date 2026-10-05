@@ -5,7 +5,7 @@
   'use strict';
 
   // Icon mapping from glyphs.json
-                                  const ICON_MAP = {
+                                        const ICON_MAP = {
     "control_eject_f": "EA01",
     "control_eject_o": "EA02",
     "control_forward_f": "EA03",
@@ -294,7 +294,11 @@
     "symbol_motion_delete": "EB1F",
     "symbol_motion_rec": "EB20",
     "system_battery_charging": "EB21",
-    "symbol_drawbar": "EB22"
+    "symbol_drawbar": "EB22",
+    "symbol_break": "EB23",
+    "symbol_freeze": "EB24",
+    "symbol_stop": "EB25",
+    "symbol_tape": "EB26"
   };
 
   // Inject font CSS

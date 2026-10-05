@@ -511,6 +511,10 @@
       "code": "EADC"
     },
     {
+      "name": "symbol_break",
+      "code": "EB23"
+    },
+    {
       "name": "symbol_carret_down",
       "code": "EAD2"
     },
@@ -669,6 +673,10 @@
     {
       "name": "symbol_folder_open",
       "code": "EAB9"
+    },
+    {
+      "name": "symbol_freeze",
+      "code": "EB24"
     },
     {
       "name": "symbol_grid",
@@ -871,6 +879,10 @@
       "code": "EA65"
     },
     {
+      "name": "symbol_stop",
+      "code": "EB25"
+    },
+    {
       "name": "symbol_stopwatch",
       "code": "EA30"
     },
@@ -881,6 +893,10 @@
     {
       "name": "symbol_tag",
       "code": "EAE0"
+    },
+    {
+      "name": "symbol_tape",
+      "code": "EB26"
     },
     {
       "name": "symbol_tempo",
