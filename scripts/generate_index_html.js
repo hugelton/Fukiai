@@ -13,19 +13,8 @@ const structuredPath = path.join(rootDir, 'glyphs_structured.json');
 
 // グリフ名を読みやすいタイトルに変換する関数
 function formatTitle(name) {
-  // プレフィックスを削除
-  let title = name
-    .replace(/^control[-_]/, '')
-    .replace(/^function[-_]/, '')
-    .replace(/^note[-_]/, '')
-    .replace(/^symbol[-_]/, '')
-    .replace(/^waveform[-_]/, '')
-    .replace(/^port[-_]/, '')
-    .replace(/^ui[-_]/, '')
-    .replace(/^numbers[-_]/, '');
-
-  // アンダースコアをスペースに変換し、各単語の最初を大文字に
-  return title
+  // names are semantic (no domain prefix): "play_reverse_fill" -> "Play Reverse Fill"
+  return name
     .split(/[_-]/)
     .map(word => word.charAt(0).toUpperCase() + word.slice(1))
     .join(' ');
@@ -64,38 +53,65 @@ const categoryLinks = '<div class="cat-links">' +
     `<a href="#${category}" class="cat-link">${category}</a>`
   ).join('\n') + '</div>';
 
+// Pre-1.0 names, so that a search for control_play_f still finds play_fill
+const aliases = require(path.join(rootDir, 'aliases.json'));
+const oldNames = {};
+Object.entries(aliases).forEach(([old, current]) => { (oldNames[current] = oldNames[current] || []).push(old); });
+
+// Glyphs with layers (primary / secondary / background) are also embedded as inline SVG, so that Tint and
+// Multicolor can be shown; the icon font is monochrome.
+function layeredSvg(name) {
+  const file = path.join(rootDir, 'svg', name + '.svg');
+  if (!fs.existsSync(file)) return null;
+  const src = fs.readFileSync(file, 'utf8');
+  if (!/<g id="(primary|secondary|background)"/.test(src)) return null;
+  return src
+    .slice(src.indexOf('<svg'))
+    .replace(/<svg[^>]*>/, '<svg class="glyph-svg" viewBox="0 0 500 500" aria-hidden="true">')
+    .replace(/<g id="(background|base|primary|secondary)"[^>]*>/g, '<g class="layer layer-$1">')
+    .replace(/\s*\n\s*/g, '');
+}
+
+function entity(code) {
+  return '&#x' + code + ';';
+}
+
 // グリフブロックを生成
 const glyphBlocks = [];
 
+
 Object.entries(structured).forEach(([category, items]) => {
+  const byName = {};
+  items.forEach(item => { byName[item.name] = item; });
   let block = `<h2 id="${category}">${category}</h2>\n<div class="category">`;
-  
+  let group = null;
+
   items.forEach(item => {
-    // HTML実体参照を使用（&#xEA01;形式）
-    // コードポイントを正規化（EA001 → EA01）
-    let displayCode = item.code;
-    
-    // すべてのEAで始まるコードが2桁になるように確実にパディング
-    if (displayCode.startsWith('EA')) {
-      const num = parseInt(displayCode.substring(2), 16);
-      displayCode = 'EA' + num.toString(16).toUpperCase().padStart(2, '0');
+    if (item.name.endsWith('_fill') && byName[item.name.slice(0, -5)]) return;   // shown on the card of its Outline
+    if (item.group !== group) {
+      group = item.group;
+      if (group !== category) block += `\n<h3 class="group-title">${group}</h3>`;   // not when it only repeats the category
     }
-    
-    // ミニマル表示: タイトル + アイコン + コピー用バッジ（name / unicode[xEEEE]）
+    const fill = byName[item.name + '_fill'];
+    const svg = layeredSvg(item.name);
     const title = formatTitle(item.name);
-    const unicodeX = `x${displayCode}`;
+    const names = [item.name].concat(fill ? [fill.name] : []);
+    const search = names.concat(names.flatMap(n => oldNames[n] || []), [group, category]).join(' ');
     block += `
-<div class="glyph" data-name="${item.name}">
-  <div class="glyph-char" title="Click to copy entity">&#x${displayCode};</div>
+<div class="glyph${svg ? ' layered' : ''}${fill ? ' has-fill' : ''}" data-name="${item.name}" data-search="${search}"` +
+      `${fill ? ` data-fill-name="${fill.name}" data-fill-code="${fill.code}"` : ''} data-code="${item.code}">
+  <div class="glyph-art" title="Click to copy the character">
+    <div class="glyph-char">${entity(item.code)}</div>${svg || ''}
+  </div>
   <div class="glyph-title">${title}</div>
   <div class="glyph-meta">
     <span class="badge copy-name" data-copy="${item.name}" title="Copy name">${item.name}</span>
-    <span class="badge copy-unicode" data-copy="${unicodeX}" title="Copy unicode">${unicodeX}</span>
+    <span class="badge copy-unicode" data-copy="x${item.code}" title="Copy unicode">x${item.code}</span>
   </div>
 </div>
 `;
   });
-  
+
   block += '</div>';
   glyphBlocks.push(block);
 });

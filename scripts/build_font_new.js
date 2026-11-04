@@ -3,6 +3,7 @@
 const fs = require('fs');
 const path = require('path');
 const { createReadStream, createWriteStream } = require('fs');
+const { Readable } = require('stream');
 const SVGIcons2SVGFontStream = require('svgicons2svgfont');
 const svg2ttf = require('svg2ttf');
 const ttf2woff = require('ttf2woff');
@@ -128,7 +129,10 @@ availableSvgs.forEach((iconName, index) => {
   const unicodeHex = glyphs[iconName];
   
   try {
-    const glyph = createReadStream(svgPath);
+    // The icon font is monochrome: the `background` layer (filled face, only for Tint / Multicolor) must not
+    // reach the font, or every outlined glyph would turn into a solid shape.
+    const svgText = fs.readFileSync(svgPath, 'utf8').replace(/<g id="background"[^>]*>[\s\S]*?<\/g>\s*/g, '');
+    const glyph = Readable.from([svgText]);
     const unicodeChar = String.fromCodePoint(parseInt(unicodeHex, 16));
     
     glyph.metadata = {

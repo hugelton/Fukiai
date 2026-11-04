@@ -1,0 +1,1844 @@
+[
+ {
+  "name": "eject_fill",
+  "code": "EA01",
+  "category": "transport",
+  "group": "transport"
+ },
+ {
+  "name": "eject",
+  "code": "EA02",
+  "category": "transport",
+  "group": "transport"
+ },
+ {
+  "name": "rewind_fill",
+  "code": "EA03",
+  "category": "transport",
+  "group": "transport"
+ },
+ {
+  "name": "rewind",
+  "code": "EA04",
+  "category": "transport",
+  "group": "transport"
+ },
+ {
+  "name": "pause_fill",
+  "code": "EA05",
+  "category": "transport",
+  "group": "transport"
+ },
+ {
+  "name": "pause",
+  "code": "EA06",
+  "category": "transport",
+  "group": "transport"
+ },
+ {
+  "name": "play_fill",
+  "code": "EA07",
+  "category": "transport",
+  "group": "transport"
+ },
+ {
+  "name": "play",
+  "code": "EA08",
+  "category": "transport",
+  "group": "transport"
+ },
+ {
+  "name": "record_fill",
+  "code": "EA09",
+  "category": "transport",
+  "group": "transport"
+ },
+ {
+  "name": "record",
+  "code": "EA0A",
+  "category": "transport",
+  "group": "transport"
+ },
+ {
+  "name": "play_reverse_fill",
+  "code": "EA0B",
+  "category": "transport",
+  "group": "transport"
+ },
+ {
+  "name": "play_reverse",
+  "code": "EA0C",
+  "category": "transport",
+  "group": "transport"
+ },
+ {
+  "name": "fast_forward_fill",
+  "code": "EA0D",
+  "category": "transport",
+  "group": "transport"
+ },
+ {
+  "name": "fast_forward",
+  "code": "EA0E",
+  "category": "transport",
+  "group": "transport"
+ },
+ {
+  "name": "stop_fill",
+  "code": "EA0F",
+  "category": "transport",
+  "group": "transport"
+ },
+ {
+  "name": "stop",
+  "code": "EA10",
+  "category": "transport",
+  "group": "transport"
+ },
+ {
+  "name": "crossfade",
+  "code": "EA11",
+  "category": "function",
+  "group": "logic"
+ },
+ {
+  "name": "adsr_exp",
+  "code": "EA12",
+  "category": "function",
+  "group": "envelope"
+ },
+ {
+  "name": "adsr_linear",
+  "code": "EA13",
+  "category": "function",
+  "group": "envelope"
+ },
+ {
+  "name": "adsr_log",
+  "code": "EA14",
+  "category": "function",
+  "group": "envelope"
+ },
+ {
+  "name": "ar_exp",
+  "code": "EA15",
+  "category": "function",
+  "group": "envelope"
+ },
+ {
+  "name": "ar_linear",
+  "code": "EA16",
+  "category": "function",
+  "group": "envelope"
+ },
+ {
+  "name": "ar_log",
+  "code": "EA17",
+  "category": "function",
+  "group": "envelope"
+ },
+ {
+  "name": "even",
+  "code": "EA18",
+  "category": "function",
+  "group": "logic"
+ },
+ {
+  "name": "impulse",
+  "code": "EA19",
+  "category": "function",
+  "group": "curve"
+ },
+ {
+  "name": "multiply",
+  "code": "EA1A",
+  "category": "function",
+  "group": "logic"
+ },
+ {
+  "name": "odd",
+  "code": "EA1B",
+  "category": "function",
+  "group": "logic"
+ },
+ {
+  "name": "phase",
+  "code": "EA1C",
+  "category": "function",
+  "group": "logic"
+ },
+ {
+  "name": "signal_bipolar",
+  "code": "EA1D",
+  "category": "function",
+  "group": "logic"
+ },
+ {
+  "name": "arrow_diagonal_both",
+  "code": "EA1E",
+  "category": "arrow",
+  "group": "arrow"
+ },
+ {
+  "name": "signal_clip",
+  "code": "EA1F",
+  "category": "function",
+  "group": "logic"
+ },
+ {
+  "name": "signal_double",
+  "code": "EA20",
+  "category": "function",
+  "group": "logic"
+ },
+ {
+  "name": "gate_fall",
+  "code": "EA23",
+  "category": "arrow",
+  "group": "arrow"
+ },
+ {
+  "name": "gate_rise",
+  "code": "EA24",
+  "category": "arrow",
+  "group": "arrow"
+ },
+ {
+  "name": "signal_in",
+  "code": "EA26",
+  "category": "arrow",
+  "group": "arrow"
+ },
+ {
+  "name": "signal_out",
+  "code": "EA28",
+  "category": "arrow",
+  "group": "arrow"
+ },
+ {
+  "name": "signal_unipolar",
+  "code": "EA2A",
+  "category": "function",
+  "group": "logic"
+ },
+ {
+  "name": "dmx",
+  "code": "EA33",
+  "category": "hardware",
+  "group": "port"
+ },
+ {
+  "name": "gate_port",
+  "code": "EA34",
+  "category": "hardware",
+  "group": "port"
+ },
+ {
+  "name": "xlr",
+  "code": "EA35",
+  "category": "hardware",
+  "group": "port"
+ },
+ {
+  "name": "midi",
+  "code": "EA36",
+  "category": "hardware",
+  "group": "port"
+ },
+ {
+  "name": "rj45",
+  "code": "EA37",
+  "category": "hardware",
+  "group": "port"
+ },
+ {
+  "name": "sd",
+  "code": "EA38",
+  "category": "hardware",
+  "group": "port"
+ },
+ {
+  "name": "sd_micro",
+  "code": "EA39",
+  "category": "hardware",
+  "group": "port"
+ },
+ {
+  "name": "trrs",
+  "code": "EA3A",
+  "category": "hardware",
+  "group": "port"
+ },
+ {
+  "name": "trs",
+  "code": "EA3B",
+  "category": "hardware",
+  "group": "port"
+ },
+ {
+  "name": "ts",
+  "code": "EA3C",
+  "category": "hardware",
+  "group": "port"
+ },
+ {
+  "name": "usb_a",
+  "code": "EA3D",
+  "category": "hardware",
+  "group": "port"
+ },
+ {
+  "name": "usb_b",
+  "code": "EA3E",
+  "category": "hardware",
+  "group": "port"
+ },
+ {
+  "name": "usb_c",
+  "code": "EA3F",
+  "category": "hardware",
+  "group": "port"
+ },
+ {
+  "name": "audio_bars",
+  "code": "EA40",
+  "category": "audio",
+  "group": "sound"
+ },
+ {
+  "name": "circle",
+  "code": "EA41",
+  "category": "symbol",
+  "group": "shape"
+ },
+ {
+  "name": "clock",
+  "code": "EA42",
+  "category": "transport",
+  "group": "transport"
+ },
+ {
+  "name": "cloud_fill",
+  "code": "EA43",
+  "category": "action",
+  "group": "file"
+ },
+ {
+  "name": "cloud",
+  "code": "EA44",
+  "category": "action",
+  "group": "file"
+ },
+ {
+  "name": "gear",
+  "code": "EA46",
+  "category": "ui",
+  "group": "ui"
+ },
+ {
+  "name": "combine",
+  "code": "EA47",
+  "category": "function",
+  "group": "logic"
+ },
+ {
+  "name": "hugelton",
+  "code": "EA48",
+  "category": "symbol",
+  "group": "brand"
+ },
+ {
+  "name": "lock_fill",
+  "code": "EA49",
+  "category": "action",
+  "group": "action"
+ },
+ {
+  "name": "lock",
+  "code": "EA4A",
+  "category": "action",
+  "group": "action"
+ },
+ {
+  "name": "lock_open_fill",
+  "code": "EA4B",
+  "category": "action",
+  "group": "action"
+ },
+ {
+  "name": "lock_open",
+  "code": "EA4C",
+  "category": "action",
+  "group": "action"
+ },
+ {
+  "name": "minus",
+  "code": "EA4F",
+  "category": "action",
+  "group": "action"
+ },
+ {
+  "name": "minus_circle",
+  "code": "EA50",
+  "category": "action",
+  "group": "action"
+ },
+ {
+  "name": "pan",
+  "code": "EA53",
+  "category": "audio",
+  "group": "sound"
+ },
+ {
+  "name": "plus",
+  "code": "EA54",
+  "category": "action",
+  "group": "action"
+ },
+ {
+  "name": "plus_circle",
+  "code": "EA55",
+  "category": "action",
+  "group": "action"
+ },
+ {
+  "name": "primitives_fill",
+  "code": "EA56",
+  "category": "symbol",
+  "group": "shape"
+ },
+ {
+  "name": "primitives",
+  "code": "EA57",
+  "category": "symbol",
+  "group": "shape"
+ },
+ {
+  "name": "search",
+  "code": "EA58",
+  "category": "action",
+  "group": "action"
+ },
+ {
+  "name": "shift",
+  "code": "EA59",
+  "category": "action",
+  "group": "action"
+ },
+ {
+  "name": "funnel",
+  "code": "EA5A",
+  "category": "action",
+  "group": "action"
+ },
+ {
+  "name": "square",
+  "code": "EA63",
+  "category": "symbol",
+  "group": "shape"
+ },
+ {
+  "name": "star_fill",
+  "code": "EA64",
+  "category": "symbol",
+  "group": "shape"
+ },
+ {
+  "name": "star",
+  "code": "EA65",
+  "category": "symbol",
+  "group": "shape"
+ },
+ {
+  "name": "bolt_fill",
+  "code": "EA6A",
+  "category": "symbol",
+  "group": "shape"
+ },
+ {
+  "name": "bolt",
+  "code": "EA6B",
+  "category": "symbol",
+  "group": "shape"
+ },
+ {
+  "name": "triangle",
+  "code": "EA6C",
+  "category": "symbol",
+  "group": "shape"
+ },
+ {
+  "name": "ramp_up",
+  "code": "EA6D",
+  "category": "audio",
+  "group": "sound"
+ },
+ {
+  "name": "button_momentary",
+  "code": "EA6E",
+  "category": "ui",
+  "group": "ui"
+ },
+ {
+  "name": "button_toggle",
+  "code": "EA6F",
+  "category": "ui",
+  "group": "ui"
+ },
+ {
+  "name": "knob",
+  "code": "EA70",
+  "category": "ui",
+  "group": "ui"
+ },
+ {
+  "name": "knob_four",
+  "code": "EA71",
+  "category": "ui",
+  "group": "ui"
+ },
+ {
+  "name": "slider_horizontal",
+  "code": "EA72",
+  "category": "ui",
+  "group": "ui"
+ },
+ {
+  "name": "slider_vertical",
+  "code": "EA73",
+  "category": "ui",
+  "group": "ui"
+ },
+ {
+  "name": "switch",
+  "code": "EA74",
+  "category": "ui",
+  "group": "ui"
+ },
+ {
+  "name": "wave_cosine",
+  "code": "EA75",
+  "category": "wave",
+  "group": "wave"
+ },
+ {
+  "name": "wave_cosine_inverted",
+  "code": "EA76",
+  "category": "wave",
+  "group": "wave"
+ },
+ {
+  "name": "wave_noise_bit",
+  "code": "EA77",
+  "category": "wave",
+  "group": "wave"
+ },
+ {
+  "name": "wave_noise_pink",
+  "code": "EA78",
+  "category": "wave",
+  "group": "wave"
+ },
+ {
+  "name": "wave_noise_step",
+  "code": "EA79",
+  "category": "wave",
+  "group": "wave"
+ },
+ {
+  "name": "wave_noise_white",
+  "code": "EA7A",
+  "category": "wave",
+  "group": "wave"
+ },
+ {
+  "name": "wave_pulse_eighth",
+  "code": "EA7B",
+  "category": "wave",
+  "group": "wave"
+ },
+ {
+  "name": "wave_pulse_eighth_inverted",
+  "code": "EA7C",
+  "category": "wave",
+  "group": "wave"
+ },
+ {
+  "name": "wave_pulse_half",
+  "code": "EA7D",
+  "category": "wave",
+  "group": "wave"
+ },
+ {
+  "name": "wave_pulse_half_inverted",
+  "code": "EA7E",
+  "category": "wave",
+  "group": "wave"
+ },
+ {
+  "name": "wave_pulse_quarter",
+  "code": "EA7F",
+  "category": "wave",
+  "group": "wave"
+ },
+ {
+  "name": "wave_pulse_quarter_inverted",
+  "code": "EA80",
+  "category": "wave",
+  "group": "wave"
+ },
+ {
+  "name": "wave_saw_ac",
+  "code": "EA81",
+  "category": "wave",
+  "group": "wave"
+ },
+ {
+  "name": "wave_saw_ac_inverted",
+  "code": "EA82",
+  "category": "wave",
+  "group": "wave"
+ },
+ {
+  "name": "wave_saw_dc",
+  "code": "EA83",
+  "category": "wave",
+  "group": "wave"
+ },
+ {
+  "name": "wave_saw_dc_inverted",
+  "code": "EA84",
+  "category": "wave",
+  "group": "wave"
+ },
+ {
+  "name": "wave_sine",
+  "code": "EA85",
+  "category": "wave",
+  "group": "wave"
+ },
+ {
+  "name": "wave_sine_inverted",
+  "code": "EA86",
+  "category": "wave",
+  "group": "wave"
+ },
+ {
+  "name": "wave_square",
+  "code": "EA87",
+  "category": "wave",
+  "group": "wave"
+ },
+ {
+  "name": "wave_square_inverted",
+  "code": "EA88",
+  "category": "wave",
+  "group": "wave"
+ },
+ {
+  "name": "wave_triangle_ac",
+  "code": "EA89",
+  "category": "wave",
+  "group": "wave"
+ },
+ {
+  "name": "wave_triangle_ac_inverted",
+  "code": "EA8A",
+  "category": "wave",
+  "group": "wave"
+ },
+ {
+  "name": "wave_triangle_dc",
+  "code": "EA8B",
+  "category": "wave",
+  "group": "wave"
+ },
+ {
+  "name": "wave_triangle_dc_inverted",
+  "code": "EA8C",
+  "category": "wave",
+  "group": "wave"
+ },
+ {
+  "name": "wave_sync",
+  "code": "EA8D",
+  "category": "wave",
+  "group": "wave"
+ },
+ {
+  "name": "arrow_scale",
+  "code": "EA8E",
+  "category": "arrow",
+  "group": "arrow"
+ },
+ {
+  "name": "arrow_from_end",
+  "code": "EA8F",
+  "category": "arrow",
+  "group": "arrow"
+ },
+ {
+  "name": "arrow_left",
+  "code": "EA90",
+  "category": "arrow",
+  "group": "arrow"
+ },
+ {
+  "name": "arrow_swap",
+  "code": "EA91",
+  "category": "arrow",
+  "group": "arrow"
+ },
+ {
+  "name": "arrow_to_end",
+  "code": "EA92",
+  "category": "arrow",
+  "group": "arrow"
+ },
+ {
+  "name": "arrow_right",
+  "code": "EA93",
+  "category": "arrow",
+  "group": "arrow"
+ },
+ {
+  "name": "arrow_to_start",
+  "code": "EA94",
+  "category": "arrow",
+  "group": "arrow"
+ },
+ {
+  "name": "pingpong",
+  "code": "EA95",
+  "category": "transport",
+  "group": "transport"
+ },
+ {
+  "name": "random",
+  "code": "EA96",
+  "category": "transport",
+  "group": "transport"
+ },
+ {
+  "name": "arrow_from_start",
+  "code": "EA97",
+  "category": "arrow",
+  "group": "arrow"
+ },
+ {
+  "name": "arrow_up",
+  "code": "EACD",
+  "category": "arrow",
+  "group": "arrow"
+ },
+ {
+  "name": "arrow_down",
+  "code": "EACE",
+  "category": "arrow",
+  "group": "arrow"
+ },
+ {
+  "name": "arrow_up_down",
+  "code": "EACF",
+  "category": "arrow",
+  "group": "arrow"
+ },
+ {
+  "name": "adsr_attack",
+  "code": "EA98",
+  "category": "function",
+  "group": "envelope"
+ },
+ {
+  "name": "adsr_decay",
+  "code": "EA99",
+  "category": "function",
+  "group": "envelope"
+ },
+ {
+  "name": "adsr_release",
+  "code": "EA9A",
+  "category": "function",
+  "group": "envelope"
+ },
+ {
+  "name": "adsr_sustain",
+  "code": "EA9B",
+  "category": "function",
+  "group": "envelope"
+ },
+ {
+  "name": "filter_bandpass",
+  "code": "EA9C",
+  "category": "function",
+  "group": "filter"
+ },
+ {
+  "name": "filter_highpass",
+  "code": "EA9D",
+  "category": "function",
+  "group": "filter"
+ },
+ {
+  "name": "filter_highpass_peak",
+  "code": "EA9E",
+  "category": "function",
+  "group": "filter"
+ },
+ {
+  "name": "filter_lowpass",
+  "code": "EA9F",
+  "category": "function",
+  "group": "filter"
+ },
+ {
+  "name": "filter_lowpass_peak",
+  "code": "EAA0",
+  "category": "function",
+  "group": "filter"
+ },
+ {
+  "name": "gate_bipolar",
+  "code": "EAA1",
+  "category": "function",
+  "group": "logic"
+ },
+ {
+  "name": "gate_unipolar",
+  "code": "EAA2",
+  "category": "function",
+  "group": "logic"
+ },
+ {
+  "name": "xmark",
+  "code": "EAA3",
+  "category": "action",
+  "group": "action"
+ },
+ {
+  "name": "xmark_circle",
+  "code": "EAA4",
+  "category": "action",
+  "group": "action"
+ },
+ {
+  "name": "swing",
+  "code": "EAA5",
+  "category": "audio",
+  "group": "effect"
+ },
+ {
+  "name": "metronome",
+  "code": "EAA6",
+  "category": "transport",
+  "group": "transport"
+ },
+ {
+  "name": "tuning_fork",
+  "code": "EAA7",
+  "category": "audio",
+  "group": "instrument"
+ },
+ {
+  "name": "countdown",
+  "code": "EAA8",
+  "category": "transport",
+  "group": "transport"
+ },
+ {
+  "name": "fantom",
+  "code": "EAA9",
+  "category": "symbol",
+  "group": "brand"
+ },
+ {
+  "name": "fx",
+  "code": "EAAA",
+  "category": "audio",
+  "group": "effect"
+ },
+ {
+  "name": "curve_exp",
+  "code": "EAAB",
+  "category": "function",
+  "group": "curve"
+ },
+ {
+  "name": "curve_exp_boxed",
+  "code": "EAAC",
+  "category": "function",
+  "group": "curve"
+ },
+ {
+  "name": "filter_notch",
+  "code": "EAAD",
+  "category": "function",
+  "group": "filter"
+ },
+ {
+  "name": "curve_linear",
+  "code": "EAAE",
+  "category": "function",
+  "group": "curve"
+ },
+ {
+  "name": "curve_linear_boxed",
+  "code": "EAAF",
+  "category": "function",
+  "group": "curve"
+ },
+ {
+  "name": "curve_log",
+  "code": "EAB0",
+  "category": "function",
+  "group": "curve"
+ },
+ {
+  "name": "curve_log_boxed",
+  "code": "EAB1",
+  "category": "function",
+  "group": "curve"
+ },
+ {
+  "name": "phase_out",
+  "code": "EAB2",
+  "category": "function",
+  "group": "logic"
+ },
+ {
+  "name": "floppy",
+  "code": "EAB3",
+  "category": "hardware",
+  "group": "port"
+ },
+ {
+  "name": "document",
+  "code": "EAB4",
+  "category": "action",
+  "group": "file"
+ },
+ {
+  "name": "echo",
+  "code": "EAB5",
+  "category": "audio",
+  "group": "effect"
+ },
+ {
+  "name": "echo_oval",
+  "code": "EAB6",
+  "category": "audio",
+  "group": "effect"
+ },
+ {
+  "name": "effector",
+  "code": "EAB7",
+  "category": "audio",
+  "group": "effect"
+ },
+ {
+  "name": "folder",
+  "code": "EAB8",
+  "category": "action",
+  "group": "file"
+ },
+ {
+  "name": "folder_open",
+  "code": "EAB9",
+  "category": "action",
+  "group": "file"
+ },
+ {
+  "name": "grid_2x2",
+  "code": "EABA",
+  "category": "ui",
+  "group": "ui"
+ },
+ {
+  "name": "grid_3x3",
+  "code": "EABB",
+  "category": "ui",
+  "group": "ui"
+ },
+ {
+  "name": "keyboard",
+  "code": "EABC",
+  "category": "audio",
+  "group": "instrument"
+ },
+ {
+  "name": "piano",
+  "code": "EACC",
+  "category": "audio",
+  "group": "instrument"
+ },
+ {
+  "name": "modular",
+  "code": "EABD",
+  "category": "audio",
+  "group": "module"
+ },
+ {
+  "name": "mouth",
+  "code": "EABE",
+  "category": "audio",
+  "group": "sound"
+ },
+ {
+  "name": "pedal",
+  "code": "EABF",
+  "category": "audio",
+  "group": "instrument"
+ },
+ {
+  "name": "speed",
+  "code": "EAC0",
+  "category": "audio",
+  "group": "effect"
+ },
+ {
+  "name": "trash",
+  "code": "EAC1",
+  "category": "action",
+  "group": "action"
+ },
+ {
+  "name": "wheels",
+  "code": "EAC2",
+  "category": "audio",
+  "group": "instrument"
+ },
+ {
+  "name": "wave_fade",
+  "code": "EAC3",
+  "category": "wave",
+  "group": "wave"
+ },
+ {
+  "name": "wave_fold",
+  "code": "EAC4",
+  "category": "wave",
+  "group": "wave"
+ },
+ {
+  "name": "wave_harmonic",
+  "code": "EAC5",
+  "category": "wave",
+  "group": "wave"
+ },
+ {
+  "name": "wave_loop",
+  "code": "EAC6",
+  "category": "wave",
+  "group": "wave"
+ },
+ {
+  "name": "wave_pitch",
+  "code": "EAC7",
+  "category": "wave",
+  "group": "wave"
+ },
+ {
+  "name": "wave_variants",
+  "code": "EAC8",
+  "category": "wave",
+  "group": "wave"
+ },
+ {
+  "name": "caret_left",
+  "code": "EAC9",
+  "category": "arrow",
+  "group": "arrow"
+ },
+ {
+  "name": "caret_right",
+  "code": "EACA",
+  "category": "arrow",
+  "group": "arrow"
+ },
+ {
+  "name": "pencil",
+  "code": "EACB",
+  "category": "action",
+  "group": "action"
+ },
+ {
+  "name": "mask",
+  "code": "EAD0",
+  "category": "function",
+  "group": "logic"
+ },
+ {
+  "name": "caret_down",
+  "code": "EAD2",
+  "category": "arrow",
+  "group": "arrow"
+ },
+ {
+  "name": "caret_up",
+  "code": "EAD3",
+  "category": "arrow",
+  "group": "arrow"
+ },
+ {
+  "name": "download",
+  "code": "EAD4",
+  "category": "action",
+  "group": "action"
+ },
+ {
+  "name": "upload",
+  "code": "EAD5",
+  "category": "action",
+  "group": "action"
+ },
+ {
+  "name": "comb",
+  "code": "EA45",
+  "category": "function",
+  "group": "filter"
+ },
+ {
+  "name": "spring",
+  "code": "EAD1",
+  "category": "audio",
+  "group": "effect"
+ },
+ {
+  "name": "repeat",
+  "code": "EAD6",
+  "category": "transport",
+  "group": "transport"
+ },
+ {
+  "name": "shuffle",
+  "code": "EAD7",
+  "category": "transport",
+  "group": "transport"
+ },
+ {
+  "name": "filter_cells",
+  "code": "EAD8",
+  "category": "function",
+  "group": "filter"
+ },
+ {
+  "name": "filter_comb",
+  "code": "EAD9",
+  "category": "function",
+  "group": "filter"
+ },
+ {
+  "name": "redo",
+  "code": "EADA",
+  "category": "arrow",
+  "group": "arrow"
+ },
+ {
+  "name": "undo",
+  "code": "EADB",
+  "category": "arrow",
+  "group": "arrow"
+ },
+ {
+  "name": "library",
+  "code": "EADC",
+  "category": "action",
+  "group": "file"
+ },
+ {
+  "name": "person",
+  "code": "EADD",
+  "category": "ui",
+  "group": "ui"
+ },
+ {
+  "name": "inbox",
+  "code": "EADE",
+  "category": "action",
+  "group": "file"
+ },
+ {
+  "name": "message",
+  "code": "EADF",
+  "category": "symbol",
+  "group": "status"
+ },
+ {
+  "name": "tag",
+  "code": "EAE0",
+  "category": "ui",
+  "group": "ui"
+ },
+ {
+  "name": "ramp_down",
+  "code": "EAE1",
+  "category": "audio",
+  "group": "sound"
+ },
+ {
+  "name": "roman_1_circle_fill",
+  "code": "EA00",
+  "category": "symbol",
+  "group": "notation"
+ },
+ {
+  "name": "roman_1_circle",
+  "code": "EA21",
+  "category": "symbol",
+  "group": "notation"
+ },
+ {
+  "name": "roman_2_circle_fill",
+  "code": "EA22",
+  "category": "symbol",
+  "group": "notation"
+ },
+ {
+  "name": "roman_2_circle",
+  "code": "EA25",
+  "category": "symbol",
+  "group": "notation"
+ },
+ {
+  "name": "roman_3_circle_fill",
+  "code": "EA27",
+  "category": "symbol",
+  "group": "notation"
+ },
+ {
+  "name": "roman_3_circle",
+  "code": "EA29",
+  "category": "symbol",
+  "group": "notation"
+ },
+ {
+  "name": "roman_4_circle_fill",
+  "code": "EA2B",
+  "category": "symbol",
+  "group": "notation"
+ },
+ {
+  "name": "roman_4_circle",
+  "code": "EA2C",
+  "category": "symbol",
+  "group": "notation"
+ },
+ {
+  "name": "mask_xor",
+  "code": "EA2D",
+  "category": "function",
+  "group": "logic"
+ },
+ {
+  "name": "checkmark",
+  "code": "EA2E",
+  "category": "action",
+  "group": "action"
+ },
+ {
+  "name": "eye",
+  "code": "EA2F",
+  "category": "action",
+  "group": "action"
+ },
+ {
+  "name": "stopwatch",
+  "code": "EA30",
+  "category": "transport",
+  "group": "transport"
+ },
+ {
+  "name": "plus_square",
+  "code": "EA31",
+  "category": "action",
+  "group": "action"
+ },
+ {
+  "name": "duplicate",
+  "code": "EA32",
+  "category": "action",
+  "group": "action"
+ },
+ {
+  "name": "ellipsis",
+  "code": "EA4D",
+  "category": "ui",
+  "group": "ui"
+ },
+ {
+  "name": "ellipsis_vertical",
+  "code": "EA4E",
+  "category": "ui",
+  "group": "ui"
+ },
+ {
+  "name": "menu",
+  "code": "EA51",
+  "category": "ui",
+  "group": "ui"
+ },
+ {
+  "name": "menu_vertical",
+  "code": "EA52",
+  "category": "ui",
+  "group": "ui"
+ },
+ {
+  "name": "midi_slash",
+  "code": "EA5B",
+  "category": "hardware",
+  "group": "port"
+ },
+ {
+  "name": "cloud_slash_fill",
+  "code": "EA5C",
+  "category": "action",
+  "group": "file"
+ },
+ {
+  "name": "cloud_slash",
+  "code": "EA5D",
+  "category": "action",
+  "group": "file"
+ },
+ {
+  "name": "document_slash",
+  "code": "EA5E",
+  "category": "action",
+  "group": "file"
+ },
+ {
+  "name": "download_as",
+  "code": "EA5F",
+  "category": "action",
+  "group": "action"
+ },
+ {
+  "name": "folder_slash",
+  "code": "EA60",
+  "category": "action",
+  "group": "file"
+ },
+ {
+  "name": "hihat",
+  "code": "EA61",
+  "category": "audio",
+  "group": "instrument"
+ },
+ {
+  "name": "kick",
+  "code": "EA62",
+  "category": "audio",
+  "group": "instrument"
+ },
+ {
+  "name": "drum",
+  "code": "EA66",
+  "category": "audio",
+  "group": "instrument"
+ },
+ {
+  "name": "feedback",
+  "code": "EAE2",
+  "category": "arrow",
+  "group": "arrow"
+ },
+ {
+  "name": "node",
+  "code": "EAE3",
+  "category": "audio",
+  "group": "module"
+ },
+ {
+  "name": "transition",
+  "code": "EAE4",
+  "category": "audio",
+  "group": "effect"
+ },
+ {
+  "name": "warp",
+  "code": "EAE5",
+  "category": "audio",
+  "group": "effect"
+ },
+ {
+  "name": "waves",
+  "code": "EAE6",
+  "category": "audio",
+  "group": "sound"
+ },
+ {
+  "name": "power",
+  "code": "EAE7",
+  "category": "action",
+  "group": "action"
+ },
+ {
+  "name": "speaker_wave_1",
+  "code": "EAE8",
+  "category": "audio",
+  "group": "sound"
+ },
+ {
+  "name": "speaker_wave_2",
+  "code": "EAE9",
+  "category": "audio",
+  "group": "sound"
+ },
+ {
+  "name": "speaker_wave_3",
+  "code": "EAEA",
+  "category": "audio",
+  "group": "sound"
+ },
+ {
+  "name": "speaker_mute",
+  "code": "EAEB",
+  "category": "audio",
+  "group": "sound"
+ },
+ {
+  "name": "mask_off",
+  "code": "EAEC",
+  "category": "function",
+  "group": "logic"
+ },
+ {
+  "name": "wave_variants_four",
+  "code": "EAED",
+  "category": "wave",
+  "group": "wave"
+ },
+ {
+  "name": "pick",
+  "code": "EA67",
+  "category": "audio",
+  "group": "instrument"
+ },
+ {
+  "name": "filter_modal",
+  "code": "EAEE",
+  "category": "function",
+  "group": "filter"
+ },
+ {
+  "name": "note_eighth",
+  "code": "EAEF",
+  "category": "symbol",
+  "group": "notation"
+ },
+ {
+  "name": "note_half",
+  "code": "EAF0",
+  "category": "symbol",
+  "group": "notation"
+ },
+ {
+  "name": "note_quarter",
+  "code": "EAF1",
+  "category": "symbol",
+  "group": "notation"
+ },
+ {
+  "name": "floppy_dual",
+  "code": "EAF2",
+  "category": "hardware",
+  "group": "port"
+ },
+ {
+  "name": "amplitude",
+  "code": "EAF3",
+  "category": "audio",
+  "group": "module"
+ },
+ {
+  "name": "bass",
+  "code": "EAF4",
+  "category": "audio",
+  "group": "instrument"
+ },
+ {
+  "name": "bell",
+  "code": "EAF5",
+  "category": "symbol",
+  "group": "status"
+ },
+ {
+  "name": "diode",
+  "code": "EAF6",
+  "category": "audio",
+  "group": "module"
+ },
+ {
+  "name": "efx",
+  "code": "EAF7",
+  "category": "audio",
+  "group": "effect"
+ },
+ {
+  "name": "face_happy",
+  "code": "EAF8",
+  "category": "symbol",
+  "group": "face"
+ },
+ {
+  "name": "warning",
+  "code": "EAF9",
+  "category": "symbol",
+  "group": "status"
+ },
+ {
+  "name": "face_angry",
+  "code": "EAFA",
+  "category": "symbol",
+  "group": "face"
+ },
+ {
+  "name": "face_sad",
+  "code": "EAFB",
+  "category": "symbol",
+  "group": "face"
+ },
+ {
+  "name": "face_smile",
+  "code": "EAFC",
+  "category": "symbol",
+  "group": "face"
+ },
+ {
+  "name": "hit",
+  "code": "EAFD",
+  "category": "audio",
+  "group": "instrument"
+ },
+ {
+  "name": "horn",
+  "code": "EAFE",
+  "category": "audio",
+  "group": "sound"
+ },
+ {
+  "name": "sparkles",
+  "code": "EAFF",
+  "category": "symbol",
+  "group": "status"
+ },
+ {
+  "name": "ladder",
+  "code": "EB00",
+  "category": "function",
+  "group": "filter"
+ },
+ {
+  "name": "lead",
+  "code": "EB01",
+  "category": "audio",
+  "group": "instrument"
+ },
+ {
+  "name": "link",
+  "code": "EB02",
+  "category": "action",
+  "group": "action"
+ },
+ {
+  "name": "pad",
+  "code": "EB03",
+  "category": "audio",
+  "group": "instrument"
+ },
+ {
+  "name": "rise",
+  "code": "EB04",
+  "category": "arrow",
+  "group": "arrow"
+ },
+ {
+  "name": "saturn",
+  "code": "EB05",
+  "category": "symbol",
+  "group": "shape"
+ },
+ {
+  "name": "sleep",
+  "code": "EB06",
+  "category": "symbol",
+  "group": "face"
+ },
+ {
+  "name": "transistor",
+  "code": "EB07",
+  "category": "audio",
+  "group": "module"
+ },
+ {
+  "name": "unlink",
+  "code": "EB08",
+  "category": "action",
+  "group": "action"
+ },
+ {
+  "name": "weight",
+  "code": "EB09",
+  "category": "symbol",
+  "group": "status"
+ },
+ {
+  "name": "antenna_0",
+  "code": "EB0A",
+  "category": "hardware",
+  "group": "device"
+ },
+ {
+  "name": "antenna_1",
+  "code": "EB0B",
+  "category": "hardware",
+  "group": "device"
+ },
+ {
+  "name": "antenna_2",
+  "code": "EB0C",
+  "category": "hardware",
+  "group": "device"
+ },
+ {
+  "name": "antenna_3",
+  "code": "EB0D",
+  "category": "hardware",
+  "group": "device"
+ },
+ {
+  "name": "antenna_4",
+  "code": "EB0E",
+  "category": "hardware",
+  "group": "device"
+ },
+ {
+  "name": "battery_0",
+  "code": "EB0F",
+  "category": "hardware",
+  "group": "device"
+ },
+ {
+  "name": "battery_1",
+  "code": "EB10",
+  "category": "hardware",
+  "group": "device"
+ },
+ {
+  "name": "battery_2",
+  "code": "EB11",
+  "category": "hardware",
+  "group": "device"
+ },
+ {
+  "name": "battery_3",
+  "code": "EB12",
+  "category": "hardware",
+  "group": "device"
+ },
+ {
+  "name": "battery_4",
+  "code": "EB13",
+  "category": "hardware",
+  "group": "device"
+ },
+ {
+  "name": "wifi_0",
+  "code": "EB14",
+  "category": "hardware",
+  "group": "device"
+ },
+ {
+  "name": "wifi_1",
+  "code": "EB15",
+  "category": "hardware",
+  "group": "device"
+ },
+ {
+  "name": "wifi_2",
+  "code": "EB16",
+  "category": "hardware",
+  "group": "device"
+ },
+ {
+  "name": "wifi_3",
+  "code": "EB17",
+  "category": "hardware",
+  "group": "device"
+ },
+ {
+  "name": "wifi_error",
+  "code": "EB18",
+  "category": "hardware",
+  "group": "device"
+ },
+ {
+  "name": "dice",
+  "code": "EB19",
+  "category": "symbol",
+  "group": "shape"
+ },
+ {
+  "name": "disc",
+  "code": "EB1A",
+  "category": "action",
+  "group": "file"
+ },
+ {
+  "name": "stethoscope",
+  "code": "EB1B",
+  "category": "symbol",
+  "group": "status"
+ },
+ {
+  "name": "info_fill",
+  "code": "EB1C",
+  "category": "symbol",
+  "group": "status"
+ },
+ {
+  "name": "info",
+  "code": "EB1D",
+  "category": "symbol",
+  "group": "status"
+ },
+ {
+  "name": "motion",
+  "code": "EB1E",
+  "category": "audio",
+  "group": "effect"
+ },
+ {
+  "name": "motion_delete",
+  "code": "EB1F",
+  "category": "audio",
+  "group": "effect"
+ },
+ {
+  "name": "motion_record",
+  "code": "EB20",
+  "category": "audio",
+  "group": "effect"
+ },
+ {
+  "name": "battery_charging",
+  "code": "EB21",
+  "category": "hardware",
+  "group": "device"
+ },
+ {
+  "name": "drawbar",
+  "code": "EB22",
+  "category": "audio",
+  "group": "instrument"
+ },
+ {
+  "name": "break",
+  "code": "EB23",
+  "category": "audio",
+  "group": "effect"
+ },
+ {
+  "name": "freeze",
+  "code": "EB24",
+  "category": "audio",
+  "group": "effect"
+ },
+ {
+  "name": "stop_sign",
+  "code": "EB25",
+  "category": "symbol",
+  "group": "status"
+ },
+ {
+  "name": "tape",
+  "code": "EB26",
+  "category": "audio",
+  "group": "instrument"
+ },
+ {
+  "name": "solo",
+  "code": "EB27",
+  "category": "audio",
+  "group": "sound"
+ },
+ {
+  "name": "bypass",
+  "code": "EB28",
+  "category": "audio",
+  "group": "effect"
+ },
+ {
+  "name": "mono",
+  "code": "EB29",
+  "category": "audio",
+  "group": "sound"
+ },
+ {
+  "name": "stereo",
+  "code": "EB2A",
+  "category": "audio",
+  "group": "sound"
+ },
+ {
+  "name": "headphones",
+  "code": "EB2B",
+  "category": "audio",
+  "group": "sound"
+ },
+ {
+  "name": "cue",
+  "code": "EB2C",
+  "category": "transport",
+  "group": "transport"
+ },
+ {
+  "name": "mute",
+  "code": "EB2D",
+  "category": "audio",
+  "group": "sound"
+ },
+ {
+  "name": "send",
+  "code": "EB2E",
+  "category": "audio",
+  "group": "module"
+ },
+ {
+  "name": "tap_tempo",
+  "code": "EB2F",
+  "category": "transport",
+  "group": "transport"
+ },
+ {
+  "name": "quantize",
+  "code": "EB30",
+  "category": "transport",
+  "group": "transport"
+ },
+ {
+  "name": "punch",
+  "code": "EB31",
+  "category": "transport",
+  "group": "transport"
+ },
+ {
+  "name": "bounce",
+  "code": "EB32",
+  "category": "action",
+  "group": "file"
+ },
+ {
+  "name": "wifi_slash",
+  "code": "EB33",
+  "category": "hardware",
+  "group": "device"
+ },
+ {
+  "name": "antenna_slash",
+  "code": "EB34",
+  "category": "hardware",
+  "group": "device"
+ }
+]

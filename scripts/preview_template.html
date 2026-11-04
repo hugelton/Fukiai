@@ -19,12 +19,37 @@
 		</style>
 	</head>
 	<body>
-    <header>
-      <h1>Fukiai : Musical Icon Fonts</h1>
-      <p style="opacity:.6;font-size:.9em;">Build v{{version}}</p>
-      <p><a href="https://github.com/hugelton/Fukiai">GitHub</a></p>
-      <input type="text" id="search" placeholder="Filter icons..." />
-    {{category_links}}
+    <header class="site-header">
+      <div class="header-inner">
+        <div class="brand">
+          <a class="brand-name" href="#">Fukiai</a>
+          <span class="build">v{{version}}</span>
+          <a class="github-link" href="https://github.com/hugelton/Fukiai">GitHub</a>
+        </div>
+        <div class="header-controls">
+          <input type="search" id="search" aria-label="Search icons" placeholder="Search icons…" />
+          <div class="toolbar">
+            <div class="seg" data-key="shape" role="group" aria-label="Shape">
+              <button type="button" data-value="outline" class="on">Outline</button>
+              <button type="button" data-value="fill">Fill</button>
+            </div>
+            <div class="seg" data-key="mode" role="group" aria-label="Rendering">
+              <button type="button" data-value="mono" class="on">Mono</button>
+              <button type="button" data-value="tint">Tint</button>
+              <button type="button" data-value="multi">Multi</button>
+            </div>
+            <label class="color-control" title="Tint color">
+              <span class="visually-hidden">Tint color</span>
+              <input type="color" id="accent" value="#2563eb" aria-label="Tint color" />
+            </label>
+            <label class="size-control" title="Icon size">
+              <span class="visually-hidden">Icon size</span>
+              <input type="range" id="size" min="32" max="96" value="56" aria-label="Icon size" />
+            </label>
+          </div>
+        </div>
+        {{category_links}}
+      </div>
     </header>
 
 		<main>{{glyph_blocks}}</main>
@@ -41,14 +66,70 @@
 		<script>
 			const search = document.getElementById("search");
 			const glyphs = document.querySelectorAll(".glyph");
+			const main = document.querySelector("main");
 
+			// Filter on the name, the Fill name, the pre-1.0 names, the group and the category
 			search.addEventListener("input", () => {
-				const q = search.value.toLowerCase();
+				const q = search.value.toLowerCase().trim().replace(/^u\+/, "x");
 				glyphs.forEach((el) => {
-					const name = el.dataset.name?.toLowerCase() || "";
-					el.style.display = name.includes(q) ? "" : "none";
+					const text = (el.dataset.search + " x" + el.dataset.code + " x" + (el.dataset.fillCode || "")).toLowerCase();
+					el.style.display = text.includes(q) ? "" : "none";
+				});
+				// hide the headings of categories and groups that have nothing left to show
+				document.querySelectorAll(".category").forEach((cat) => {
+					let any = false, title = null, titleHasCards = false;
+					const closeGroup = () => { if (title) title.style.display = titleHasCards ? "" : "none"; };
+					cat.querySelectorAll(".group-title, .glyph").forEach((node) => {
+						if (node.classList.contains("group-title")) {
+							closeGroup();
+							title = node;
+							titleHasCards = false;
+						} else if (node.style.display !== "none") {
+							any = true;
+							titleHasCards = true;
+						}
+					});
+					closeGroup();
+					cat.style.display = any ? "" : "none";
+					cat.previousElementSibling.style.display = any ? "" : "none";
 				});
 			});
+
+			// Style switching: Outline / Fill changes the glyph (a different character), Monochrome / Tint / Multicolor only the colors
+			const state = { shape: "outline", mode: "mono" };
+			// the state can be linked to: ?shape=fill&mode=tint&q=battery
+			const params = new URLSearchParams(location.search);
+			if (["outline", "fill"].includes(params.get("shape"))) state.shape = params.get("shape");
+			if (["mono", "tint", "multi"].includes(params.get("mode"))) state.mode = params.get("mode");
+			if (params.get("q")) { search.value = params.get("q"); search.dispatchEvent(new Event("input")); }
+
+			function apply() {
+				main.dataset.shape = state.shape;
+				main.dataset.mode = state.mode;
+				document.querySelectorAll(".seg").forEach((seg) => {
+					seg.querySelectorAll("button").forEach((b) => b.classList.toggle("on", b.dataset.value === state[seg.dataset.key]));
+				});
+				document.querySelectorAll(".glyph.has-fill").forEach((el) => {
+					const fill = state.shape === "fill";
+					const name = fill ? el.dataset.fillName : el.dataset.name;
+					const code = fill ? el.dataset.fillCode : el.dataset.code;
+					el.querySelector(".glyph-char").innerHTML = "&#x" + code + ";";
+					const nameBadge = el.querySelector(".copy-name");
+					nameBadge.textContent = name;
+					nameBadge.dataset.copy = name;
+					const codeBadge = el.querySelector(".copy-unicode");
+					codeBadge.textContent = "x" + code;
+					codeBadge.dataset.copy = "x" + code;
+					el.querySelector(".glyph-title").textContent = name.split("_").map((w) => w[0].toUpperCase() + w.slice(1)).join(" ");
+				});
+			}
+			document.querySelectorAll(".seg button").forEach((b) => {
+				b.addEventListener("click", () => { state[b.parentElement.dataset.key] = b.dataset.value; apply(); });
+			});
+			document.getElementById("accent").addEventListener("input", (e) => main.style.setProperty("--accent", e.target.value));
+			document.getElementById("size").addEventListener("input", (e) => main.style.setProperty("--icon-size", e.target.value + "px"));
+			main.style.setProperty("--accent", document.getElementById("accent").value);
+			apply();
 
     // コピー＆通知（要素ごとにコピー内容を分離）
     const notice = document.getElementById("copied-notice");
@@ -61,9 +142,9 @@
 
     // アイコンクリックで実体をコピー
     document.addEventListener('click', (e) => {
-      const icon = e.target.closest('.glyph-char');
+      const icon = e.target.closest('.glyph-art');
       if (icon) {
-        const content = icon.textContent;
+        const content = icon.querySelector('.glyph-char').textContent;
         navigator.clipboard.writeText(content).then(() => showNotice('Copied entity'));
         return;
       }

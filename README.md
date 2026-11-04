@@ -33,14 +33,23 @@ Add this script to your HTML:
 npm install fukiai
 ```
 
+## Preview page
+
+`docs/index.html` (GitHub Pages) lists every glyph by category and group.
+
+- **Outline / Fill** switches the 20 glyphs that have both (one card each).
+- **Monochrome / Tint / Multicolor** changes only the colors: the glyphs with layers (battery, wifi, ADSR stages) are drawn from their SVG with `primary` / `secondary` / `background`; the others use the color as it is.
+- The search finds a glyph by its name, its pre-1.0 name (`control_play_f`), its group or its Unicode.
+- The state can be linked to: `?shape=fill&mode=tint&q=battery`.
+
 ## Usage
 
 ### Simple Usage
 
 ```html
-<i class="fukiai" name="control_rec_f"></i>
-<i class="fukiai" name="waveform_sine"></i>
-<i class="fukiai" name="ui_knob"></i>
+<i class="fukiai" name="record_fill"></i>
+<i class="fukiai" name="wave_sine"></i>
+<i class="fukiai" name="knob"></i>
 ```
 
 ### CSS Only (without JavaScript)
@@ -125,6 +134,8 @@ Fukiai/
 │   └── assets/{version}/     # Versioned font files
 ├── scripts/                  # Build and generation scripts
 ├── glyphs.json               # Icon to Unicode mapping
+├── categories.json           # Category and group of every icon (used by the preview and the Illustrator files)
+├── aliases.json              # Pre-1.0 name → current name (e.g. control_play_f → play_fill); the JS library still accepts them
 ├── glyphs_structured.json    # Categorized icon data (auto-generated)
 └── package.json              # Project configuration
 ```

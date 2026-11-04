@@ -27,3 +27,48 @@ build/
 # OS generated files
 *.tmp
 *.temp
+# Generated Illustrator exports (rebuild with scripts/export_illustrator.py)
+illustrator/export/
+
+# Local Python environment (scripts/requirements.txt)
+.venv/
+__pycache__/
+
+# Generated reports and working copies (rebuild with scripts/audit_*.py, scripts/proto_sheet.py, scripts/tint_preview.py)
+audit/sheets/
+audit/*_before/
+audit/proto/before/
+audit/metrics.json
+audit/classification.json
+audit/tint/*.png
+!audit/tint/preview.png
+
+# Illustrator files are generated from svg/ (scripts/build_illustrator.py); svg/ is the source of truth
+illustrator/ai/
+illustrator/fukiai_template.ai
+
+# Local design work and agent notes. Keep these on this Mac only.
+AGENTS.md
+CLAUDE.md
+DESIGN.md
+JOURNAL.md
+audit/
+illustrator/
+tools/
+temp_ordered/
+temp_unicode/
+missing.json
+compose.json
+tint.json
+docs/README.md
+
+# Only the scripts needed by npm/Pages/release builds belong in Git.
+# New one-off scripts stay local unless explicitly added to this list.
+scripts/*
+!scripts/build_font_new.js
+!scripts/build_dist.js
+!scripts/generate_index_html.js
+!scripts/generate_structured_glyphs.js
+!scripts/preview_template.html
+!scripts/sync_docs_assets.js
+!scripts/update_js_library.js
