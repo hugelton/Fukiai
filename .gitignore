@@ -57,6 +57,7 @@ illustrator/
 tools/
 temp_ordered/
 temp_unicode/
+local/
 missing.json
 compose.json
 tint.json
