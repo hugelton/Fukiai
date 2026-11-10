@@ -2026,5 +2026,11 @@
   "code": "EB57",
   "category": "function",
   "group": "sequence"
+ },
+ {
+  "name": "hammer_wrench",
+  "code": "EB58",
+  "category": "ui",
+  "group": "ui"
  }
 ]

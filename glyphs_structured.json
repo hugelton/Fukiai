@@ -517,6 +517,11 @@
       "group": "ui"
     },
     {
+      "name": "hammer_wrench",
+      "code": "EB58",
+      "group": "ui"
+    },
+    {
       "name": "home",
       "code": "EB3D",
       "group": "ui"
