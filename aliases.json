@@ -140,7 +140,7 @@
   "symbol_metronome": "metronome",
   "symbol_tuning": "tuning_fork",
   "control_countdown": "countdown",
-  "control_fantom": "fantom",
+  "control_fantom": "phantom_power",
   "control_fx": "fx",
   "function_exp": "curve_exp",
   "function_exp_biscuit": "curve_exp_boxed",
@@ -242,7 +242,7 @@
   "symbol_bass": "strings_four",
   "symbol_bell": "bell",
   "symbol_diode": "diode",
-  "symbol_efx": "efx",
+  "symbol_efx": "explosion",
   "symbol_enjoy": "face_happy",
   "symbol_error": "warning",
   "symbol_face_angry": "face_angry",
@@ -291,5 +291,7 @@
   "symbol_stop": "stop_sign",
   "symbol_tape": "tape",
   "symbol_tempo": "metronome",
-  "bass": "strings_four"
+  "bass": "strings_four",
+  "efx": "explosion",
+  "fantom": "phantom_power"
 }

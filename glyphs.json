@@ -140,7 +140,7 @@
   "metronome": "EAA6",
   "tuning_fork": "EAA7",
   "countdown": "EAA8",
-  "fantom": "EAA9",
+  "phantom_power": "EAA9",
   "fx": "EAAA",
   "curve_exp": "EAAB",
   "curve_exp_boxed": "EAAC",
@@ -244,7 +244,7 @@
   "strings_four": "EAF4",
   "bell": "EAF5",
   "diode": "EAF6",
-  "efx": "EAF7",
+  "explosion": "EAF7",
   "face_happy": "EAF8",
   "warning": "EAF9",
   "face_angry": "EAFA",
@@ -310,7 +310,7 @@
   "arpeggiator": "EB36",
   "bus": "EB37",
   "cabinet": "EB38",
-  "euclid": "EB39",
+  "target": "EB39",
   "guitar": "EB3A",
   "hammer": "EB3B",
   "help": "EB3C",
@@ -334,5 +334,7 @@
   "scale": "EB51",
   "name": "EB52",
   "save": "EB53",
-  "load": "EB54"
+  "load": "EB54",
+  "mvave_fm_1": "EB56",
+  "euclid": "EB57"
 }

@@ -846,10 +846,10 @@
   "group": "transport"
  },
  {
-  "name": "fantom",
+  "name": "phantom_power",
   "code": "EAA9",
-  "category": "symbol",
-  "group": "brand"
+  "category": "hardware",
+  "group": "device"
  },
  {
   "name": "fx",
@@ -1470,10 +1470,10 @@
   "group": "module"
  },
  {
-  "name": "efx",
+  "name": "explosion",
   "code": "EAF7",
-  "category": "audio",
-  "group": "effect"
+  "category": "action",
+  "group": "action"
  },
  {
   "name": "face_happy",
@@ -1866,7 +1866,7 @@
   "group": "instrument"
  },
  {
-  "name": "euclid",
+  "name": "target",
   "code": "EB39",
   "category": "function",
   "group": "sequence"
@@ -2014,5 +2014,17 @@
   "code": "EB54",
   "category": "action",
   "group": "file"
+ },
+ {
+  "name": "mvave_fm_1",
+  "code": "EB56",
+  "category": "symbol",
+  "group": "brand"
+ },
+ {
+  "name": "euclid",
+  "code": "EB57",
+  "category": "function",
+  "group": "sequence"
  }
 ]

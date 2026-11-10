@@ -285,6 +285,11 @@
       "group": "action"
     },
     {
+      "name": "explosion",
+      "code": "EAF7",
+      "group": "action"
+    },
+    {
       "name": "eye",
       "code": "EA2F",
       "group": "action"
@@ -591,11 +596,6 @@
     {
       "name": "effector",
       "code": "EAB7",
-      "group": "effect"
-    },
-    {
-      "name": "efx",
-      "code": "EAF7",
       "group": "effect"
     },
     {
@@ -1107,7 +1107,7 @@
     },
     {
       "name": "euclid",
-      "code": "EB39",
+      "code": "EB57",
       "group": "sequence"
     },
     {
@@ -1128,6 +1128,11 @@
     {
       "name": "steps_fill",
       "code": "EB45",
+      "group": "sequence"
+    },
+    {
+      "name": "target",
+      "code": "EB39",
       "group": "sequence"
     },
     {
@@ -1370,6 +1375,11 @@
       "group": "device"
     },
     {
+      "name": "phantom_power",
+      "code": "EAA9",
+      "group": "device"
+    },
+    {
       "name": "wifi_0",
       "code": "EB14",
       "group": "device"
@@ -1482,13 +1492,13 @@
   ],
   "symbol": [
     {
-      "name": "fantom",
-      "code": "EAA9",
+      "name": "hugelton",
+      "code": "EA48",
       "group": "brand"
     },
     {
-      "name": "hugelton",
-      "code": "EA48",
+      "name": "mvave_fm_1",
+      "code": "EB56",
       "group": "brand"
     },
     {

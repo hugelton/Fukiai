@@ -5,7 +5,7 @@
   'use strict';
 
   // Icon mapping from glyphs.json
-                                                                                                                          const ICON_MAP = {
+                                                                                                                                      const ICON_MAP = {
     "eject_fill": "EA01",
     "eject": "EA02",
     "rewind_fill": "EA03",
@@ -147,7 +147,7 @@
     "metronome": "EAA6",
     "tuning_fork": "EAA7",
     "countdown": "EAA8",
-    "fantom": "EAA9",
+    "phantom_power": "EAA9",
     "fx": "EAAA",
     "curve_exp": "EAAB",
     "curve_exp_boxed": "EAAC",
@@ -251,7 +251,7 @@
     "strings_four": "EAF4",
     "bell": "EAF5",
     "diode": "EAF6",
-    "efx": "EAF7",
+    "explosion": "EAF7",
     "face_happy": "EAF8",
     "warning": "EAF9",
     "face_angry": "EAFA",
@@ -317,7 +317,7 @@
     "arpeggiator": "EB36",
     "bus": "EB37",
     "cabinet": "EB38",
-    "euclid": "EB39",
+    "target": "EB39",
     "guitar": "EB3A",
     "hammer": "EB3B",
     "help": "EB3C",
@@ -341,10 +341,12 @@
     "scale": "EB51",
     "name": "EB52",
     "save": "EB53",
-    "load": "EB54"
+    "load": "EB54",
+    "mvave_fm_1": "EB56",
+    "euclid": "EB57"
   };
 
-                                                                                    const ALIASES = {
+                                                                                                const ALIASES = {
     "control_eject_f": "eject_fill",
     "control_eject_o": "eject",
     "control_forward_f": "rewind_fill",
@@ -486,7 +488,7 @@
     "symbol_metronome": "metronome",
     "symbol_tuning": "tuning_fork",
     "control_countdown": "countdown",
-    "control_fantom": "fantom",
+    "control_fantom": "phantom_power",
     "control_fx": "fx",
     "function_exp": "curve_exp",
     "function_exp_biscuit": "curve_exp_boxed",
@@ -588,7 +590,7 @@
     "symbol_bass": "strings_four",
     "symbol_bell": "bell",
     "symbol_diode": "diode",
-    "symbol_efx": "efx",
+    "symbol_efx": "explosion",
     "symbol_enjoy": "face_happy",
     "symbol_error": "warning",
     "symbol_face_angry": "face_angry",
@@ -637,7 +639,9 @@
     "symbol_stop": "stop_sign",
     "symbol_tape": "tape",
     "symbol_tempo": "metronome",
-    "bass": "strings_four"
+    "bass": "strings_four",
+    "efx": "explosion",
+    "fantom": "phantom_power"
   };
 
   // Inject font CSS
