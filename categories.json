@@ -975,7 +975,7 @@
   "name": "modular",
   "code": "EABD",
   "category": "audio",
-  "group": "module"
+  "group": "instrument"
  },
  {
   "name": "mouth",
@@ -1452,7 +1452,7 @@
   "group": "module"
  },
  {
-  "name": "bass",
+  "name": "strings_four",
   "code": "EAF4",
   "category": "audio",
   "group": "instrument"
@@ -1840,5 +1840,179 @@
   "code": "EB34",
   "category": "hardware",
   "group": "device"
+ },
+ {
+  "name": "amp",
+  "code": "EB35",
+  "category": "audio",
+  "group": "instrument"
+ },
+ {
+  "name": "arpeggiator",
+  "code": "EB36",
+  "category": "function",
+  "group": "sequence"
+ },
+ {
+  "name": "bus",
+  "code": "EB37",
+  "category": "symbol",
+  "group": "shape"
+ },
+ {
+  "name": "cabinet",
+  "code": "EB38",
+  "category": "audio",
+  "group": "instrument"
+ },
+ {
+  "name": "euclid",
+  "code": "EB39",
+  "category": "function",
+  "group": "sequence"
+ },
+ {
+  "name": "guitar",
+  "code": "EB3A",
+  "category": "audio",
+  "group": "instrument"
+ },
+ {
+  "name": "hammer",
+  "code": "EB3B",
+  "category": "ui",
+  "group": "ui"
+ },
+ {
+  "name": "help",
+  "code": "EB3C",
+  "category": "symbol",
+  "group": "status"
+ },
+ {
+  "name": "home",
+  "code": "EB3D",
+  "category": "ui",
+  "group": "ui"
+ },
+ {
+  "name": "humanize",
+  "code": "EB3E",
+  "category": "function",
+  "group": "sequence"
+ },
+ {
+  "name": "led_off",
+  "code": "EB3F",
+  "category": "hardware",
+  "group": "device"
+ },
+ {
+  "name": "led_on",
+  "code": "EB40",
+  "category": "hardware",
+  "group": "device"
+ },
+ {
+  "name": "reverse_order",
+  "code": "EB41",
+  "category": "function",
+  "group": "sequence"
+ },
+ {
+  "name": "room",
+  "code": "EB42",
+  "category": "audio",
+  "group": "effect"
+ },
+ {
+  "name": "stairs",
+  "code": "EB43",
+  "category": "symbol",
+  "group": "shape"
+ },
+ {
+  "name": "steps_clear",
+  "code": "EB44",
+  "category": "function",
+  "group": "sequence"
+ },
+ {
+  "name": "steps_fill",
+  "code": "EB45",
+  "category": "function",
+  "group": "sequence"
+ },
+ {
+  "name": "synthesizer",
+  "code": "EB46",
+  "category": "audio",
+  "group": "instrument"
+ },
+ {
+  "name": "track",
+  "code": "EB47",
+  "category": "function",
+  "group": "sequence"
+ },
+ {
+  "name": "wah",
+  "code": "EB48",
+  "category": "audio",
+  "group": "effect"
+ },
+ {
+  "name": "tremolo",
+  "code": "EB4B",
+  "category": "audio",
+  "group": "effect"
+ },
+ {
+  "name": "bass_guitar",
+  "code": "EB4D",
+  "category": "audio",
+  "group": "instrument"
+ },
+ {
+  "name": "drum_kit",
+  "code": "EB4E",
+  "category": "audio",
+  "group": "instrument"
+ },
+ {
+  "name": "clipboard",
+  "code": "EB4F",
+  "category": "ui",
+  "group": "ui"
+ },
+ {
+  "name": "bus_stop",
+  "code": "EB50",
+  "category": "symbol",
+  "group": "shape"
+ },
+ {
+  "name": "scale",
+  "code": "EB51",
+  "category": "symbol",
+  "group": "notation"
+ },
+ {
+  "name": "name",
+  "code": "EB52",
+  "category": "ui",
+  "group": "ui"
+ },
+ {
+  "name": "save",
+  "code": "EB53",
+  "category": "action",
+  "group": "file"
+ },
+ {
+  "name": "load",
+  "code": "EB54",
+  "category": "action",
+  "group": "file"
  }
 ]

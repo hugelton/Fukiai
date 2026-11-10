@@ -453,6 +453,16 @@
       "name": "library",
       "code": "EADC",
       "group": "file"
+    },
+    {
+      "name": "load",
+      "code": "EB54",
+      "group": "file"
+    },
+    {
+      "name": "save",
+      "code": "EB53",
+      "group": "file"
     }
   ],
   "ui": [
@@ -464,6 +474,11 @@
     {
       "name": "button_toggle",
       "code": "EA6F",
+      "group": "ui"
+    },
+    {
+      "name": "clipboard",
+      "code": "EB4F",
       "group": "ui"
     },
     {
@@ -492,6 +507,16 @@
       "group": "ui"
     },
     {
+      "name": "hammer",
+      "code": "EB3B",
+      "group": "ui"
+    },
+    {
+      "name": "home",
+      "code": "EB3D",
+      "group": "ui"
+    },
+    {
       "name": "knob",
       "code": "EA70",
       "group": "ui"
@@ -509,6 +534,11 @@
     {
       "name": "menu_vertical",
       "code": "EA52",
+      "group": "ui"
+    },
+    {
+      "name": "name",
+      "code": "EB52",
       "group": "ui"
     },
     {
@@ -594,6 +624,11 @@
       "group": "effect"
     },
     {
+      "name": "room",
+      "code": "EB42",
+      "group": "effect"
+    },
+    {
       "name": "speed",
       "code": "EAC0",
       "group": "effect"
@@ -614,13 +649,33 @@
       "group": "effect"
     },
     {
+      "name": "tremolo",
+      "code": "EB4B",
+      "group": "effect"
+    },
+    {
+      "name": "wah",
+      "code": "EB48",
+      "group": "effect"
+    },
+    {
       "name": "warp",
       "code": "EAE5",
       "group": "effect"
     },
     {
-      "name": "bass",
-      "code": "EAF4",
+      "name": "amp",
+      "code": "EB35",
+      "group": "instrument"
+    },
+    {
+      "name": "bass_guitar",
+      "code": "EB4D",
+      "group": "instrument"
+    },
+    {
+      "name": "cabinet",
+      "code": "EB38",
       "group": "instrument"
     },
     {
@@ -631,6 +686,16 @@
     {
       "name": "drum",
       "code": "EA66",
+      "group": "instrument"
+    },
+    {
+      "name": "drum_kit",
+      "code": "EB4E",
+      "group": "instrument"
+    },
+    {
+      "name": "guitar",
+      "code": "EB3A",
       "group": "instrument"
     },
     {
@@ -659,6 +724,11 @@
       "group": "instrument"
     },
     {
+      "name": "modular",
+      "code": "EABD",
+      "group": "instrument"
+    },
+    {
       "name": "pad",
       "code": "EB03",
       "group": "instrument"
@@ -676,6 +746,16 @@
     {
       "name": "pick",
       "code": "EA67",
+      "group": "instrument"
+    },
+    {
+      "name": "strings_four",
+      "code": "EAF4",
+      "group": "instrument"
+    },
+    {
+      "name": "synthesizer",
+      "code": "EB46",
       "group": "instrument"
     },
     {
@@ -701,11 +781,6 @@
     {
       "name": "diode",
       "code": "EAF6",
-      "group": "module"
-    },
-    {
-      "name": "modular",
-      "code": "EABD",
       "group": "module"
     },
     {
@@ -1024,6 +1099,41 @@
       "name": "signal_unipolar",
       "code": "EA2A",
       "group": "logic"
+    },
+    {
+      "name": "arpeggiator",
+      "code": "EB36",
+      "group": "sequence"
+    },
+    {
+      "name": "euclid",
+      "code": "EB39",
+      "group": "sequence"
+    },
+    {
+      "name": "humanize",
+      "code": "EB3E",
+      "group": "sequence"
+    },
+    {
+      "name": "reverse_order",
+      "code": "EB41",
+      "group": "sequence"
+    },
+    {
+      "name": "steps_clear",
+      "code": "EB44",
+      "group": "sequence"
+    },
+    {
+      "name": "steps_fill",
+      "code": "EB45",
+      "group": "sequence"
+    },
+    {
+      "name": "track",
+      "code": "EB47",
+      "group": "sequence"
     }
   ],
   "wave": [
@@ -1250,6 +1360,16 @@
       "group": "device"
     },
     {
+      "name": "led_off",
+      "code": "EB3F",
+      "group": "device"
+    },
+    {
+      "name": "led_on",
+      "code": "EB40",
+      "group": "device"
+    },
+    {
       "name": "wifi_0",
       "code": "EB14",
       "group": "device"
@@ -1452,6 +1572,11 @@
       "group": "notation"
     },
     {
+      "name": "scale",
+      "code": "EB51",
+      "group": "notation"
+    },
+    {
       "name": "bolt",
       "code": "EA6B",
       "group": "shape"
@@ -1459,6 +1584,16 @@
     {
       "name": "bolt_fill",
       "code": "EA6A",
+      "group": "shape"
+    },
+    {
+      "name": "bus",
+      "code": "EB37",
+      "group": "shape"
+    },
+    {
+      "name": "bus_stop",
+      "code": "EB50",
       "group": "shape"
     },
     {
@@ -1492,6 +1627,11 @@
       "group": "shape"
     },
     {
+      "name": "stairs",
+      "code": "EB43",
+      "group": "shape"
+    },
+    {
       "name": "star",
       "code": "EA65",
       "group": "shape"
@@ -1509,6 +1649,11 @@
     {
       "name": "bell",
       "code": "EAF5",
+      "group": "status"
+    },
+    {
+      "name": "help",
+      "code": "EB3C",
       "group": "status"
     },
     {

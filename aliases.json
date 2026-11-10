@@ -239,7 +239,7 @@
   "note_eight": "note_eighth",
   "port_disk_dual": "floppy_dual",
   "symbol_amp": "amplitude",
-  "symbol_bass": "bass",
+  "symbol_bass": "strings_four",
   "symbol_bell": "bell",
   "symbol_diode": "diode",
   "symbol_efx": "efx",
@@ -290,5 +290,6 @@
   "symbol_freeze": "freeze",
   "symbol_stop": "stop_sign",
   "symbol_tape": "tape",
-  "symbol_tempo": "metronome"
+  "symbol_tempo": "metronome",
+  "bass": "strings_four"
 }

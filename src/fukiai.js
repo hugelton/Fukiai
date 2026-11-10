@@ -5,7 +5,7 @@
   'use strict';
 
   // Icon mapping from glyphs.json
-                                                                                                const ICON_MAP = {
+                                                                                                                          const ICON_MAP = {
     "eject_fill": "EA01",
     "eject": "EA02",
     "rewind_fill": "EA03",
@@ -248,7 +248,7 @@
     "note_quarter": "EAF1",
     "floppy_dual": "EAF2",
     "amplitude": "EAF3",
-    "bass": "EAF4",
+    "strings_four": "EAF4",
     "bell": "EAF5",
     "diode": "EAF6",
     "efx": "EAF7",
@@ -312,10 +312,39 @@
     "punch": "EB31",
     "bounce": "EB32",
     "wifi_slash": "EB33",
-    "antenna_slash": "EB34"
+    "antenna_slash": "EB34",
+    "amp": "EB35",
+    "arpeggiator": "EB36",
+    "bus": "EB37",
+    "cabinet": "EB38",
+    "euclid": "EB39",
+    "guitar": "EB3A",
+    "hammer": "EB3B",
+    "help": "EB3C",
+    "home": "EB3D",
+    "humanize": "EB3E",
+    "led_off": "EB3F",
+    "led_on": "EB40",
+    "reverse_order": "EB41",
+    "room": "EB42",
+    "stairs": "EB43",
+    "steps_clear": "EB44",
+    "steps_fill": "EB45",
+    "synthesizer": "EB46",
+    "track": "EB47",
+    "wah": "EB48",
+    "tremolo": "EB4B",
+    "bass_guitar": "EB4D",
+    "drum_kit": "EB4E",
+    "clipboard": "EB4F",
+    "bus_stop": "EB50",
+    "scale": "EB51",
+    "name": "EB52",
+    "save": "EB53",
+    "load": "EB54"
   };
 
-                                                          const ALIASES = {
+                                                                                    const ALIASES = {
     "control_eject_f": "eject_fill",
     "control_eject_o": "eject",
     "control_forward_f": "rewind_fill",
@@ -556,7 +585,7 @@
     "note_eight": "note_eighth",
     "port_disk_dual": "floppy_dual",
     "symbol_amp": "amplitude",
-    "symbol_bass": "bass",
+    "symbol_bass": "strings_four",
     "symbol_bell": "bell",
     "symbol_diode": "diode",
     "symbol_efx": "efx",
@@ -607,7 +636,8 @@
     "symbol_freeze": "freeze",
     "symbol_stop": "stop_sign",
     "symbol_tape": "tape",
-    "symbol_tempo": "metronome"
+    "symbol_tempo": "metronome",
+    "bass": "strings_four"
   };
 
   // Inject font CSS
