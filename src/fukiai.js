@@ -5,7 +5,7 @@
   'use strict';
 
   // Icon mapping from glyphs.json
-                                                                                                                                                const ICON_MAP = {
+                                                                                                                                                    const ICON_MAP = {
     "eject_fill": "EA01",
     "eject": "EA02",
     "rewind_fill": "EA03",
@@ -339,7 +339,7 @@
     "hammer_wrench": "EB58"
   };
 
-                                                                                                          const ALIASES = {
+                                                                                                              const ALIASES = {
     "control_eject_f": "eject_fill",
     "control_eject_o": "eject",
     "control_forward_f": "rewind_fill",

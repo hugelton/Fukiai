@@ -510,11 +510,10 @@ a:hover::after {
 
 
 /* ---- style switching (Outline / Fill, Monochrome / Tint / Multicolor) ---- */
-main { --icon-size: 56px; --accent: #2563eb; --mc-face: #d1d1d6; --mc-primary: #34c759;
+main { --icon-size: 56px; --accent: #2563eb; --mc-primary: currentColor;
 	--mc-blue: #007aff; --mc-red: #ff3b30; --mc-yellow: #ffcc00; --mc-green: #34c759; --mc-gray: #8e8e93; }
 @media (prefers-color-scheme: dark) {
-	main { --mc-face: #48484a; --mc-primary: #30d158;
-		--mc-blue: #0a84ff; --mc-red: #ff453a; --mc-yellow: #ffd60a; --mc-green: #30d158; --mc-gray: #8e8e93; }
+	main { --mc-blue: #0a84ff; --mc-red: #ff453a; --mc-yellow: #ffd60a; --mc-green: #30d158; --mc-gray: #8e8e93; }
 }
 /* Multicolor: the colour of the `primary` layer per glyph (data-mc comes from multicolor.json) */
 .glyph[data-mc="blue"] { --mc-primary: var(--mc-blue); }
@@ -569,13 +568,11 @@ main[data-mode="tint"] .glyph.layered .glyph-svg { display: block; color: var(--
 main[data-mode="tint"] .layer-secondary { opacity: 0.3; }
 main[data-mode="tint"] .layer-background { display: inline; opacity: 0.12; }   /* the face of a glyph with a Fill */
 
+/* Multicolor: everything is painted with the text colour; only the `primary` layer of the glyphs listed in
+   multicolor.json (data-mc) gets a colour of its own. `background` (the face) stays hidden. */
 main[data-mode="multi"] .glyph.layered .glyph-char { display: none; }
 main[data-mode="multi"] .glyph.layered .glyph-svg { display: block; }
-main[data-mode="multi"] .layer-background { display: inline; }
-main[data-mode="multi"] .layer-background path { fill: var(--mc-face); }
-main[data-mode="multi"] .layer-secondary { display: none; }
 main[data-mode="multi"] .layer-primary path { fill: var(--mc-primary); }
-main[data-mode="multi"] .glyph:not(.layered) .glyph-art { opacity: 0.35; }   /* not on .glyph: its fade-in animation owns the opacity */
 
 /* a glyph with a Fill: in Fill shape the Fill itself (the character) is shown, never the layered Outline */
 main[data-shape="fill"] .glyph.has-fill .glyph-svg { display: none !important; }

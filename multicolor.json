@@ -1,6 +1,7 @@
 {
   "colors": ["blue", "red", "yellow", "green", "gray"],
   "rules": [
+    { "match": "^battery_([0-4]|charging)$", "color": "green" },
     { "match": "^wifi_[0-3]$", "color": "blue" },
     { "match": "^(wifi_error|xmark_circle|stop_sign|warning|face_angry)$", "color": "red" },
     { "match": "_slash(_fill)?$", "color": "red" },

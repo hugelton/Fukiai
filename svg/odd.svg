@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
-  <g id="background" display="none">
-    <path d="M200,250A50,50 0 1 1 300,250A50,50 0 1 1 200,250ZM225,250A25,25 0 1 0 275,250A25,25 0 1 0 225,250Z"/>
-  </g>
   <g id="primary">
     <path d="M75,250A50,50 0 1 1 175,250A50,50 0 1 1 75,250Z"/>
     <path d="M325,250A50,50 0 1 1 425,250A50,50 0 1 1 325,250Z"/>
