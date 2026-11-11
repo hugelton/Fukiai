@@ -1176,54 +1176,6 @@
   "group": "sound"
  },
  {
-  "name": "roman_1_circle_fill",
-  "code": "EA00",
-  "category": "symbol",
-  "group": "notation"
- },
- {
-  "name": "roman_1_circle",
-  "code": "EA21",
-  "category": "symbol",
-  "group": "notation"
- },
- {
-  "name": "roman_2_circle_fill",
-  "code": "EA22",
-  "category": "symbol",
-  "group": "notation"
- },
- {
-  "name": "roman_2_circle",
-  "code": "EA25",
-  "category": "symbol",
-  "group": "notation"
- },
- {
-  "name": "roman_3_circle_fill",
-  "code": "EA27",
-  "category": "symbol",
-  "group": "notation"
- },
- {
-  "name": "roman_3_circle",
-  "code": "EA29",
-  "category": "symbol",
-  "group": "notation"
- },
- {
-  "name": "roman_4_circle_fill",
-  "code": "EA2B",
-  "category": "symbol",
-  "group": "notation"
- },
- {
-  "name": "roman_4_circle",
-  "code": "EA2C",
-  "category": "symbol",
-  "group": "notation"
- },
- {
   "name": "mask_xor",
   "code": "EA2D",
   "category": "function",

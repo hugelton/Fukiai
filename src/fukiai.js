@@ -5,7 +5,7 @@
   'use strict';
 
   // Icon mapping from glyphs.json
-                                                                                                                                            const ICON_MAP = {
+                                                                                                                                                const ICON_MAP = {
     "eject_fill": "EA01",
     "eject": "EA02",
     "rewind_fill": "EA03",
@@ -202,14 +202,6 @@
     "message": "EADF",
     "tag": "EAE0",
     "ramp_down": "EAE1",
-    "roman_1_circle_fill": "EA00",
-    "roman_1_circle": "EA21",
-    "roman_2_circle_fill": "EA22",
-    "roman_2_circle": "EA25",
-    "roman_3_circle_fill": "EA27",
-    "roman_3_circle": "EA29",
-    "roman_4_circle_fill": "EA2B",
-    "roman_4_circle": "EA2C",
     "mask_xor": "EA2D",
     "checkmark": "EA2E",
     "eye": "EA2F",
@@ -347,7 +339,7 @@
     "hammer_wrench": "EB58"
   };
 
-                                                                                                      const ALIASES = {
+                                                                                                          const ALIASES = {
     "control_eject_f": "eject_fill",
     "control_eject_o": "eject",
     "control_forward_f": "rewind_fill",
@@ -544,14 +536,6 @@
     "symbol_message": "message",
     "symbol_tag": "tag",
     "symbol_volume_inv": "ramp_down",
-    "numbers_circle_1_roman_f": "roman_1_circle_fill",
-    "numbers_circle_1_roman_o": "roman_1_circle",
-    "numbers_circle_2_roman_f": "roman_2_circle_fill",
-    "numbers_circle_2_roman_o": "roman_2_circle",
-    "numbers_circle_3_roman_f": "roman_3_circle_fill",
-    "numbers_circle_3_roman_o": "roman_3_circle",
-    "numbers_circle_4_roman_f": "roman_4_circle_fill",
-    "numbers_circle_4_roman_o": "roman_4_circle",
     "function_mask_xor": "mask_xor",
     "symbol_check": "checkmark",
     "symbol_eye": "eye",

@@ -1547,46 +1547,6 @@
       "group": "notation"
     },
     {
-      "name": "roman_1_circle",
-      "code": "EA21",
-      "group": "notation"
-    },
-    {
-      "name": "roman_1_circle_fill",
-      "code": "EA00",
-      "group": "notation"
-    },
-    {
-      "name": "roman_2_circle",
-      "code": "EA25",
-      "group": "notation"
-    },
-    {
-      "name": "roman_2_circle_fill",
-      "code": "EA22",
-      "group": "notation"
-    },
-    {
-      "name": "roman_3_circle",
-      "code": "EA29",
-      "group": "notation"
-    },
-    {
-      "name": "roman_3_circle_fill",
-      "code": "EA27",
-      "group": "notation"
-    },
-    {
-      "name": "roman_4_circle",
-      "code": "EA2C",
-      "group": "notation"
-    },
-    {
-      "name": "roman_4_circle_fill",
-      "code": "EA2B",
-      "group": "notation"
-    },
-    {
       "name": "scale",
       "code": "EB51",
       "group": "notation"

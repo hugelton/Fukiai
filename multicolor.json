@@ -1,0 +1,13 @@
+{
+  "colors": ["blue", "red", "yellow", "green", "gray"],
+  "rules": [
+    { "match": "^wifi_[0-3]$", "color": "blue" },
+    { "match": "^(wifi_error|xmark_circle|stop_sign|warning|face_angry)$", "color": "red" },
+    { "match": "_slash(_fill)?$", "color": "red" },
+    { "match": "^led_on$", "color": "yellow" },
+    { "match": "^led_off$", "color": "gray" },
+    { "match": "^face_happy$", "color": "yellow" },
+    { "match": "^face_smile$", "color": "green" },
+    { "match": "^face_sad$", "color": "blue" }
+  ]
+}

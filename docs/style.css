@@ -510,10 +510,18 @@ a:hover::after {
 
 
 /* ---- style switching (Outline / Fill, Monochrome / Tint / Multicolor) ---- */
-main { --icon-size: 56px; --accent: #2563eb; --mc-face: #d1d1d6; --mc-primary: #34c759; }
+main { --icon-size: 56px; --accent: #2563eb; --mc-face: #d1d1d6; --mc-primary: #34c759;
+	--mc-blue: #007aff; --mc-red: #ff3b30; --mc-yellow: #ffcc00; --mc-green: #34c759; --mc-gray: #8e8e93; }
 @media (prefers-color-scheme: dark) {
-	main { --mc-face: #48484a; --mc-primary: #30d158; }
+	main { --mc-face: #48484a; --mc-primary: #30d158;
+		--mc-blue: #0a84ff; --mc-red: #ff453a; --mc-yellow: #ffd60a; --mc-green: #30d158; --mc-gray: #8e8e93; }
 }
+/* Multicolor: the colour of the `primary` layer per glyph (data-mc comes from multicolor.json) */
+.glyph[data-mc="blue"] { --mc-primary: var(--mc-blue); }
+.glyph[data-mc="red"] { --mc-primary: var(--mc-red); }
+.glyph[data-mc="yellow"] { --mc-primary: var(--mc-yellow); }
+.glyph[data-mc="green"] { --mc-primary: var(--mc-green); }
+.glyph[data-mc="gray"] { --mc-primary: var(--mc-gray); }
 .toolbar {
 	display: flex;
 	flex-wrap: nowrap;

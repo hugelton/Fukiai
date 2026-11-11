@@ -58,6 +58,13 @@ const aliases = require(path.join(rootDir, 'aliases.json'));
 const oldNames = {};
 Object.entries(aliases).forEach(([old, current]) => { (oldNames[current] = oldNames[current] || []).push(old); });
 
+// Multicolor: the colour of the `primary` layer per glyph (multicolor.json: the first matching rule wins; no match = default green)
+const multicolor = JSON.parse(fs.readFileSync(path.join(rootDir, 'multicolor.json'), 'utf8'));
+function mcColor(name) {
+  const rule = multicolor.rules.find(r => new RegExp(r.match).test(name));
+  return rule ? rule.color : null;
+}
+
 // Glyphs with layers (primary / secondary / background) are also embedded as inline SVG, so that Tint and
 // Multicolor can be shown; the icon font is monochrome.
 function layeredSvg(name) {
@@ -98,7 +105,7 @@ Object.entries(structured).forEach(([category, items]) => {
     const names = [item.name].concat(fill ? [fill.name] : []);
     const search = names.concat(names.flatMap(n => oldNames[n] || []), [group, category]).join(' ');
     block += `
-<div class="glyph${svg ? ' layered' : ''}${fill ? ' has-fill' : ''}" data-name="${item.name}" data-search="${search}"` +
+<div class="glyph${svg ? ' layered' : ''}${fill ? ' has-fill' : ''}"${mcColor(item.name) ? ` data-mc="${mcColor(item.name)}"` : ''} data-name="${item.name}" data-search="${search}"` +
       `${fill ? ` data-fill-name="${fill.name}" data-fill-code="${fill.code}"` : ''} data-code="${item.code}">
   <div class="glyph-art" title="Click to copy the character">
     <div class="glyph-char">${entity(item.code)}</div>${svg || ''}
