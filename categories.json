@@ -1984,5 +1984,107 @@
   "code": "EB58",
   "category": "ui",
   "group": "ui"
+ },
+ {
+  "name": "chamfer",
+  "code": "EB59",
+  "category": "cad",
+  "group": "edit"
+ },
+ {
+  "name": "fillet",
+  "code": "EB5A",
+  "category": "cad",
+  "group": "edit"
+ },
+ {
+  "name": "move",
+  "code": "EB5B",
+  "category": "cad",
+  "group": "edit"
+ },
+ {
+  "name": "offset",
+  "code": "EB5C",
+  "category": "cad",
+  "group": "edit"
+ },
+ {
+  "name": "resize",
+  "code": "EB5D",
+  "category": "cad",
+  "group": "edit"
+ },
+ {
+  "name": "rotate",
+  "code": "EB5E",
+  "category": "cad",
+  "group": "edit"
+ },
+ {
+  "name": "shell",
+  "code": "EB5F",
+  "category": "cad",
+  "group": "edit"
+ },
+ {
+  "name": "dimension",
+  "code": "EB60",
+  "category": "cad",
+  "group": "view"
+ },
+ {
+  "name": "ruler",
+  "code": "EB61",
+  "category": "cad",
+  "group": "view"
+ },
+ {
+  "name": "polygon",
+  "code": "EB62",
+  "category": "symbol",
+  "group": "shape"
+ },
+ {
+  "name": "rectangle",
+  "code": "EB63",
+  "category": "symbol",
+  "group": "shape"
+ },
+ {
+  "name": "zoom_in",
+  "code": "EB64",
+  "category": "ui",
+  "group": "ui"
+ },
+ {
+  "name": "push_pull",
+  "code": "EB65",
+  "category": "cad",
+  "group": "edit"
+ },
+ {
+  "name": "hand",
+  "code": "EB66",
+  "category": "ui",
+  "group": "ui"
+ },
+ {
+  "name": "hand_grab",
+  "code": "EB67",
+  "category": "ui",
+  "group": "ui"
+ },
+ {
+  "name": "hand_point",
+  "code": "EB68",
+  "category": "ui",
+  "group": "ui"
+ },
+ {
+  "name": "orbit",
+  "code": "EB69",
+  "category": "ui",
+  "group": "ui"
  }
 ]

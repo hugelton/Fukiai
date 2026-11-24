@@ -5,7 +5,7 @@
   'use strict';
 
   // Icon mapping from glyphs.json
-                                                                                                                                                    const ICON_MAP = {
+                                                                                                                                                        const ICON_MAP = {
     "eject_fill": "EA01",
     "eject": "EA02",
     "rewind_fill": "EA03",
@@ -336,10 +336,27 @@
     "load": "EB54",
     "mvave_fm_1": "EB56",
     "euclid": "EB57",
-    "hammer_wrench": "EB58"
+    "hammer_wrench": "EB58",
+    "chamfer": "EB59",
+    "fillet": "EB5A",
+    "move": "EB5B",
+    "offset": "EB5C",
+    "resize": "EB5D",
+    "rotate": "EB5E",
+    "shell": "EB5F",
+    "dimension": "EB60",
+    "ruler": "EB61",
+    "polygon": "EB62",
+    "rectangle": "EB63",
+    "zoom_in": "EB64",
+    "push_pull": "EB65",
+    "hand": "EB66",
+    "hand_grab": "EB67",
+    "hand_point": "EB68",
+    "orbit": "EB69"
   };
 
-                                                                                                              const ALIASES = {
+                                                                                                                  const ALIASES = {
     "control_eject_f": "eject_fill",
     "control_eject_o": "eject",
     "control_forward_f": "rewind_fill",

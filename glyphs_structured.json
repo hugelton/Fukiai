@@ -522,6 +522,21 @@
       "group": "ui"
     },
     {
+      "name": "hand",
+      "code": "EB66",
+      "group": "ui"
+    },
+    {
+      "name": "hand_grab",
+      "code": "EB67",
+      "group": "ui"
+    },
+    {
+      "name": "hand_point",
+      "code": "EB68",
+      "group": "ui"
+    },
+    {
       "name": "home",
       "code": "EB3D",
       "group": "ui"
@@ -552,6 +567,11 @@
       "group": "ui"
     },
     {
+      "name": "orbit",
+      "code": "EB69",
+      "group": "ui"
+    },
+    {
       "name": "person",
       "code": "EADD",
       "group": "ui"
@@ -574,6 +594,11 @@
     {
       "name": "tag",
       "code": "EAE0",
+      "group": "ui"
+    },
+    {
+      "name": "zoom_in",
+      "code": "EB64",
       "group": "ui"
     }
   ],
@@ -1582,6 +1607,11 @@
       "group": "shape"
     },
     {
+      "name": "polygon",
+      "code": "EB62",
+      "group": "shape"
+    },
+    {
       "name": "primitives",
       "code": "EA57",
       "group": "shape"
@@ -1589,6 +1619,11 @@
     {
       "name": "primitives_fill",
       "code": "EA56",
+      "group": "shape"
+    },
+    {
+      "name": "rectangle",
+      "code": "EB63",
       "group": "shape"
     },
     {
@@ -1670,6 +1705,58 @@
       "name": "weight",
       "code": "EB09",
       "group": "status"
+    }
+  ],
+  "cad": [
+    {
+      "name": "chamfer",
+      "code": "EB59",
+      "group": "edit"
+    },
+    {
+      "name": "fillet",
+      "code": "EB5A",
+      "group": "edit"
+    },
+    {
+      "name": "move",
+      "code": "EB5B",
+      "group": "edit"
+    },
+    {
+      "name": "offset",
+      "code": "EB5C",
+      "group": "edit"
+    },
+    {
+      "name": "push_pull",
+      "code": "EB65",
+      "group": "edit"
+    },
+    {
+      "name": "resize",
+      "code": "EB5D",
+      "group": "edit"
+    },
+    {
+      "name": "rotate",
+      "code": "EB5E",
+      "group": "edit"
+    },
+    {
+      "name": "shell",
+      "code": "EB5F",
+      "group": "edit"
+    },
+    {
+      "name": "dimension",
+      "code": "EB60",
+      "group": "view"
+    },
+    {
+      "name": "ruler",
+      "code": "EB61",
+      "group": "view"
     }
   ]
 }
