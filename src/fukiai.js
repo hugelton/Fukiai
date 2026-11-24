@@ -5,7 +5,7 @@
   'use strict';
 
   // Icon mapping from glyphs.json
-                                                                                                                                                        const ICON_MAP = {
+                                                                                                                                                          const ICON_MAP = {
     "eject_fill": "EA01",
     "eject": "EA02",
     "rewind_fill": "EA03",
@@ -353,10 +353,17 @@
     "hand": "EB66",
     "hand_grab": "EB67",
     "hand_point": "EB68",
-    "orbit": "EB69"
+    "orbit": "EB69",
+    "subtract": "EB6A",
+    "union": "EB6B",
+    "cone": "EB6C",
+    "cube": "EB6D",
+    "cylinder": "EB6E",
+    "sphere": "EB6F",
+    "torus": "EB70"
   };
 
-                                                                                                                  const ALIASES = {
+                                                                                                                    const ALIASES = {
     "control_eject_f": "eject_fill",
     "control_eject_o": "eject",
     "control_forward_f": "rewind_fill",

@@ -1749,6 +1749,41 @@
       "group": "edit"
     },
     {
+      "name": "subtract",
+      "code": "EB6A",
+      "group": "edit"
+    },
+    {
+      "name": "union",
+      "code": "EB6B",
+      "group": "edit"
+    },
+    {
+      "name": "cone",
+      "code": "EB6C",
+      "group": "shape"
+    },
+    {
+      "name": "cube",
+      "code": "EB6D",
+      "group": "shape"
+    },
+    {
+      "name": "cylinder",
+      "code": "EB6E",
+      "group": "shape"
+    },
+    {
+      "name": "sphere",
+      "code": "EB6F",
+      "group": "shape"
+    },
+    {
+      "name": "torus",
+      "code": "EB70",
+      "group": "shape"
+    },
+    {
       "name": "dimension",
       "code": "EB60",
       "group": "view"

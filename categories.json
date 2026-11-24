@@ -2086,5 +2086,47 @@
   "code": "EB69",
   "category": "ui",
   "group": "ui"
+ },
+ {
+  "name": "subtract",
+  "code": "EB6A",
+  "category": "cad",
+  "group": "edit"
+ },
+ {
+  "name": "union",
+  "code": "EB6B",
+  "category": "cad",
+  "group": "edit"
+ },
+ {
+  "name": "cone",
+  "code": "EB6C",
+  "category": "cad",
+  "group": "shape"
+ },
+ {
+  "name": "cube",
+  "code": "EB6D",
+  "category": "cad",
+  "group": "shape"
+ },
+ {
+  "name": "cylinder",
+  "code": "EB6E",
+  "category": "cad",
+  "group": "shape"
+ },
+ {
+  "name": "sphere",
+  "code": "EB6F",
+  "category": "cad",
+  "group": "shape"
+ },
+ {
+  "name": "torus",
+  "code": "EB70",
+  "category": "cad",
+  "group": "shape"
  }
 ]

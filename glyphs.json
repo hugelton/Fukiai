@@ -346,5 +346,12 @@
   "hand": "EB66",
   "hand_grab": "EB67",
   "hand_point": "EB68",
-  "orbit": "EB69"
+  "orbit": "EB69",
+  "subtract": "EB6A",
+  "union": "EB6B",
+  "cone": "EB6C",
+  "cube": "EB6D",
+  "cylinder": "EB6E",
+  "sphere": "EB6F",
+  "torus": "EB70"
 }
