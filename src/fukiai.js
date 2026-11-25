@@ -5,7 +5,7 @@
   'use strict';
 
   // Icon mapping from glyphs.json
-                                                                                                                                                          const ICON_MAP = {
+                                                                                                                                                            const ICON_MAP = {
     "eject_fill": "EA01",
     "eject": "EA02",
     "rewind_fill": "EA03",
@@ -354,16 +354,21 @@
     "hand_grab": "EB67",
     "hand_point": "EB68",
     "orbit": "EB69",
-    "subtract": "EB6A",
+    "difference": "EB6A",
     "union": "EB6B",
     "cone": "EB6C",
     "cube": "EB6D",
     "cylinder": "EB6E",
     "sphere": "EB6F",
-    "torus": "EB70"
+    "torus": "EB70",
+    "intersect": "EB71",
+    "extrude": "EB72",
+    "loft": "EB73",
+    "revolve": "EB74",
+    "surface": "EB75"
   };
 
-                                                                                                                    const ALIASES = {
+                                                                                                                      const ALIASES = {
     "control_eject_f": "eject_fill",
     "control_eject_o": "eject",
     "control_forward_f": "rewind_fill",
@@ -650,7 +655,8 @@
     "symbol_tempo": "metronome",
     "bass": "strings_four",
     "efx": "explosion",
-    "fantom": "phantom_power"
+    "fantom": "phantom_power",
+    "subtract": "difference"
   };
 
   // Inject font CSS

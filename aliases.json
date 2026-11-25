@@ -285,5 +285,6 @@
   "symbol_tempo": "metronome",
   "bass": "strings_four",
   "efx": "explosion",
-  "fantom": "phantom_power"
+  "fantom": "phantom_power",
+  "subtract": "difference"
 }

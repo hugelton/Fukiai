@@ -2088,7 +2088,7 @@
   "group": "ui"
  },
  {
-  "name": "subtract",
+  "name": "difference",
   "code": "EB6A",
   "category": "cad",
   "group": "edit"
@@ -2126,6 +2126,36 @@
  {
   "name": "torus",
   "code": "EB70",
+  "category": "cad",
+  "group": "shape"
+ },
+ {
+  "name": "intersect",
+  "code": "EB71",
+  "category": "cad",
+  "group": "edit"
+ },
+ {
+  "name": "extrude",
+  "code": "EB72",
+  "category": "cad",
+  "group": "shape"
+ },
+ {
+  "name": "loft",
+  "code": "EB73",
+  "category": "cad",
+  "group": "shape"
+ },
+ {
+  "name": "revolve",
+  "code": "EB74",
+  "category": "cad",
+  "group": "shape"
+ },
+ {
+  "name": "surface",
+  "code": "EB75",
   "category": "cad",
   "group": "shape"
  }

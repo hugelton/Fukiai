@@ -1714,8 +1714,18 @@
       "group": "edit"
     },
     {
+      "name": "difference",
+      "code": "EB6A",
+      "group": "edit"
+    },
+    {
       "name": "fillet",
       "code": "EB5A",
+      "group": "edit"
+    },
+    {
+      "name": "intersect",
+      "code": "EB71",
       "group": "edit"
     },
     {
@@ -1749,11 +1759,6 @@
       "group": "edit"
     },
     {
-      "name": "subtract",
-      "code": "EB6A",
-      "group": "edit"
-    },
-    {
       "name": "union",
       "code": "EB6B",
       "group": "edit"
@@ -1774,8 +1779,28 @@
       "group": "shape"
     },
     {
+      "name": "extrude",
+      "code": "EB72",
+      "group": "shape"
+    },
+    {
+      "name": "loft",
+      "code": "EB73",
+      "group": "shape"
+    },
+    {
+      "name": "revolve",
+      "code": "EB74",
+      "group": "shape"
+    },
+    {
       "name": "sphere",
       "code": "EB6F",
+      "group": "shape"
+    },
+    {
+      "name": "surface",
+      "code": "EB75",
       "group": "shape"
     },
     {
